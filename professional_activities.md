@@ -1,6 +1,6 @@
 ---
 title: "Professional Activities"
-layout: professional_activities
+layout: default
 fname: professional_activities
 ---
 
@@ -34,3 +34,26 @@ Committee, Board, etc. Memberships
 Conference organizations, program committee membership, etc.
 --------------------------------------------------------------
 
+<ul>
+    {% for act in site.data.social %}
+    <li>
+    {% if act.start != act.end %}
+        <strong>{{ act.start }}-{{ act.end }}:</strong> 
+    {% else %}
+        <strong>{{ act.start }}:</strong>
+    {% endif %}
+    {% if act.href %}
+        <a href="{{ act.href }}">{{ act.label }}</a>, 
+    {% else %}
+        {{ act.label }}, 
+    {% endif%}
+    {{ act.where }},
+    {% if act["act-type"] == "conference programme committee" or act["act-type"] == "conference organization" or act["act-type"] == "advisory board" %}
+        member of the {{ act["act-type"]}}.
+    {% else %}
+        {{ act["act-type"] }}
+    {% endif %}
+    </li>
+    {% endfor %}
+
+</ul>

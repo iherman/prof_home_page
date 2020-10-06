@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <script type="text/javascript" src="assets/js/doc-toc.js"></script>
+  </head>
+  <body class="hyphenate">
+    <div class="title">
+      <h1>Ivan Herman—{{ page.title }}</h1>
+    </div>
+    <div class="main">
+      <main>
+        <h2 data-notoc>Publication Categories</h2>
+        <nav role="doc-toc" data-options="suppress_counters">
+        </nav>
+
+        {{ content }}
+        
+      </main>
+      {% include aside.html %}
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
