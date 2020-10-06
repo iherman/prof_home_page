@@ -1,0 +1,242 @@
+/****************************************************************
+   SASS things
+****************************************************************/
+@import url(fonts.css);
+/****************************************************************
+	Font setting
+*****************************************************************/
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-variant-ligatures: common-ligatures no-discretionary-ligatures no-historical-ligatures; }
+
+main {
+  font-size: 1em; }
+
+/****************************************************************
+	Generic styling
+*****************************************************************/
+body {
+  background: snow;
+  padding: 2em;
+  color: rgba(0, 0, 0, 0.6); }
+
+main {
+  /* This does not work in Chrome, 'cause it does not do hyphenation. Without
+  hyphenation, on the other hand, justification can look very ugly.
+  Ie, this should be switched on only if the hyphenate.js is also used
+  as a polyfill */
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  text-align: justify; }
+
+main h2 + p:first-letter {
+  display: block;
+  line-height: 0.85em;
+  font-size: 300%;
+  float: left;
+  padding-top: 0.1em;
+  padding-right: 0.4em;
+  font-style: italic;
+  font-family: FirstLetter, "Noto Sans", sans-serif;
+  /*  font-family: FirstLetter, "Lucida Calligraphy", "Apple Chancery", myfont, sans-serif; */ }
+
+h1 {
+  font-style: italic;
+  font-weight: bold; }
+
+main {
+  border: thin dotted;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-top: 0.5em; }
+
+a, a:visited {
+  color: inherit;
+  background: transparent;
+  transition-property: background;
+  transition-duration: 0.3s;
+  transition-timing-function: ease; }
+
+a:hover:not(.nav) {
+  background: yellow;
+  border-radius: 5px; }
+
+dl dt {
+  font-weight: bold; }
+
+figure img {
+  border: inset 2pt; }
+
+/****************************************************************
+	Title styling
+*****************************************************************/
+body > div.title {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.3em; }
+
+/****************************************************************
+	Generated footnote styling
+*****************************************************************/
+a.footnote-ref, a.footnote-backref {
+  margin-left: 0.3em;
+  text-decoration: none;
+  font-size: 90%; }
+
+div.footnote {
+  font-size: 80%; }
+
+/*div.footnote > hr {
+	display: none;
+}
+*/
+/****************************************************************
+    Right column styling
+*****************************************************************/
+nav {
+  margin-top: 2em; }
+  nav > li {
+    list-style: none;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border-radius: 5px;
+    background: rgba(231, 230, 228, 0.8);
+    transition-property: background;
+    transition-duration: 0.3s;
+    transition-timing-function: ease; }
+  nav > li.local {
+    background: rgba(136, 128, 119, 0.6); }
+  nav nav > li:hover {
+    border-radius: 5px;
+    background: rgba(136, 128, 119, 0.6); }
+  nav a {
+    color: rgba(0, 0, 0, 0.5) !important;
+    text-decoration: none; }
+
+aside {
+  padding: 0em; }
+  aside > p.date {
+    text-align: right;
+    padding-right: 0.5em;
+    padding-bottom: 0;
+    font-size: 80%; }
+  aside > * {
+    margin: 0;
+    padding: 0; }
+
+/****************************************************************
+    Footer styling
+*****************************************************************/
+/* The footer part */
+footer {
+  font-size: 80%; }
+
+/****************************************************************
+	Layout part: using flex over flex over flex...
+*****************************************************************/
+/* Centralize the title */
+div.title {
+  display: flex;
+  margin: 0; }
+  div.title > h1 {
+    padding: 0.5em;
+    margin: auto; }
+
+/* The main flow */
+body {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  min-height: 96vh;
+  flex-direction: column; }
+
+div.main {
+  flex: 1; }
+
+/* The main content's flow */
+div.main {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  width: 100%; }
+
+main {
+  flex: 1; }
+
+/* The footer part */
+footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  width: 100%; }
+
+footer > p.empty {
+  flex: 1; }
+
+/* The aside part */
+aside {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2em; }
+
+aside > nav {
+  flex: 1; }
+
+/* Footnotes */
+div[role = doc-endnotes] p {
+  line-height: 20%;
+}
+
+/****************************************************************
+	Media query for iPhone 6, portrait: modification of the flexes;
+*****************************************************************/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* The main content's flow */
+  div.main {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    flex-flow: column nowrap; }
+
+  /* The footer part */
+  footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    flex-flow: column nowrap; }
+
+  aside {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex; }
+
+  aside > figure {
+    flex: 1; }
+
+  aside > nav {
+    margin-bottom: 0.8em;
+    margin-left: 0.5em;
+    flex: 2; }
+
+  body {
+    font-size: 2em;
+    padding: 1em; } }

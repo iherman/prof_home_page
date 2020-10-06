@@ -1,0 +1,50 @@
+<HEAD>
+<TITLE> Connection to Scripting Languages.</TITLE>
+</HEAD>
+<BODY><P>
+ <A NAME=tex2html191 HREF=subsubsection3.4.1.1.html><IMG SRC="../../../l2hicons/previous.xbm"></A> <A NAME=tex2html193 HREF=subsection3.4.1.html><IMG SRC="../../../l2hicons/up.xbm"></A> <A NAME=tex2html189 HREF=subsubsection3.4.1.3.html><IMG SRC="../../../l2hicons/next.xbm"></A> <A NAME=tex2html187 HREF=subsubsection3.4.1.1.html><IMG SRC="../../../l2hicons/previous_page.xbm"></A> <A NAME=tex2html195 HREF=subsubsection3.4.1.3.html><IMG SRC="../../../l2hicons/next_page.xbm"></A> <BR>
+ <b>Previous:</b> <A NAME=tex2html192 HREF=subsubsection3.4.1.1.html> Visual Metaphors.</A><BR> <b>Up:</b> <A NAME=tex2html194 HREF=subsection3.4.1.html> Application Program Interface Utilities</A><BR> <b>Next:</b> <A NAME=tex2html190 HREF=subsubsection3.4.1.3.html> User Interface Builder.</A><BR> <b>Previous Page:</b> <A NAME=tex2html188 HREF=subsubsection3.4.1.1.html> Visual Metaphors.</A><BR> <b>Next Page:</b> <A NAME=tex2html196 HREF=subsubsection3.4.1.3.html> User Interface Builder.</A><BR> <P>
+<H3><A NAME=SECTION0004120000000000000> Connection to Scripting Languages.</A></H3>
+<P>
+<A NAME=secscripting><IMG SRC="../../../l2hicons/invis_anchor.xbm"></A>
+<P>
+Several  MADE objects make use of scripting languages; animation
+and interaction objects have been mentioned in the preceding sections, and
+there are others, too.  It is also perfectly feasible to create
+full--blown applications, either in a prototype or even in a final form,
+where the ``user--level'' program is in fact a script.
+<P>
+ MADE does not introduce it own scripting language. Instead, all
+objects that make potential use of scripting access the interpreter
+functionality via an abstract general scripting interface. This general
+scripting interface is then specialized to access specific languages and
+their interpreters.  This lets the final choice over which scripting
+language is used be made by the  MADE application developer or even
+the end--user. Furthermore, several scripting languages can coexist
+within the same  MADE application (see <A HREF=bibliography3.8.html#MADEScr>[10]</A>).
+<P>
+In order to be usable for  MADE, a scripting language should have an
+embeddable interpreter. Ie, it should be possible to link the
+interpreter to C/C++ and C/C++ functions should be accessible from
+the language somehow. Conversely, functions of the scripting language
+should be accessible from C/C++. Note that the availability of the
+dynamic call interface of  MADE objects plays an essential role in
+interfacing such interpreters: it is not necessary to create a special
+``stub'' for each  MADE object in the scripting language; indeed,
+ MADE objects can be created, and their methods invoked, based only on
+their signature.
+<P>
+There are several general embedded interpreters available. Currently,
+the  MADE toolkit includes an interface to Wool, a Lisp dialect
+implemented by Bull (<A HREF=bibliography3.8.html#CN92>[23]</A>), and to Python, a language
+developed at CWI (<A HREF=bibliography3.8.html#GvR93>[31]</A>). In the future, interfacing to
+Tcl (<A HREF=bibliography3.8.html#JKO92>[25]</A>) or other emerging languages will also be considered.
+<P>
+<HR>
+<A NAME=tex2html191 HREF=subsubsection3.4.1.1.html><IMG SRC="../../../l2hicons/previous.xbm"></A> <A NAME=tex2html193 HREF=subsection3.4.1.html><IMG SRC="../../../l2hicons/up.xbm"></A> <A NAME=tex2html189 HREF=subsubsection3.4.1.3.html><IMG SRC="../../../l2hicons/next.xbm"></A> <A NAME=tex2html187 HREF=subsubsection3.4.1.1.html><IMG SRC="../../../l2hicons/previous_page.xbm"></A> <A NAME=tex2html195 HREF=subsubsection3.4.1.3.html><IMG SRC="../../../l2hicons/next_page.xbm"></A> <BR>
+ <b>Previous:</b> <A NAME=tex2html192 HREF=subsubsection3.4.1.1.html> Visual Metaphors.</A><BR> <b>Up:</b> <A NAME=tex2html194 HREF=subsection3.4.1.html> Application Program Interface Utilities</A><BR> <b>Next:</b> <A NAME=tex2html190 HREF=subsubsection3.4.1.3.html> User Interface Builder.</A><BR> <b>Previous Page:</b> <A NAME=tex2html188 HREF=subsubsection3.4.1.1.html> Visual Metaphors.</A><BR> <b>Next Page:</b> <A NAME=tex2html196 HREF=subsubsection3.4.1.3.html> User Interface Builder.</A><BR> <P>
+
+</BODY>
+<P><ADDRESS>
+ 
+</ADDRESS>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="hyphenate">
+    <div class="title">
+      <h1>Ivan Herman—{{ page.title }}</h1>
+    </div>
+    <div class="main">
+      <main>{{ content }}</main>
+      {% include aside.html %}
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<HEAD>
+<TITLE> Interaction Objects.</TITLE>
+</HEAD>
+<BODY><P>
+ <A NAME=tex2html134 HREF=subsubsection3.3.2.3.html><IMG SRC="../../../l2hicons/previous.xbm"></A> <A NAME=tex2html136 HREF=subsection3.3.2.html><IMG SRC="../../../l2hicons/up.xbm"></A> <A NAME=tex2html132 HREF=subsubsection3.3.2.5.html><IMG SRC="../../../l2hicons/next.xbm"></A> <A NAME=tex2html130 HREF=subsubsection3.3.2.3.html><IMG SRC="../../../l2hicons/previous_page.xbm"></A> <A NAME=tex2html138 HREF=subsubsection3.3.2.5.html><IMG SRC="../../../l2hicons/next_page.xbm"></A> <BR>
+ <b>Previous:</b> <A NAME=tex2html135 HREF=subsubsection3.3.2.3.html> Synchronization.</A><BR> <b>Up:</b> <A NAME=tex2html137 HREF=subsection3.3.2.html> Combination Objects</A><BR> <b>Next:</b> <A NAME=tex2html133 HREF=subsubsection3.3.2.5.html> Constraint Management.</A><BR> <b>Previous Page:</b> <A NAME=tex2html131 HREF=subsubsection3.3.2.3.html> Synchronization.</A><BR> <b>Next Page:</b> <A NAME=tex2html139 HREF=subsubsection3.3.2.5.html> Constraint Management.</A><BR> <P>
+<H3><A NAME=SECTION0003240000000000000> Interaction Objects.</A></H3>
+<P>
+<A NAME=secinteraction><IMG SRC="../../../l2hicons/invis_anchor.xbm"></A>
+<P>
+Multimedia applications are very often highly interactive; it is
+therefore essential to give very good tools to construct complex
+interaction scenarios involving  MADE objects.
+<P>
+The  MADE project does <em> not</em> aim at developing a completely new
+user interface management system. Instead,  MADE objects may be
+embedded into an existing user interface environment, like the Athena
+Widget set of X Window System, the Motif toolkit, MS-Windows or, in the
+future, Windows--NT. Nevertheless, not all user interaction can be adequately
+managed by these tools; many complex interaction scenarios will involve
+ MADE objects directly (eg, for direct manipulation).  The scheme
+developed in  MADE for achieving these complex interaction scenarios
+is based on the notion of <em> sensors</em> and associated <em>
+interaction objects</em>.
+<P>
+Sensors are best understood in the context of graphics: in this context
+they define sensitive areas on the screen, which can be ``activated'' by
+external interaction, typically mouse events.  Sensors are associated
+with  MADE objects via interaction objects. In effect, they provide a
+sensitive region which acts as a focal point for interaction with these
+objects.  For some objects, sensors cannot be attached to the object
+itself, but, instead, a visual representation of the object is used, in
+the form of graphics object. This might be the case, for some sensors
+attached to audio objects. The notion of sensor is general enough to
+accommodate regions involving higher dimensions including time. It can
+also be applied in association with interaction input devices that
+provide non--geometric input measures, such as audio input devices,
+pressure sensitive devices, etc.
+<P>
+<A NAME=218><IMG SRC="../../../l2hicons/invis_anchor.xbm"></A><P><A NAME=figinteract><IMG SRC="../../../l2hicons/invis_anchor.xbm"></A><IMG ALIGN=BOTTOM ALT="" SRC="_19323_figure216.gif"><P>
+<P>
+Sensors forward events to interaction objects; it is part of the
+sensor's initialization procedure to decide which interaction object
+it is connected to. The interaction objects react on these events,
+following some patterns which describes the behaviour of the
+interaction object. Several sensors may be connected to the same
+interaction object.
+<P>
+In very simple cases, interaction objects perform straightforward and
+predefined tasks (like, for example, reshaping a graphics object).  In
+other cases, much greater complexity may be required, perhaps providing
+control over several  MADE objects and receiving events from several
+sensors (eg, the video control board depicted in Figure <A HREF=subsection3.3.2.html#figwindow>2</A>
+reacts on the sensors of the graphical objects describing the four
+push--buttons, may control the visual appearance of these buttons and,
+of course, controls the video object proper; see also
+Figure <A HREF=subsubsection3.3.2.4.html#figinteract>4</A>). To describe such complex interaction
+behaviour,  MADE introduces a type of interaction object that
+implements a general finite state machine (see <A HREF=bibliography3.8.html#MADEIAO>[11]</A>). These
+objects have a default finite state machine for a specific interaction
+scenario; however, the user can also assign a script to an interaction
+object, which, conceptually, includes a complete scripting interpreter
+(see also &#167;<A HREF=subsubsection3.4.1.2.html#secscripting>4.1.2</A>). Such a script automatically overrides
+the default behaviour of the interaction object. This high degree of
+openness, with respect to the end--user, is a very valuable feature of
+the  MADE interaction management.
+<P>
+<HR>
+<A NAME=tex2html134 HREF=subsubsection3.3.2.3.html><IMG SRC="../../../l2hicons/previous.xbm"></A> <A NAME=tex2html136 HREF=subsection3.3.2.html><IMG SRC="../../../l2hicons/up.xbm"></A> <A NAME=tex2html132 HREF=subsubsection3.3.2.5.html><IMG SRC="../../../l2hicons/next.xbm"></A> <A NAME=tex2html130 HREF=subsubsection3.3.2.3.html><IMG SRC="../../../l2hicons/previous_page.xbm"></A> <A NAME=tex2html138 HREF=subsubsection3.3.2.5.html><IMG SRC="../../../l2hicons/next_page.xbm"></A> <BR>
+ <b>Previous:</b> <A NAME=tex2html135 HREF=subsubsection3.3.2.3.html> Synchronization.</A><BR> <b>Up:</b> <A NAME=tex2html137 HREF=subsection3.3.2.html> Combination Objects</A><BR> <b>Next:</b> <A NAME=tex2html133 HREF=subsubsection3.3.2.5.html> Constraint Management.</A><BR> <b>Previous Page:</b> <A NAME=tex2html131 HREF=subsubsection3.3.2.3.html> Synchronization.</A><BR> <b>Next Page:</b> <A NAME=tex2html139 HREF=subsubsection3.3.2.5.html> Constraint Management.</A><BR> <P>
+
+</BODY>
+<P><ADDRESS>
+ 
+</ADDRESS>

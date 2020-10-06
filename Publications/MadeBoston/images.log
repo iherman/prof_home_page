@@ -1,0 +1,119 @@
+This is TeX, C Version 3.0 (format=lplain 93.2.19)  25 JAN 1994 14:22
+**&latex 250_images.tex
+(250_images.tex
+LaTeX Version 2.09 <7 Dec 1989>
+
+(/usr/local/lib/tex/macros/article.sty
+Document Style `article' <16 Mar 88>.
+(/usr/local/lib/tex/macros/art10.sty)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+) (/ufs/ivan/lib/tex/html.sty) (/ufs/ivan/pub/lib/dvips/macros/epsf.tex
+\epsffilein=\read0
+\epsfxsize=\dimen99
+\epsfysize=\dimen100
+\epsftsize=\dimen101
+\epsfrsize=\dimen102
+\epsftmp=\dimen103
+\pspoints=\dimen104
+)
+No file 250_images.aux.
+
+Overfull \hbox (27.03499pt too wide) in paragraph at lines 28--31
+ [][] 
+
+\hbox(361.34999+0.0)x345.0
+.\glue(\leftskip) 0.0 plus 1.0fil
+.\hbox(0.0+0.0)x0.0
+.\vbox(361.34999+0.0)x372.03499, glue set 361.34999fil
+..\glue 0.0 plus 1.0fil
+..\hbox(0.0+0.0)x372.03499, glue set 372.03499fil
+...\special{PSfile=Figs/over.eps llx=0 lly=0 urx=383 ury=372 rwi=3706}
+...\glue 0.0 plus 1.0fil
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.etc.
+
+[1] [2] [3]
+Overfull \hbox (14.33835pt too wide) in paragraph at lines 72--76
+ [][] 
+
+\hbox(286.06544+0.0)x345.0
+.\glue(\leftskip) 0.0 plus 1.0fil
+.\hbox(0.0+0.0)x0.0
+.\vbox(286.06544+0.0)x359.33835, glue set 286.06544fil
+..\glue 0.0 plus 1.0fil
+..\hbox(0.0+0.0)x359.33835, glue set 359.33835fil
+...\special{PSfile=Figs/interact.eps llx=0 lly=0 urx=358 ury=285 rwi=3580}
+...\glue 0.0 plus 1.0fil
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.etc.
+
+[4]
+Overfull \hbox (27.03499pt too wide) in paragraph at lines 96--99
+ [][] 
+
+\hbox(361.34999+0.0)x345.0
+.\glue(\leftskip) 0.0 plus 1.0fil
+.\hbox(0.0+0.0)x0.0
+.\vbox(361.34999+0.0)x372.03499, glue set 361.34999fil
+..\glue 0.0 plus 1.0fil
+..\hbox(0.0+0.0)x372.03499, glue set 372.03499fil
+...\special{PSfile=Figs/over.eps llx=0 lly=0 urx=383 ury=372 rwi=3706}
+...\glue 0.0 plus 1.0fil
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.etc.
+
+[5]
+Overfull \hbox (39.25415pt too wide) in paragraph at lines 110--113
+ [][] 
+
+\hbox(346.89621+0.0)x345.0
+.\glue(\leftskip) 0.0 plus 1.0fil
+.\hbox(0.0+0.0)x0.0
+.\vbox(346.89621+0.0)x384.25415, glue set 346.89621fil
+..\glue 0.0 plus 1.0fil
+..\hbox(0.0+0.0)x384.25415, glue set 384.25415fil
+...\special{PSfile=Figs/compo.eps llx=0 lly=0 urx=504 ury=455 rwi=3828}
+...\glue 0.0 plus 1.0fil
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.etc.
+
+[6]
+Overfull \hbox (83.51874pt too wide) in paragraph at lines 124--127
+ [][] 
+
+\hbox(346.89621+0.0)x345.0
+.\glue(\leftskip) 0.0 plus 1.0fil
+.\hbox(0.0+0.0)x0.0
+.\vbox(346.89621+0.0)x428.51874, glue set 346.89621fil
+..\glue 0.0 plus 1.0fil
+..\hbox(0.0+0.0)x428.51874, glue set 428.51874fil
+...\special{PSfile=Figs/hyper.eps llx=0 lly=0 urx=504 ury=408 rwi=4269}
+...\glue 0.0 plus 1.0fil
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.etc.
+
+[7] (250_images.aux)
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+ ) 
+Here is how much of TeX's memory you used:
+ 254 strings out of 4458
+ 2489 string characters out of 63205
+ 27836 words of memory out of 262141
+ 2184 multiletter control sequences out of 9500
+ 18996 words of font info for 72 fonts, out of 72000 for 255
+ 14 hyphenation exceptions out of 607
+ 15i,4n,15p,288b,172s stack positions out of 300i,40n,60p,3000b,4000s
+
+Output written on 250_images.dvi (7 pages, 1824 bytes).

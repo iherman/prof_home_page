@@ -1,0 +1,102 @@
+<HEAD>
+<TITLE> Media Objects</TITLE>
+</HEAD>
+<BODY><P>
+ <HR> <A NAME=tex2html84 HREF=subsection3_3_2.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/next_motif.gif"></A> <A NAME=tex2html82 HREF=section3_3.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/up_motif.gif"></A> <A NAME=tex2html76 HREF=section3_3.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/previous_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME=tex2html85 HREF=subsection3_3_2.html> Combination Objects</A>
+<B>Up:</B> <A NAME=tex2html83 HREF=section3_3.html> Toolkit Objects</A>
+<B> Previous:</B> <A NAME=tex2html77 HREF=section3_3.html> Toolkit Objects</A>
+<HR> <P>
+<H2><A NAME=SECTION0003100000000000000> Media Objects</A></H2>
+<P>
+<A NAME=secmediaobjects><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/invis_anchor.xbm"></A>
+<P>
+The MADE toolkit includes <em>media objects</em>, ie,
+objects whose role is to directly control different media in a unified
+and hardware/firmware independent way.
+<P>
+The toolkit includes four main categories of media objects: graphics
+objects (for two and three dimensional graphics), animation, sound and
+video objects.  The functionality of these objects is defined in a
+device-independent way; porting the toolkit to a new environment
+involves changes on the interface level only. In other words, all of
+these objects ``hide'' their respective device-dependencies behind
+specific, low-level abstract interface objects, thereby cleanly
+separating their MADE specific behaviour from particular device
+dependent features.  Adaptation of a media object type to a new
+environment simply requires the definition of a new device-dependent
+subclass of the appropriate general interface object.
+<P>
+Some of the categories listed above contain relatively simple objects.
+Their task is to provide a mapping from the MADE library structure
+onto their respective interface object. This is the case, for example,
+with video and audio objects. The most critical aspect of the definition
+of these objects is synchronization. The objects and their device
+specific interfaces must be matched with the synchronization model of
+MADE (see &#167;<A HREF=subsubsection3_3_2_3.html#secsynchronization>3.2.3</A> below) and with the
+requirements and facilities provided be the specific hardware that is
+used.
+<P>
+Audio and video objects rely on Microsoft's Multimedia Environment for
+MS-WINDOWS, which is a de-facto standard in this area.  On UNIX,
+portable video and audio services are used: the Video Extension of the X
+Windows system for analogue video (<A HREF=bibliography3_8.html#X11Xv>[5]</A>) and the AudioFile
+server for audio (<A HREF=bibliography3_8.html#AF>[19]</A>). For digital video, the UNIX solution is
+not yet defined.
+<P>
+2D and 3D graphics require a much higher level of complexity. Indeed,
+the collections of both the 2D and the 3D graphics objects represent two
+full-blown subsystems per se, which are also usable stand alone for
+graphics purposes.
+<P>
+For 2D graphics, the MADE toolkit reuses an already existing
+object-oriented 2D graphics system, called GoPATH<A HREF=bibliography3_8.html#JD91>[7]</A>, by
+adapting it to the requirements of MADE. These 2D objects include
+different two dimensional shapes, associated clipping areas, composition
+rules, attributes (eg, colour, line type, text font), etc. The
+programmer has the possibility, via sub-classing, to define new
+shapes and include these into the full 2D world. GoPATH is currently
+based on X11R5 for UNIX platforms, and on MS-WINDOWS under MS-DOS; a
+Windows-NT version is also operational.
+<P>
+The 3D subsystem provided by MADE supports a mapping between general
+3D objects (shapes, surfaces, lighting and view control, etc.) and
+existing 3D packages. A mapping to SGI's GL library is currently being
+developed.  The use of PEX<A HREF=bibliography3_8.html#WCJIMCJS88>[6]</A> or Open-GL, as a replacement
+for GL, will be considered in the future.  It has to be stressed that it
+is <em>not</em> the goal of the MADE development to define yet another
+three dimensional graphics package; the emphasis is more to provide an
+object-oriented layer on top of existing packages, integrated into the
+MADE environment. On the other hand, due to the object-oriented
+nature of the MADE toolkit, it is possible to extend, by
+sub-classing, the basic 3D functionality (eg, to add a proprietary
+ray-tracing module).
+<P>
+Graphics objects (both in 2D and 3D) do not have a temporal dimension;
+essentially, they describe static scenes. This is in contrast with the
+inherently temporal nature of video and audio objects.  To alleviate
+this contradiction, MADE includes separate <em>animation objects</em>,
+which describe, and even automatically generate, sequences of scenes.
+The methods and algorithms used in animation may be extremely complex
+and, more importantly, dependent on specific application areas.
+Although simpler, built-in animation techniques based on animation
+curves are also available, MADE animation objects also allow for
+animation scripts, using a scripting language, which is then interpreted
+by the MADE animation objects.
+<P>
+Animation objects may be active objects, too, thereby subject to the
+same synchronization behaviour and control as audio and video objects
+(see &#167;<A HREF=subsubsection3_3_2_3.html#secsynchronization>3.2.3</A>).
+<P>
+<HR> <A NAME=tex2html84 HREF=subsection3_3_2.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/next_motif.gif"></A> <A NAME=tex2html82 HREF=section3_3.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/up_motif.gif"></A> <A NAME=tex2html76 HREF=section3_3.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/previous_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME=tex2html85 HREF=subsection3_3_2.html> Combination Objects</A>
+<B>Up:</B> <A NAME=tex2html83 HREF=section3_3.html> Toolkit Objects</A>
+<B> Previous:</B> <A NAME=tex2html77 HREF=section3_3.html> Toolkit Objects</A>
+<HR> <P>
+<HR>
+
+</BODY>
+<P><ADDRESS>
+<I>ivan@petunia.cwi.nl <BR>
+Tue Jan 25 14:21:49 MET 1994</I>
+</ADDRESS>

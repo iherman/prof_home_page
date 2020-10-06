@@ -1,0 +1,49 @@
+<HEAD>
+<TITLE> Synchronization.</TITLE>
+</HEAD>
+<BODY><P>
+ <A NAME=tex2html124 HREF=subsubsection3.3.2.2.html><IMG SRC="../../../l2hicons/previous.xbm"></A> <A NAME=tex2html126 HREF=subsection3.3.2.html><IMG SRC="../../../l2hicons/up.xbm"></A> <A NAME=tex2html122 HREF=subsubsection3.3.2.4.html><IMG SRC="../../../l2hicons/next.xbm"></A> <A NAME=tex2html120 HREF=subsubsection3.3.2.2.html><IMG SRC="../../../l2hicons/previous_page.xbm"></A> <A NAME=tex2html128 HREF=subsubsection3.3.2.4.html><IMG SRC="../../../l2hicons/next_page.xbm"></A> <BR>
+ <b>Previous:</b> <A NAME=tex2html125 HREF=subsubsection3.3.2.2.html> Structuring.</A><BR> <b>Up:</b> <A NAME=tex2html127 HREF=subsection3.3.2.html> Combination Objects</A><BR> <b>Next:</b> <A NAME=tex2html123 HREF=subsubsection3.3.2.4.html> Interaction Objects.</A><BR> <b>Previous Page:</b> <A NAME=tex2html121 HREF=subsubsection3.3.2.2.html> Structuring.</A><BR> <b>Next Page:</b> <A NAME=tex2html129 HREF=subsubsection3.3.2.4.html> Interaction Objects.</A><BR> <P>
+<H3><A NAME=SECTION0003230000000000000> Synchronization.</A></H3>
+<P>
+<A NAME=secsynchronization><IMG SRC="../../../l2hicons/invis_anchor.xbm"></A>
+<P>
+The issue of synchronization has always been one of the central problems
+of multimedia applications; it is therefore necessary for the  MADE
+toolkit to offer a consistent solution to this issue.
+<P>
+The fundamental synchronization scheme used in  MADE is called <em>
+reference point</em> synchronization. For each, so called, <em>
+synchronizable</em>  MADE object a series of media specific reference
+points may be defined (for example, video frames, audio samples, etc.).
+Each reference point contains internal ``instructions'' for
+synchronization, references to other synchronizable objects that are to
+be synchronized with it, etc. Synchronizable objects are active objects;
+when they reach a reference point, synchronization is performed by
+exchanging messages with other active objects, waiting for their
+replies, etc. The reference point model has been greatly inspired
+by <A HREF=bibliography3.8.html#GBJHUL92>[3]</A>; its details in the  MADE environment are specified
+in <A HREF=bibliography3.8.html#MADETTO>[8]</A>.  Audio, video, and animation objects are obvious
+examples of synchronizable  MADE objects<A NAME=tex2html5 HREF=Descrhtml.foot.html#196><IMG SRC="../../../l2hicons/foot.xbm"></A>. The  MADE programmer may
+create new, application--specific synchronizable objects, too.
+<P>
+Based on this synchronization model, the  MADE toolkit also includes a
+higher--level mechanism for time--based synchronization. This mechanism
+defines different types of <em> schedulers</em> which the application may
+use as building blocks for more complex time--based synchronization
+scenarios (see <A HREF=bibliography3.8.html#MADETTO>[8]</A> for further details). These schedulers
+all assume the existence of a special synchronizable object within
+ MADE, namely a <em> timer</em>. The approach of building time--based
+synchronization on the top of a more general mechanism, instead of
+considering it as a basic feature, allows the  MADE library
+to be used in environments which do not necessarily offer real--time
+facilities.
+<P>
+<HR>
+<A NAME=tex2html124 HREF=subsubsection3.3.2.2.html><IMG SRC="../../../l2hicons/previous.xbm"></A> <A NAME=tex2html126 HREF=subsection3.3.2.html><IMG SRC="../../../l2hicons/up.xbm"></A> <A NAME=tex2html122 HREF=subsubsection3.3.2.4.html><IMG SRC="../../../l2hicons/next.xbm"></A> <A NAME=tex2html120 HREF=subsubsection3.3.2.2.html><IMG SRC="../../../l2hicons/previous_page.xbm"></A> <A NAME=tex2html128 HREF=subsubsection3.3.2.4.html><IMG SRC="../../../l2hicons/next_page.xbm"></A> <BR>
+ <b>Previous:</b> <A NAME=tex2html125 HREF=subsubsection3.3.2.2.html> Structuring.</A><BR> <b>Up:</b> <A NAME=tex2html127 HREF=subsection3.3.2.html> Combination Objects</A><BR> <b>Next:</b> <A NAME=tex2html123 HREF=subsubsection3.3.2.4.html> Interaction Objects.</A><BR> <b>Previous Page:</b> <A NAME=tex2html121 HREF=subsubsection3.3.2.2.html> Structuring.</A><BR> <b>Next Page:</b> <A NAME=tex2html129 HREF=subsubsection3.3.2.4.html> Interaction Objects.</A><BR> <P>
+
+</BODY>
+<P><ADDRESS>
+ 
+</ADDRESS>

@@ -1,0 +1,1397 @@
+% --- Checking own.sty for standard style
+% --- Checking html.sty for standard style
+\documentstyle[html]{article}
+% --- Checking owngeneral.sty for standard style
+%
+\typeout{Own utilities and macros, I.H.}
+%
+% Abbreviations, Logo-like words
+%
+\newcommand{\eg}{{\em e.g.,\/}}
+\newcommand{\ie}{{\em i.e.,\/}}
+\def\C++{C\raise.23ex\hbox{++}}   % This came from the net
+\def\atsign{\raise-0.8pt\hbox{@}}
+\def\tm{$\m@th^{^{\rm T\kern -.04em M}}$}   % Trademark; it came from
+                                            % the net
+\def\deg{\ifmmode^\circ\else$^\circ$\fi}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% It is pretty disturbing (sometimes) to have pagination on the first
+% page!
+\renewcommand{\thepage}{\ifnum \value{page} >1 \arabic{page} \fi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Macros to produce title and related fields
+%
+\newcommand{\cwiaddr}{
+\begin{center}{\em
+Centre for Mathematics and Computer Sciences \\
+Department of Interactive Systems    \\
+Kruislaan 413, 1098 SJ Amsterdam, The Netherlands
+}
+\end{center}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\modify}{
+\begin{center}{
+\em (Last Modified: \today)
+}
+\end{center}
+}
+
+%
+% Put the current time into the file (comes from the net from
+% dfarrow@spam.ua.oz
+%
+\newcount\hour \newcount\minute
+\def\now{\ifnum\time<60       %check to see if it's just after midnight
+          00:\ifnum\time<10 0\fi\number\time am %and act accordingly.
+         \else
+          \ifnum\time>719\let\a=p\else\let\a=a\fi%Check to see if it is pm
+          \hour=\time
+          \minute=\time
+          \divide\hour by 60 %\hour is the result of an integer divide
+          \ifnum\hour>12\advance\hour by -12 \advance\minute by -720 \fi
+          {\number\hour}:%
+          \multiply\hour by 60 %Use is made of the integer divide here.
+          \advance\minute by -\hour
+          \ifnum\minute<10 0\fi\number\minute \a m
+         \fi }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Put the date in Date/Month, Year order
+%
+\def\mtoday{\number\day\space \ifcase\number\month\or
+  January\or February\or March\or April\or May\or June\or
+  July\or August\or September\or October\or November\or December\fi,%
+  \space \number\year}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Small and tiny margin notes
+%
+\newcommand{\margin}[1]{\marginpar{ \tiny\em \sloppy #1 }}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% New floating environment: Listings (used for program listings).
+% Its use is the same as for figures
+%
+% LISTING
+
+\newcounter{listing}
+\def\thelisting{\@arabic\c@listing}
+
+\def\fps@listing{tbp}
+\def\ftype@listing{8}
+\def\ext@listing{lol}
+\def\fnum@listing{ Listing \thelisting}
+\def\listing{\@float{listing}}
+\let\endlisting\end@float
+\@namedef{listing*}{\@dblfloat{listing}}
+\@namedef{endlisting*}{\end@dblfloat}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Generic form of a list with wider items:
+% The argument to the list is the longest item in use
+%
+
+\newenvironment{largelist}[1]{\begin{list}{}{
+   \settowidth{\labelwidth}{#1}
+   \setlength{\leftmargin}{\labelwidth}
+   \addtolength{\leftmargin}{0.2in}
+   \setlength{\labelsep}{0.1in}
+   \setlength{\itemsep}{0.1in}
+   }
+}{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Generic form of an item command with the item flushed to the left
+%
+\newcommand{\hitem}[1]{\item[{#1}\hfill]}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Generic form of an item command with a special mark before the item
+% header 
+%
+\def\smark{*}
+\def\sitem{\@ifnextchar [{\@sitem}{\@noitemargtrue \@sitem[\@itemlabel]}}
+\def\@sitem[#1]{\@item[\llap{\smark\ }#1]}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  The macro below was automatically generated for transfig for eepic
+%  drawings; included here to avoid regenerating each time
+
+\begingroup\makeatletter
+% extract first six characters in \fmtname
+\def\x#1#2#3#4#5#6#7\relax{\def\x{#1#2#3#4#5#6}}
+\expandafter\x\fmtname xxxxxx\relax \def\y{splain}
+\ifx\x\y   % LaTeX or SliTeX?
+\gdef\SetFigFont#1#2#3{%
+  \ifnum #1<17 \tiny\else \ifnum #1<20 \small\else
+  \ifnum #1<24 \normalsize\else \ifnum #1<29 \large\else
+  \ifnum #1<34 \Large\else \ifnum #1<41 \LARGE\else
+     \huge\fi\fi\fi\fi\fi\fi
+  \csname #3\endcsname}
+\else
+\gdef\SetFigFont#1#2#3{\begingroup
+  \count@#1\relax \ifnum 25<\count@ \count@25 \fi
+  \def\x{\endgroup\@setsize\SetFigFont{#2pt}}%
+  \expandafter\x
+    \csname \romannumeral\the\count@ pt\expandafter\endcsname
+    \csname @\romannumeral\the\count@ pt\endcsname
+  \csname #3\endcsname}
+\fi
+\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Typing keywords
+\newcommand{\Ky}[1]{{\tt {#1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography handling macros
+
+\def\includebib{
+\typeout{Bibliography file:\cfile}
+\bibliographystyle{ieeetr}
+\bibliography{\cfile}
+}
+\def\cfile{\jobname}			% default name
+
+% Bibliography per years
+\def\biblio{
+\bibliographystyle{plain}
+\bibliography{to1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------
+% Definitions of Bibtex and Slitex
+\newcommand{\BibTeX}{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+%
+\newcommand{\SliTeX}{{\rm S\kern-.06em{\sc l\kern-.035emi}\kern-.06em T\kern
+   -.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\newcommand{\SLiTeX}{\SliTeX}
+%
+\newcommand{\AmsTeX}{{$\cal A$}\kern-.1667em\lower.5ex\hbox
+{$\cal M$}\kern-.125em{$\cal S$}-\TeX}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Here is a macro used to display a paremthesized matrix in a tabular
+% environment.
+%
+\newcommand{\tabularmatrix}[1]{\begin{center}\begin{math}
+                         \left(\begin{array}{cccc}#1\end{array}\right)
+                        \end{math}\end{center}}
+%
+% more freedom on figure placement
+%
+\renewcommand{\topfraction}{.95}
+\renewcommand{\bottomfraction}{.95}
+\renewcommand{\textfraction}{.05}
+\renewcommand{\floatpagefraction}{.7}
+\setlength{\floatsep}{1\baselineskip plus 0pt minus 0pt}
+\setlength{\textfloatsep}{1.5\baselineskip plus 0pt minus 0pt}
+\setlength{\intextsep}{1.5\baselineskip plus 0pt minus 0pt}
+
+%----------------------------------------------------------------------
+%  warn.sty
+%
+\def\@warning#1{\typeout{LaTeX Warning [l.\the\inputlineno]: #1.}}
+%----------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   This is a file originally ftp-d from ymir.claremont.edu (I.H.)
+%   It is pretty useful: gives a really nice control over header
+%   and footer. I do not really understand why is the LaTeX 
+%   specification so awfully rigid in this respect.
+%
+% ---------------------------- Included file -------------------------
+% headerfooter.sty 13 Apr 89
+
+% Use with LaTeX version 2.09:
+% \documentstyle[headerfooter]{article}
+
+% Copyright (c) 1987 by Stephen Gildea
+% Permission to copy all or part of this work is granted, provided
+% that the copies are not made or distributed for resale, and that
+% the copyright notice and this notice are retained.
+% 
+% THIS WORK IS PROVIDED ON AN "AS IS" BASIS.  THE AUTHOR PROVIDES NO
+% WARRANTY WHATSOEVER, EITHER EXPRESS OR IMPLIED, REGARDING THE WORK,
+% INCLUDING WARRANTIES WITH RESPECT TO ITS MERCHANTABILITY OR FITNESS
+% FOR ANY PARTICULAR PURPOSE.
+
+% If you make any improvements, I'd like to hear about them.
+
+% Stephen Gildea
+% MIT Earth Resources Lab
+% Cambridge, Mass. 02139
+% mit-erl!gildea
+% gildea@erl.mit.edu
+
+% \pageheader{LEFT}{CENTER}{RIGHT}
+% \pagefooter{LEFT}{CENTER}{RIGHT}
+
+% There is no reason why these commands should not be available
+% to the user.  Of course, I did fancy up the interface a bit.
+% By mit-erl!gildea 11 October 1986
+% minor changes 14 Oct 87 gildea
+% added \pageheaderlinetrue feature 9 Dec 88 gildea
+% added \pagefooterlinetrue feature 13 Apr 89 gildea
+
+% All of these commands take three arguments, which are printed at
+% the left, center, and right of each page.  All three args must be
+% provided even if some of them are empty.  The odd and even
+% variations are only useful if you are using the twoside option.
+
+% Example: \pagefooter{}{\thepage}{}
+
+% Say \pageheaderlinetrue if you want the header underlined.
+% Say \pagefooterlinetrue if you want a rule above the footer.
+
+\newif\ifpageheaderline	\pageheaderlinefalse
+\newif\ifpagefooterline	\pagefooterlinefalse
+
+\newdimen\pageheaderlineskip  \pageheaderlineskip=1.5pt
+
+\newdimen\pagefooterlineskip  \pagefooterlineskip=\pageheaderlineskip
+
+\def\@headerline#1#2#3{%
+	\ifpageheaderline
+          \vbox{\hbox to \textwidth{\rlap{#1}\hss{#2}\hss\llap{#3}}%
+                \vskip\pageheaderlineskip \hrule}%
+        \else{\rlap{#1}\hss{#2}\hss\llap{#3}}\fi}
+
+\def\@footerline#1#2#3{%
+	\ifpagefooterline
+          \vbox{\hrule \vskip\pagefooterlineskip
+                \hbox to \textwidth{\rlap{#1}\hss{#2}\hss\llap{#3}}}%
+        \else{\rlap{#1}\hss{#2}\hss\llap{#3}}\fi}
+
+\newcommand\oddpageheader[3]{\def\@oddhead{\@headerline{#1}{#2}{#3}}}
+
+\newcommand\evenpageheader[3]{\def\@evenhead{\@headerline{#1}{#2}{#3}}}
+
+\newcommand\oddpagefooter[3]{\def\@oddfoot{\@footerline{#1}{#2}{#3}}}
+
+\newcommand\evenpagefooter[3]{\def\@evenfoot{\@footerline{#1}{#2}{#3}}}
+
+\newcommand\pageheader[3]{%
+	\oddpageheader{#1}{#2}{#3}\evenpageheader{#1}{#2}{#3}}
+
+\newcommand\pagefooter[3]{%
+	\oddpagefooter{#1}{#2}{#3}\evenpagefooter{#1}{#2}{#3}}
+
+%------------------------------- end of ftp-d file --------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Default values for header and footer
+%
+\pageheader{}{}{}
+\pagefooter{}{\thepage}{}
+
+
+%
+% $Id: Descr.tex,v 1.5 1993/09/13 09:52:27 ivan Exp ivan $
+%
+% --- Checking epsf for standard style
+\input epsf
+
+\newcommand{\made}{{\sc MADE}}
+\newcommand{\premo}{{\sc PREMO}}
+\newcommand{\esprit}{ESPRIT}
+
+\newcommand{\kedit}{{\small KEDIT}}
+\newcommand{\unix}{{\small UNIX}}
+\newcommand{\msdos}{{\small MS--DOS}}
+\newcommand{\mswin}{{\small MS--WINDOWS}}
+\newcommand{\nt}{{Windows--NT}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{MADE: A Multimedia Application Development Environment}
+
+\author{
+Ivan Herman, Graham J Reynolds \\
+CWI \\ 
+P.O. Box 94079, 1090 GB Amsterdam, The Netherlands \\
+\and 
+Jacques Davy \\
+Groupe Bull \\
+7, rue Amp\`ere, Massy 91343, France
+}
+
+\date{}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+  MADE is the acronym for an ESPRIT~III project aiming at the
+  development of a programming environment for multimedia
+  applications.  The resulting software library is based on C++,
+  and is planned to operate on UNIX Workstations as well as on
+  PC--based platforms. This reports gives a technical overview of the
+  project, and describes some possible application scenarios where the
+  MADE environment can be of a great help for multimedia programming.
+
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{sec:introduction}
+
+One of the most significant developments in computing technology over
+the past few years is the emergence of multimedia.  Glossy multimedia
+applications are shown all over the place and on a wide range of
+different platforms. All major workstation hardware vendors feel the
+need to come to technical fairs with stunning demonstrations mixing
+graphics, video, imaging, and sound. Technical analysts predict that
+multimedia related hardware development will be one of the booming areas
+of electronics in the years to come.
+
+However, most of the available multimedia environments aim at {\em
+hypermedia authoring\/}, ie, they offer means to interactively create
+hypermedia documents.  ``Document'', as a multimedia term, means more
+than our traditional paper--based understanding. It should be perceived
+as a potentially complex composition of related media information, thus
+it is a multimedia document, which can be ``read'' or viewed in a
+non--sequential fashion by following semantic connections (or links)
+between the various media components, hence it is hypermedia.
+
+Although the concept of hypermedia document is very powerful indeed, it
+does not cover all possible fields of applications of multimedia. The
+ability of combining, modifying, or even synthectically creating
+multimedia data is often necessary for more complex multimedia
+applications. For example, the user might want to extract a frame from a
+video sequence, modify it with standard image processing tools, combine
+the image with the output of synthetic graphics, and possibly exchange
+the original frame with the modified image. Description of such actions
+does not fit easily in the model of a hypermedia document, in spite of
+the sophisticated interaction tools which are usually provided with
+authoring environments. There is, therefore, a need for a programming
+environment which would allow for the developments of such applications,
+too.
+
+The techniques to achieve combination of media are extremely disparate,
+and they use the results of various fields of computing technology like,
+for example, high quality synthetic graphics, image processing, speech
+synthesis, etc. Some of the techniques are also highly application
+dependent. It is almost impossible to define a closed programming
+environment which would encompass all needs. The already traditional
+answer to this kind of challenge is to use object--oriented techniques:
+services are offered in the form of objects, which are then extensible
+by the programmer to include any necessary application--dependent tools.
+
+The European Communities' {\esprit}~III project {\made} (Multimedia
+Application Development Environment\cite{MADE92}) has set up the
+ambitious goal of defining and implementing such a portable
+object--oriented development environment for multimedia applications,
+based on C++\cite{BS91}. The outcome of the {\made} project should be
+a programming environment running on various {\unix} platforms, as well
+as on {\msdos} or {\nt} environments.  This report gives a general
+overview of {\made}. It describes its major services, and it also gives
+an overview of some possible ``application scenarios'', ie, major
+application architectures which may use these services.  It is not the
+purpose of the paper to give a detailed technical description of the
+full project; this would go far beyond the scope of such a report. The
+interested reader should consult the ``official'' {\made} documents to
+gain a more detailed insight
+(eg,~\cite{MADE-TOM,MADE-TTO,MADE-PRS,MADE-Scr,MADE-COO,MADE92}).
+
+The {\made} project is still an ongoing activity. Consequently, some
+problems are still open and will be solved only later in the project.
+For this reason this report sometimes raises issues without presenting
+complete solutions.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{General Overview}
+\label{sec:technoverview}
+
+The full {\made} environment contains a large number of different
+objects and related services. Two important categories of these objects
+have a major role in the development environment; these are: {\em
+toolkits\/} and {\em utilities\/}. (Note that the object--oriented
+nature of {\made} makes it possible for the end--user to add new objects
+to both toolkits and utilities and/or to extend the functional
+capability of existing ones.)
+
+The {\em toolkit\/} level is a collection of objects that are considered
+to be fundamental for multimedia programming. It includes, obviously,
+objects to interface different media. Also, it includes objects which,
+although not directly involved in handling specific media, play a
+fundamental role in constructing more complex multimedia applications.
+Some more details of the toolkit level will be given below
+(see~\S\ref{sec:toolkit}).
+
+Although it is possible to construct complex applications using the
+{\made} toolkit level only, doing that may be unnecessarily tedious and
+error--prone. Consequently, another layer has been defined on top of the
+{\made} toolkit, called {\em utilities\/}. The idea here is to define
+and implement objects which include complex functionality and which are
+considered to be essential for most multimedia applications.
+Applications programmers may choose to use some of these utility
+objects; however, the toolkit level is never completely obscured, and
+the application layer is free to use toolkit objects directly as well
+(see also~Figure~\ref{fig:over}; some of the terms appearing on the
+Figure will be described in later sections).
+
+\begin{figure}[tbp]
+  \leavevmode\centering
+  \epsfysize=5in
+  \epsfbox{Figs/over.eps}
+  \caption{Toolkits and Utilities}
+  \label{fig:over}
+\end{figure}
+
+In the early stage of the {\made} project a common {\em object model\/}
+was defined and developed, to ensure the smooth cooperation among
+objects within the {\made} library and also to provide a clear approach
+to some of the technical issues raised by multimedia programming in
+general. This object model defines a conceptual layer on the top of the
+implementation language of {\made} (ie, C++), and it describes
+numerous features of objects within {\made}. As far as the application
+programmer is concerned, two characteristics of this model are of a
+great importance: the use of {\em active objects\/} and the presence of
+{\em delegation\/}.
+
+In {\made}, objects may be {\em active\/}, ie, they may have their own
+thread of control (within the shared address space of the same {\unix},
+{\msdos}, or {\nt} process).  This fact is exploited in the
+implementation of the {\made} toolkit library, and is a major tool used
+in defining synchronization of different media
+(see~\S\ref{sec:synchronization} below). Application programmers may
+have to be aware of this fact if they decide to use the toolkit level
+objects directly.
+
+The concept of {\em delegation\/} of object methods is the other central
+feature of the {\made} object model. Using delegation an object may
+delegate some or all of its behaviour (i.e., the messages it serves) to
+any number of other objects, which will then act on its behalf. The
+notion is not unlike inheritance, but delegation is dynamic, ie, the
+target of delegation may be set and re--set at run--time.  Delegation
+plays a very important role in controlling constraints in {\made}
+(constraint objects are part of the toolkit), and offers advanced means
+to describe temporal behavioural control. A more exact semantics of
+delegation is described in, eg,~\cite{HL86}; see also~\cite{FAIHGJR93}
+for a more detailed description of the concept within the framework of
+the {\made} object model.
+
+The object model has been realized in the form of an extension of
+C++, called mC++.  The mC++ compiler generates a set of C++
+classes, library and macro calls; this ``intermediate'' level can also
+be accessed by programmers directly, in case they do not intend to use
+yet another programming language (see~\cite{MADE-API}).  Details of the
+object model are, however, hidden to most application programmers and
+are only of real interest for toolkit or utility developers.  The full
+technical description of this object model will be omitted here; the
+interested reader should refer to~\cite{FAIHGJR93} for a general
+overview and to~\cite{MADE-TOM} for a complete description of the model
+and of mC++.
+
+The object model is not the only means to achieve smooth cooperation
+among objects.  All {\made} objects also include general features
+that allow them to be used under various circumstances in a unified
+way. Some examples of these features, which are necessary to
+understand what is described in later sections, are given below.
+
+All objects in the {\made} system may be {\em permanent\/}. This means
+that they may ``store'' themselves in a database and can restore their
+content at a later stage of the application's lifetime or even during
+the execution of some other applications.  This feature is present for
+all {\made} objects by default; the only step the application program
+has to do is to invoke certain implicitly defined member functions.
+Furthermore, the {\made} toolkit level includes a special object which
+can interface with various database systems.  Although this interface
+obviously cannot cover all known database systems, it does provide an
+interface to some object--oriented and relational databases.  Here
+again, the general features required by the database access is included
+in all {\made} objects in a database--independent way, and the details
+of the database access is hidden in the general database management
+object of {\made} (see~\cite{MADE-DBO}); interfacing to a new database
+system means the specification of an appropriate sub--class.
+
+{\made} objects, primarily utility objects, are also prepared for
+distributed access. This not only means that the {\made} library
+includes specific objects for inter--process communication, but also
+that {\made} objects are prepared to ``convert themselves'' into a
+format suitable for communication and, conversely, can ``reconstruct''
+their internal state based on data coming from a communication channel.
+A sophisticated object--oriented communication protocol (called
+{\kedit}\cite{MADE-KEDIT}) is currently under development for
+{\unix} platforms, which will allow {\made} applications to offer
+object--based services, and will provide means for the transfer of full
+{\made} objects from one {\made} application to another. The features
+offered by the combination of {\made} objects and {\kedit} are similar
+to the kind of object services defined by the Object Management
+Group\footnote{OMG is an industrial consortium aiming at the definition
+  of object services in general. In their CORBA
+  specification\cite{CORBA}, OMG gives a specification for object
+  services in a distributed environment. However, CORBA is still not
+  final, nor is there a reliable implementation available yet. If, by
+  the end of the MADE project, OMG produces a final version of their
+  specification, replacing KEDIT with this specification will be
+  considered.}.  
+On {\msdos} and {\nt} platforms the {\small OLE} protocol will be used
+to provide similar facilities; this is already a de--facto standard on
+these environments.
+
+All {\made} objects include a general mechanism known as a ``dynamic
+call interface''. This interface makes it possible to call a member
+function of an object by knowing the object's handle and a {\em
+string\/} describing the full signature of the member function. This
+string can be constructed at run--time, hence the ``dynamic'' nature of
+the call. This feature permits {\made} objects to be accessed easily
+from scripting languages, and provides a simple way of constructing
+interfaces to other programming languages (eg,~C or Fortran). It also
+makes the implementation of distribution support (like {\kedit}) fast and
+easy.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Toolkit Objects}
+\label{sec:toolkit}
+
+The primary goal of the {\made} toolkit is the provision of a set of
+features and facilities basic for multimedia programming. These include
+control over different media, and other types of objects, which have
+also been identified as playing a fundamental role.
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{Media Objects}
+\label{sec:mediaobjects}
+
+The {\made} toolkit includes {\em media objects\/}, ie,
+objects whose role is to directly control different media in a unified
+and hardware/firmware independent way.
+
+The toolkit includes four main categories of media objects: graphics
+objects (for two and three dimensional graphics), animation, sound and
+video objects.  The functionality of these objects is defined in a
+device--independent way; porting the toolkit to a new environment
+involves changes on the interface level only. In other words, all of
+these objects ``hide'' their respective device--dependencies behind
+specific, low--level abstract interface objects, thereby cleanly
+separating their {\made} specific behaviour from particular device
+dependent features.  Adaptation of a media object type to a new
+environment simply requires the definition of a new device--dependent
+subclass of the appropriate general interface object.
+
+Some of the categories listed above contain relatively simple objects.
+Their task is to provide a mapping from the {\made} library structure
+onto their respective interface object. This is the case, for example,
+with video and audio objects. The most critical aspect of the definition
+of these objects is synchronization. The objects and their device
+specific interfaces must be matched with the synchronization model of
+{\made} (see~\S\ref{sec:synchronization} below) and with the
+requirements and facilities provided be the specific hardware that is
+used.
+
+Audio and video objects rely on Microsoft's Multimedia Environment for
+{\mswin}, which is a de--facto standard in this area.  On {\unix},
+portable video and audio services are used: the Video Extension of the X
+Windows system for analogue video (\cite{X11-Xv}) and the AudioFile
+server for audio (\cite{AF}). For digital video, the {\unix} solution is
+not yet defined.
+
+2D and 3D graphics require a much higher level of complexity. Indeed,
+the collections of both the 2D and the 3D graphics objects represent two
+full--blown subsystems per se, which are also usable stand alone for
+graphics purposes.
+
+For 2D graphics, the {\made} toolkit reuses an already existing
+object--oriented 2D graphics system, called GoPATH\cite{JD91}, by
+adapting it to the requirements of {\made}. These 2D objects include
+different two dimensional shapes, associated clipping areas, composition
+rules, attributes (eg, colour, line type, text font), etc. The
+programmer has the possibility, via sub--classing, to define new
+shapes and include these into the full 2D world. GoPATH is currently
+based on X11R5 for {\unix} platforms, and on {\mswin} under {\msdos}; a
+{\nt} version is also operational.
+
+The 3D subsystem provided by {\made} supports a mapping between general
+3D objects (shapes, surfaces, lighting and view control, etc.) and
+existing 3D packages. A mapping to SGI's GL library is currently being
+developed.  The use of PEX\cite{WCJIMCJS88} or Open-GL, as a replacement
+for GL, will be considered in the future.  It has to be stressed that it
+is {\em not\/} the goal of the {\made} development to define yet another
+three dimensional graphics package; the emphasis is more to provide an
+object--oriented layer on top of existing packages, integrated into the
+{\made} environment. On the other hand, due to the object--oriented
+nature of the {\made} toolkit, it is possible to extend, by
+sub--classing, the basic 3D functionality (eg, to add a proprietary
+ray--tracing module).
+
+Graphics objects (both in 2D and 3D) do not have a temporal dimension;
+essentially, they describe static scenes. This is in contrast with the
+inherently temporal nature of video and audio objects.  To alleviate
+this contradiction, {\made} includes separate {\em animation objects\/},
+which describe, and even automatically generate, sequences of scenes.
+The methods and algorithms used in animation may be extremely complex
+and, more importantly, dependent on specific application areas.
+Although simpler, built--in animation techniques based on animation
+curves are also available, {\made} animation objects also allow for
+animation scripts, using a scripting language, which is then interpreted
+by the {\made} animation objects.
+
+Animation objects may be active objects, too, thereby subject to the
+same synchronization behaviour and control as audio and video objects
+(see~\S\ref{sec:synchronization}).
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{Combination Objects}
+\label{sec:combination}
+
+It is of course possible to build very spectacular programs that only
+rely on {\made} media objects, using complex and possibly animated 2D
+and 3D graphics, running a video on the screen and playing audio.
+However, the shortcomings of such an approach are very soon visible if
+more complicated application programs have to be devised and implemented
+on this basis. As the very rudimentary example on
+Figure~\ref{fig:window} already shows: interactive behaviour assigned to
+graphics objects have to be combined to control video output; visual
+representations for audio control have to be defined and implemented; 2D
+and 3D objects have to be combined in one picture, etc.
+
+\begin{figure}[tbp]
+  \leavevmode\centering
+  \epsfbox{Figs/window.eps}
+  \caption{A rudimentary example for multiple media in an application.}
+  \label{fig:window}
+\end{figure}
+
+The basic media objects become really usable if they can be {\em
+combined\/} in variety of ways. Combination of media objects (and
+{\made} objects in general) within an application has received a
+particular emphasis in the specification of the {\made} project in order
+to enhance the usability of the tools. Five major areas of combination
+have been identified, and we shall return to each of them in some
+detail.  The five areas of combination are: {\em imaging\/}, {\em
+structuring\/}, {\em synchronization\/}, {\em interaction\/}, and {\em
+constraint management\/}.
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Imaging.}
+\label{sec:imaging}
+
+Some of the media objects produce {\em images\/} on the screen. This is
+the case for 2D and 3D graphics, and for video objects. It is also
+possible to import and to export digital images in various formats
+({\small TIFF}, {\small GIF}, etc.).  A natural consequence of this is
+the requirement for an application to combine these images directly. For
+example, one may want to create a complex picture by using a snapshot of
+a video sequence, annotated with a generated (2D) text, filtered through
+a pattern read from a {\small TIFF} image, etc.
+
+\begin{figure}[tbp]
+  \leavevmode\centering
+  \epsfbox{Figs/image.eps}
+  \caption{Combination of a 3D and a 2D object in one image}
+  \label{fig:image}
+\end{figure}
+
+To achieve this functionality, {\made} defines a special {\em image
+object\/}, which can be used as a common platform for the combination of
+pictures. 2D and 3D objects can produce such images, they can be
+generated from various image file formats, and individual frames of
+video sequences may be converted into images. These images may then be
+visualized on the screen, or can be converted back into video frames. In
+the future, complex image processing functions will be defined to
+operate on these images, combining them, filtering them, etc.  Here
+again, due to the object oriented design, it will be possible for the
+end--user to add their own application dependent image processing
+functionalities.
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Structuring.}
+\label{sec:structuring}
+
+The importance of {\em structuring\/}, ie, of creating aggregates of
+different objects in interactive programs, has long been recognized in
+computer graphics.  All graphics packages provide some form of
+aggregation, like structures in {\small PHIGS}\cite{TLJHWTHRJHKMW91},
+the scene database of IRIS~Inventor\cite{PSSRC92}, or the so called
+Go trees in GoPATH\cite{JD91}.  Although the structures used in these
+examples are all relatively simple (directed acyclic graphs or just
+trees), the appearance of hypertext and, lately, of hypermedia systems
+makes it clear that more general aggregation facilities are also
+necessary.
+
+To answer these demands, the {\made} toolkit includes a general graph
+management facility in the form of {\em graph objects\/}. These objects
+allow for the specification, management, and the traversal of general
+graphs, with no restrictions imposed on their types. Nodes of these
+graphs may refer to any {\made} object. Graph management is achieved via
+special {\made} objects; consequently, recursive graphs may also be
+defined via the same mechanism. Individual {\made} objects can be
+referred to by several graph nodes (ie, they can be {\em shared\/}).
+
+Graph objects provide a sound basis for the type of structuring required
+by graphics as well as for complex hypermedia navigation systems. They
+are fully integrated into the full {\made} structure, which has a number
+of advantages. As an example, graphs provide an automatic defence
+against concurrent access of structures by active objects, they can be
+exported and imported using the very same mechanism as for all other
+{\made} objects (ie, complete structures may be stored in databases),
+etc.
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Synchronization.}
+\label{sec:synchronization}
+
+The issue of synchronization has always been one of the central problems
+of multimedia applications; it is therefore necessary for the {\made}
+toolkit to offer a consistent solution to this issue.
+
+The fundamental synchronization scheme used in {\made} is called {\em
+reference point\/} synchronization. For each, so called, {\em
+synchronizable\/} {\made} object a series of media specific reference
+points may be defined (for example, video frames, audio samples, etc.).
+Each reference point contains internal ``instructions'' for
+synchronization, references to other synchronizable objects that are to
+be synchronized with it, etc. Synchronizable objects are active objects;
+when they reach a reference point, synchronization is performed by
+exchanging messages with other active objects, waiting for their
+replies, etc. The reference point model has been greatly inspired
+by~\cite{GBJHUL92}; its details in the {\made} environment are specified
+in~\cite{MADE-TTO}.  Audio, video, and animation objects are obvious
+examples of synchronizable {\made} objects\footnote{To be very precise,
+certain animation objects, which describe random animation, cannot be
+properly synchronized, but these objects represent a small minority
+vis-\`a-vis animation objects in general.}. The {\made} programmer may
+create new, application--specific synchronizable objects, too.
+
+Based on this synchronization model, the {\made} toolkit also includes a
+higher--level mechanism for time--based synchronization. This mechanism
+defines different types of {\em schedulers} which the application may
+use as building blocks for more complex time--based synchronization
+scenarios (see~\cite{MADE-TTO} for further details). These schedulers
+all assume the existence of a special synchronizable object within
+{\made}, namely a {\em timer\/}. The approach of building time--based
+synchronization on the top of a more general mechanism, instead of
+considering it as a basic feature, allows the {\made} library
+to be used in environments which do not necessarily offer real--time
+facilities.
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Interaction Objects.}
+\label{sec:interaction}
+
+Multimedia applications are very often highly interactive; it is
+therefore essential to give very good tools to construct complex
+interaction scenarios involving {\made} objects.
+
+The {\made} project does {\em not\/} aim at developing a completely new
+user interface management system. Instead, {\made} objects may be
+embedded into an existing user interface environment, like the Athena
+Widget set of X Window System, the Motif toolkit, MS-Windows or, in the
+future, {\nt}. Nevertheless, not all user interaction can be adequately
+managed by these tools; many complex interaction scenarios will involve
+{\made} objects directly (eg, for direct manipulation).  The scheme
+developed in {\made} for achieving these complex interaction scenarios
+is based on the notion of {\em sensors\/} and associated {\em
+interaction objects\/}.
+
+Sensors are best understood in the context of graphics: in this context
+they define sensitive areas on the screen, which can be ``activated'' by
+external interaction, typically mouse events.  Sensors are associated
+with {\made} objects via interaction objects. In effect, they provide a
+sensitive region which acts as a focal point for interaction with these
+objects.  For some objects, sensors cannot be attached to the object
+itself, but, instead, a visual representation of the object is used, in
+the form of graphics object. This might be the case, for some sensors
+attached to audio objects. The notion of sensor is general enough to
+accommodate regions involving higher dimensions including time. It can
+also be applied in association with interaction input devices that
+provide non--geometric input measures, such as audio input devices,
+pressure sensitive devices, etc.
+
+\begin{figure}[tbp]
+  \leavevmode\centering
+  \epsfbox{Figs/interact.eps}
+  \caption{Use of Interaction Objects. Sensors forward events to
+  objects, which controls the geometric appearance of buttons and the
+  real video object.}
+  \label{fig:interact}
+\end{figure}
+
+Sensors forward events to interaction objects; it is part of the
+sensor's initialization procedure to decide which interaction object
+it is connected to. The interaction objects react on these events,
+following some patterns which describes the behaviour of the
+interaction object. Several sensors may be connected to the same
+interaction object.
+
+In very simple cases, interaction objects perform straightforward and
+predefined tasks (like, for example, reshaping a graphics object).  In
+other cases, much greater complexity may be required, perhaps providing
+control over several {\made} objects and receiving events from several
+sensors (eg, the video control board depicted in Figure~\ref{fig:window}
+reacts on the sensors of the graphical objects describing the four
+push--buttons, may control the visual appearance of these buttons and,
+of course, controls the video object proper; see also
+Figure~\ref{fig:interact}). To describe such complex interaction
+behaviour, {\made} introduces a type of interaction object that
+implements a general finite state machine (see~\cite{MADE-IAO}). These
+objects have a default finite state machine for a specific interaction
+scenario; however, the user can also assign a script to an interaction
+object, which, conceptually, includes a complete scripting interpreter
+(see also~\S\ref{sec:scripting}). Such a script automatically overrides
+the default behaviour of the interaction object. This high degree of
+openness, with respect to the end--user, is a very valuable feature of
+the {\made} interaction management.
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Constraint Management.}
+\label{sec:constraints}
+
+Provision of a general purpose constraint system within \made\ for all
+of the potential uses of constraints in a multimedia development
+environment would justify a development project in its own right.
+Fortunately, there are various restricted types of constraint satisfier
+that, while not being as capable in some aspects, still provide useful
+functionality for dealing with certain categories of constraint.
+
+The approach followed in the specification of constraints within {\made}
+(see also~\cite{MADE-COO}), is to consider those applications of
+constraint systems that are of direct relevance to the multimedia part
+of \made. In effect, this restricts the scope of the constraint
+satisfier to the topics of geometric layout, user interface control,
+animation, and media synchronisation.  For example, the {\made}
+presentation facilities include a composition editor/player which may
+make use of constraints when defining the hypermedia document structure
+and presentation characteristics.  What this classification means is
+that any predefined constraints that are defined as part of the toolkit
+can be organised into ``constraint families'' (to avoid the use of the
+term ``class'') which are relevant for specific multimedia aspects.
+
+For the time being at least, only one--way constraints are proposed for
+\made. While multi--way constraints provide greater expressive power to
+the constraint user, they also require more complex constraint
+satisfaction algorithms and may involve more effort on the part of the
+programmer to set up specific constraint objects. This decision need not
+be considered final, and can be reviewed after experience with the
+proposed constraint objects has been gained.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Utilities}
+\label{sec:utilities}
+
+As said before, {\em utilities\/} offer a higher level of functionality
+which make the implementation of more complex multimedia applications
+easier and faster. In fact, the functionality of some of the utilities
+is so complex that, by ``wrapping'' them into a simple program, they can
+be used as a separate application programs in their own right.
+
+The major categories of utilities are as follows:
+
+\begin{enumerate}
+\item {\em application program interface utilities\/}: visual metaphors,
+  scripting, user interface builders, user monitoring;
+\item {\em monomedia editors\/}: 2D and 3D graphics editors, animation, video,
+  and audio editors;
+\item {\em composition utilities\/}: framework for hyperdocument management,
+  synchronization editors, interaction and graph object editors;
+\item {\em miscellaneous\/}: class browsers, generic on--line help
+  facilities, object monitoring.
+\end{enumerate}
+
+\noindent Different {\made} utilities may and do rely on one another,
+too. For example, the visual metaphors, to be presented below
+(see~\S\ref{sec:visuals}), are reused by monomedia editors
+(see~\S\ref{sec:editors}), or, to take another example, the user
+interface of some of the editors may be developed with the help of
+{\made} user interface builders and scripting languages usable from
+within {\made}.
+
+Utilities, together with {\made} toolkit objects, offer a
+set of building blocks which can be used in various ways to create
+different types of {\made} application program architectures. Some of the
+most common scenarios will be described in \S\ref{sec:scenarios} below;
+however, to make these scenarios understandable, some of the most
+important {\made} utilities are presented below in somewhat more
+details. 
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{Application Program Interface Utilities}
+\label{sec:appinterface}
+
+
+Application program interface utilities give a set of tools that help an
+application programmer to prototype or to develop a final {\made}
+application. Although the facilities provided by some of these utilities
+are fairly standard these days, it is nevertheless necessary to provide
+them in the context of the {\made} environment, too. Note that not all
+tools are presented in this report, only some of the most important
+ones.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Visual Metaphors.}
+\label{sec:visuals}
+
+The visual representation and control of media objects is not always
+obvious. Indeed, to control certain attributes of media objects,
+relatively complex visual tools, with associated interaction, have to be
+developed. These tools may then be used on different levels: in program
+development, in authoring, or in the final playback of authored
+documents.  These visual metaphors play an essential role in
+defining complex interactions operating on the objects; indeed, it is
+sometimes much easier to attach a sensor to these metaphor objects,
+rather than to try to define a sensor on the object proper
+(see~\S\ref{sec:interaction}).
+
+There are numerous examples for such visual metaphors. Just to give some
+examples:
+
+\begin{itemize}
+\item Video control board for stopping, playing, rewinding, providing
+  fast forward and backward motion, etc.
+\item Audio panel containing volume control, channel control, etc.
+\item Control boards for the manipulation of graphics object attributes
+  (colour, lighting, shading attributes, etc.)
+\end{itemize}
+
+\noindent All these objects, collectively called {\em visual metaphor\/}
+objects, are part of the {\made} utility library. Other utilities
+(primarily the editors, see~\S\ref{sec:editors}), reuse these objects,
+thereby providing a common look--and--feel among {\made} utilities.
+{\made} applications may of course choose to ignore these objects and to
+implement similar user interface facilities by themselves.
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Connection to Scripting Languages.}
+\label{sec:scripting}
+
+Several {\made} objects make use of scripting languages; animation
+and interaction objects have been mentioned in the preceding sections, and
+there are others, too.  It is also perfectly feasible to create
+full--blown applications, either in a prototype or even in a final form,
+where the ``user--level'' program is in fact a script.
+
+{\made} does not introduce it own scripting language. Instead, all
+objects that make potential use of scripting access the interpreter
+functionality via an abstract general scripting interface. This general
+scripting interface is then specialized to access specific languages and
+their interpreters.  This lets the final choice over which scripting
+language is used be made by the {\made} application developer or even
+the end--user. Furthermore, several scripting languages can coexist
+within the same {\made} application (see~\cite{MADE-Scr}).
+
+In order to be usable for {\made}, a scripting language should have an
+embeddable interpreter. Ie, it should be possible to link the
+interpreter to C/C++ and C/C++ functions should be accessible from
+the language somehow. Conversely, functions of the scripting language
+should be accessible from C/C++. Note that the availability of the
+dynamic call interface of {\made} objects plays an essential role in
+interfacing such interpreters: it is not necessary to create a special
+``stub'' for each {\made} object in the scripting language; indeed,
+{\made} objects can be created, and their methods invoked, based only on
+their signature.
+
+There are several general embedded interpreters available. Currently,
+the {\made} toolkit includes an interface to Wool, a Lisp dialect
+implemented by Bull~(\cite{CN92}), and to Python, a language
+developed at CWI~(\cite{GvR93}). In the future, interfacing to
+Tcl~(\cite{JKO92}) or other emerging languages will also be considered.
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{User Interface Builder.}
+\label{sec:usergen}
+
+The \made\ utility workpackage also includes the definition and
+implementation of a user interface builder utility for {\unix}
+platforms. This utility is based on an existing Bull product called {\small
+EGERIA}\cite{EGERIA} which is to be adapted for the {\made} environment
+in the course of the project. This utility is considered as a completely
+separate part of the \made\ environment; it is aimed at the fast
+specification of the user--interface part of a {\made} application and is
+based on the Motif toolkit.
+
+On {\mswin} environments, Visual C++\cite{VISUALC} will be used as a
+user interface builder.  For the integration of {\made} objects and
+utilities, subclasses of the ``Microsoft Foundation Classes'' will be
+developed and accessible directly from Visual C++. This has already been
+validated with the 2D editors of GoPATH\cite{JD91}.
+
+User interface builders may also be available for the scripting
+languages usable with {\made}. In fact, {\small EGERIA} is based on
+Wool, and can therefore be used as a user interface generator for
+Wool--based applications; a similar development (being carried out
+independently of the {\made} project) for Python may be used in
+later stages of the project.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Monomedia Editors}
+\label{sec:editors}
+
+The role of monomedia editors is relatively straightforward: they offer
+means for the creation, modification, and also for the display of media
+objects. There is nothing particularly unusual or new in these
+utilities, except that they all abide to the architectural demands for
+{\made} editors, as described above. Note that these editors make
+use of the visual metaphors described in~\S\ref{sec:visuals} to give a
+unified outlook.
+
+{\made} editor objects may be used in various application settings. This
+includes being activated alongside with other {\made} objects, eg, other
+editors. In this case, editor objects may be active objects, and the
+mechanism provided by the {\made} object model will ensure that data
+managed by several editors will not be corrupted by concurrent access.
+Editors may also be wrapped up into separate application programs to run
+as stand--alone processes. In this case, editors may operate on {\made}
+objects residing in a database or they can manage objects received via a
+communication channel using, eg, the {\kedit} protocol
+(see~\S\ref{sec:technoverview}).
+
+The {\em 2D graphics editor\/} is based on an existing program, called
+{\tt godraw} (related to GoPATH, mentioned earlier).  The facilities
+supported by this editor are relatively straightforward, and are in line
+with other 2D graphics editors, available for different platforms.
+
+The {\em 3D graphics editor\/} emphasizes two aspects of 3D editing:
+editing of scenes by composing 3D objects in space, and simple 3D
+solid modelling to create 3D bodies. It includes dialogues to control
+attributes like texture, colour, reflectance, opacity, etc.
+
+The {\em audio editor\/} offers facilities to ``cut'' and ``paste''
+audio tracks, apply (possibly user--specified) filters on the sound
+tracks, and modify their characteristics. A {\small MIDI} editor will
+also be available.
+
+The {\em video editor} offers similar facilities that of the
+audio editor: ``cut'' and ``paste'' of video sequences, modification of its
+characteristics (if the underlying hardware permits it), retrieve and
+frames as images, etc.
+
+A separate {\em animation editor\/} is also provided, which allows for
+the interactive creation and editing of animation curves, and animation
+scripts.
+
+Note that, under {\mswin}, Microsoft's Multimedia Environment already
+contains some multimedia editors; to avoid duplication, these editors
+will be reused as much as possible.
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{Composition Utilities}
+\label{sec:composition-editors}
+
+Composition editing and playback is the mechanism within \made\ for
+developing and viewing multimedia/hypermedia documents, both from the
+point of view of an author of such documents and also from the point of
+view of the final user(s) of a \made\ application based on the document
+concept.  The composition editing and playback utility is one of the main
+integrating components of the \made\ application environment. It is
+through the definition of an abstract document structure that a
+hypermedia document is created and it is the presentation of this
+hyperdocument which the end user may interact with. During both the
+authoring and playback modes of operation the composition utility makes
+direct use of the other \made\ utilities for viewing or editing
+particular media objects, for presenting help information, for
+navigating the hyperdocument structure, and perhaps also for monitoring
+the user's actions. The composition utility drives the operation of
+these other utilities based on a composition graph (ie, the internal
+representation of the hyperdocument).
+
+An essential aspect of the composition facilities is the ability
+to define and manipulate an abstract document structure\footnote{This
+abstract document structure is also referred to in this specification as
+a composition graph.} The abstract document structure is a
+representation of logical components which describes not only the
+specific types of media involved in the presentation, but also the
+semantic connections between media, the synchronisation constraints
+associated with the presentation of the logical components, geometric
+and other presentation attributes for each component, and specific
+interaction entities to be used in reading the multimedia document.
+
+The authoring and presentation of a hyperdocument is not only determined
+by the media and the composition utilities. There may be a number of
+alternative styles (or metaphors) for presenting a particular
+hyperdocument that are dependent not on the specific document itself but
+on the application domain in which the \made\ application exists. 
+
+A specific goal of the composition utilities of {\made} as a whole is
+to separate the presentation metaphor used for authoring and viewing a
+\made\ hyperdocument from the underlying composition graph.  The aim is
+to accommodate different styles of authoring and different forms of
+visually structuring the hypermedia information. Within the {\made}
+project, a prototype authoring application will be developed, with a
+specific application area and presentation metaphor. However, this
+application should be considered merely as a test of the {\made}
+concepts; it is perfectly possible for another application to choose a
+radically different presentation scheme and implement it on the ``top''
+of the {\made} composition utilities.
+
+Another important aspect of the composition editing and playback
+facility is making provision for use of an interchange format that
+represents the abstract document structure in a more persistent form.
+An interchange format enables the reuse of existing compositions, either
+fully or in part, and enables the exchange of documents among \made\
+applications. This aspect is not straightforward, however, and there are
+a number of decisions to be made on which specific format should be
+adopted. The main contenders at the moment appear to be
+HyTime\cite{HyTime} and {\small MHEG}\cite{MHEG}. A third choice would
+be to develop a \made\ specific format (temporarily denoted as {\small
+MIFF}), perhaps based partly on either of the above or some other less
+well known format. Other possibilities include the Microsoft's {\small
+AVI} format~(\cite{AVI}) and the {\small MOVIE} format defines as part
+of Apple's QuickTime environment~(\cite{MOVIE}). At the time of writing,
+the choice of the appropriate format is still to be made.
+
+The composition utilities include some sub--modules with well specified
+tasks. These include:
+
+An {\em interaction editor\/}, used to create or modify interaction
+objects (see~\S\ref{sec:interaction}). This involves defining sensors
+associated with {\made} objects (or with their associated visual
+metaphor), specifying the objects the interaction object has to control,
+and editing the corresponding script. The definition and/or the
+modification of sensors may involve, eg, graphics editing, which means
+that the interaction editor may also start up a 2D graphics editor
+internally. In this setting, interaction objects provide a possible
+internal representation for hyperlinks.
+
+The role of the {\em synchronization editor\/} is to interactively
+define the synchronization patterns among several synchronizable {\made}
+objects. This may involve the specification of reference points, setting
+references of other object the synchronizable object has to synchronize
+with, defining the details of this synchronization, etc.  Time objects
+are also managed by this editor; the user may indeed prefer to use the
+notions of time, scheduler, and time--constraints for the purpose of
+synchronization, rather than the concept of reference points. (As
+described in \S\ref{sec:synchronization}, both mechanisms are available
+within the {\made} toolkit.)
+
+The choice of the interchange format will greatly influence whether, in
+the synchronization editor, the emphasis will be placed on reference point
+on time--based synchronization. HyTime, for example, expresses
+all synchronizations using an abstract notion of time; quite naturally,
+if the HyTime format, or a subset of it, is chosen, this will
+determine the final shape of the synchronization editor, too.
+
+The {\em graph} or {\em layout editor} gives a visual interface for the
+direct manipulation and visualization of the composition graph (ie, the
+hyperdocument structure).
+
+Finally, the {\em composition editor\/} is the most complex composition
+utility, which combines and controls all other composition utilities as
+well as the monomedia editors, and {\made} toolkit objects. It is this
+module which lies at the heart of all composition utilities, which
+is responsible for providing all the general functionalities described
+above. 
+
+%%%%%%%%%%%%%%%%%%%%%
+\section{Application Architectures}
+\label{sec:scenarios}
+
+The notion of {\em multimedia application\/} is a very broad concept and
+application programmers may make use of a package like {\made} in
+different ways. Also, the concept of a {\em user\/} of {\made} (or of
+similar packages) has become a somewhat fuzzy notion; there are, in
+fact, different types of users (toolkit or utility developers, C++,
+script programmers, hypermedia document authors, etc) which are all, in
+some way or other, ``users'' of the {\made} environment.  Without
+claiming to be exhaustive, this section will give some, very typical
+examples of application program architectures.
+
+Note that the full {\made} {\esprit} project includes the development of
+some pilot applications, too. It is not the purpose of this paper to
+give a thorough description of the whole {\esprit} project, hence these
+applications are not described here. Suffice it to say, however, that
+the application program architectures, as presented below, are all
+represented in these various pilot applications.
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{``Traditional'' Programming}
+\label{sec:traditional}
+
+The {\made} toolkit objects, plus some of the utility objects,
+form a powerful, albeit ``traditional'' programming environment for
+C++ programmers. This means that applications may be developed in
+C++ or C, and then linked to a set of run--time {\made} libraries.
+
+Figure~\ref{fig:traditional} (which is identical to
+Figure~\ref{fig:over}) gives a faithful picture of a traditional program
+using {\made}. The application program (which is usually a single
+{\unix}, {\msdos}, or {\nt} task) uses different toolkit objects
+either directly or indirectly, via some utility objects. A more elaborate
+application would also make use of an external database, accessed via
+the {\made} database object facilities.
+
+\begin{figure}[tbp]
+  \leavevmode\centering
+  \epsfysize=5in
+  \epsfbox{Figs/over.eps}
+  \caption{Traditional Programming with MADE}
+  \label{fig:traditional}
+\end{figure}
+
+The application program may interchange data with other applications
+via, eg, the {\small MIFF} exchange format. Alternatively, the
+application program may offer {\em services\/}, in the form of a
+sophisticated multimedia server, using either the {\kedit} protocol or
+{\small OLE}.  Other applications may then either directly manipulate
+{\made} objects via this protocol or full {\made} objects may be
+transferred back and forth, and manipulated upon, by different modules.
+
+Various objects, such as the interaction and animation objects, may use
+scripting languages, which may be revisable by the end--user. In
+fact, the skeleton of the application program may also be written in a
+scripting language instead of C or C++; the script would then manipulate
+{\made} objects (written in mC++) via the appropriate
+{\made}--script interpreter interface.
+
+Another possibility is to use C++ and, eg, Motif to create the
+user--interface; this is when a graphics user interface application
+builder, like {\small EGERIA}, or Visual~C++, may play an important role.
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{Hyperdocument Editing and Playback}
+\label{sec:compo}
+
+Figure \ref{fig:compo} illustrates a possibility for hypermedia document
+manipulation using the full--blown composition utilities described
+in~\S\ref{sec:composition-editors}. The programming environment offered
+by {\made} in this setting is hypermedia document authoring; quite
+naturally, the user community for such an environment differs radically
+from the community of ``traditional'' programmers. (Very often, to make
+the distinction, members of this community are referred to as
+``authors'', as opposed to ``users''.)
+
+
+\begin{figure}[tbp]
+  \leavevmode\centering
+  \epsfysize=4.8in
+  \epsfbox{Figs/compo.eps}
+  \caption{Composition Utilities in a MADE Application}
+  \label{fig:compo}
+\end{figure}
+
+
+In this authoring environment, the composition utilities are
+conceptually separate from the media editors. The composition utilities
+act as the coordinating components of the complete architecture.
+Effectively, there is an inter--editor message facility that is used to
+both control the operation of the media editors and to provide
+information to the composition utilities representing actions performed
+by the user through dialogues with the media editors.  In this setting
+the media editors may be considered as separate applications or, in
+other terms, as separate service providers. These applications
+may be realized following the scheme described in the previous section.
+
+This organisation implies that media objects or references to objects
+are passed between the composition utility and the media editors in
+order to ``render'' them.  Similarly, edited media objects may need to
+be passed back to the composition editor and placed into the multimedia
+database.
+
+Note that a simpler version of the architecture, including a simpler
+version for each of the media editors, may be defined to be used for
+``playback'' only.
+
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{Other Application Schemes}
+\label{sec:hyperp}
+
+The application architectures presented in the preceding two sections
+represent, in a way, the two extremes of a large palette. Intermediate
+architectures, making use of only part of the full {\made} functionality
+are also possible and feasible. It is possible to create, for example, a
+HyTime--like engine based on the {\made} toolkit and some of the utilities
+only (although these utilities may be distributed services rather then
+linked to the HyTime engine)\footnote{In fact, creation of an engine for
+a specialized set of HyTime documents is part of the full ESPRIT
+project.}; interactive modelling applications, or scientific
+visualization applications, are also possible, which may use the
+services of media editors, just as a full hypermedia authoring tool
+does, but with a fundamentally different user--interface.
+
+\begin{figure}[tbp]
+  \leavevmode\centering
+  \epsfysize=4.8in
+  \epsfbox{Figs/hyper.eps}
+  \caption{Usage of an External Composition Tool: HyperPATH}
+  \label{fig:hyperp}
+\end{figure}
+
+The application architecture shown on Figure~\ref{fig:hyperp}
+illustrates another possibility for an authoring environment. As said
+earlier, media editors, realized as {\made} applications, may be used as
+independent servers, provided that the external communication protocol
+is understood by the ``wrapper'' around the {\made} editor objects.  In
+such a case, an ``external'' (ie, not closely {\made} dependent)
+hyperdocument authoring tool may be used instead of the {\made}
+composition utilities.  The example used in Figure~\ref{fig:hyperp} is
+HyperPATH, formerly known as Multicard (\cite{ARLS92}), a hypermedia
+editing tool developed by Bull. (The M2000 protocol referred to in
+the figure is the internal communication protocol defined for
+HyperPATH.)
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\section{Standardization}
+\label{sec:premo}
+
+In a somewhat unexpected way, activities in the {\made} project have
+become very much relevant recently for an ongoing standardization
+process within ISO.  Indeed, after several years of preparations, the
+ISO committee ISO/IEC JTC~1/SC~24 (the committee which developed
+graphics standards in the past) has decided to engage into a project for
+the standardization of a presentation environment for multimedia
+programming. The scope and purposes of this new project, called
+{\premo}\cite{PREMO} are indeed very close to the project specifications
+of {\made}: an object--oriented presentation environment for multimedia
+objects, including graphics, video, audio, etc., which incorporates
+specific means for the synchronization, interaction, and combination of
+such media.
+
+Fortunately for the {\made} project (and, hopefully, for the {\premo}
+project, too), contacts between {\made} project members and the relevant
+ISO committee could be set up very quickly, due to some earlier ISO
+activities of several participants of the {\made} project. Concepts
+developed within the {\made} project have been included into the {\premo}
+activities, and, conversely, some of the issues that have arisen at the
+{\premo} meetings have provided valuable input in the design work of
+{\made}. It can be expected that this fruitful interaction will help to
+shape the outcome of the {\made} project in the future, too.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Acknowledgements}
+\label{sec:environment}
+
+Obviously, {\made} is a large--scale teamwork project, involving experts
+from a number of industrial and academic institutions\footnote{Namely:
+Groupe~Bull~(France), CWI~(The Netherlands), INESC~(Portugal),
+INRIA~(France), FhG-IAO~(Germany), BaE~(UK), NR~(Norway), ESI~(France),
+Iselqui~(Italy).}. Although only some of the partners are involved in
+the specification details of the {\made} framework (others being
+responsible for the pilot applications), the team of experts is still
+rather voluminous. Instead of trying to list everybody and thereby
+incurring the danger of forgetting, and therefore offending, somebody,
+we prefer to omit such a long list. We would just like to express our
+gratitude to the full {\made} team altogether.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{plain}
+\bibliography{to1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993}
+
+\end{document}

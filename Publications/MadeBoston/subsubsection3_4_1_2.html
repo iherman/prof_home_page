@@ -1,0 +1,57 @@
+<HEAD>
+<TITLE> Connection to Scripting Languages.</TITLE>
+</HEAD>
+<BODY><P>
+ <HR> <A NAME=tex2html194 HREF=subsubsection3_4_1_3.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/next_motif.gif"></A> <A NAME=tex2html192 HREF=subsection3_4_1.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/up_motif.gif"></A> <A NAME=tex2html186 HREF=subsubsection3_4_1_1.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/previous_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME=tex2html195 HREF=subsubsection3_4_1_3.html> User Interface Builder.</A>
+<B>Up:</B> <A NAME=tex2html193 HREF=subsection3_4_1.html> Application Program Interface </A>
+<B> Previous:</B> <A NAME=tex2html187 HREF=subsubsection3_4_1_1.html> Visual Metaphors.</A>
+<HR> <P>
+<H3><A NAME=SECTION0004120000000000000> Connection to Scripting Languages.</A></H3>
+<P>
+<A NAME=secscripting><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/invis_anchor.xbm"></A>
+<P>
+Several MADE objects make use of scripting languages; animation
+and interaction objects have been mentioned in the preceding sections, and
+there are others, too.  It is also perfectly feasible to create
+full-blown applications, either in a prototype or even in a final form,
+where the ``user-level'' program is in fact a script.
+<P>
+MADE does not introduce it own scripting language. Instead, all
+objects that make potential use of scripting access the interpreter
+functionality via an abstract general scripting interface. This general
+scripting interface is then specialized to access specific languages and
+their interpreters.  This lets the final choice over which scripting
+language is used be made by the MADE application developer or even
+the end-user. Furthermore, several scripting languages can coexist
+within the same MADE application (see <A HREF=bibliography3_8.html#MADEScr>[10]</A>).
+<P>
+In order to be usable for MADE, a scripting language should have an
+embeddable interpreter. Ie, it should be possible to link the
+interpreter to C/C++ and C/C++ functions should be accessible from
+the language somehow. Conversely, functions of the scripting language
+should be accessible from C/C++. Note that the availability of the
+dynamic call interface of MADE objects plays an essential role in
+interfacing such interpreters: it is not necessary to create a special
+``stub'' for each MADE object in the scripting language; indeed,
+MADE objects can be created, and their methods invoked, based only on
+their signature.
+<P>
+There are several general embedded interpreters available. Currently,
+the MADE toolkit includes an interface to Wool, a Lisp dialect
+implemented by Bull (<A HREF=bibliography3_8.html#CN92>[23]</A>), and to Python, a language
+developed at CWI (<A HREF=bibliography3_8.html#GvR93>[31]</A>). In the future, interfacing to
+Tcl (<A HREF=bibliography3_8.html#JKO92>[25]</A>) or other emerging languages will also be considered.
+<P>
+<HR> <A NAME=tex2html194 HREF=subsubsection3_4_1_3.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/next_motif.gif"></A> <A NAME=tex2html192 HREF=subsection3_4_1.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/up_motif.gif"></A> <A NAME=tex2html186 HREF=subsubsection3_4_1_1.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/previous_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME=tex2html195 HREF=subsubsection3_4_1_3.html> User Interface Builder.</A>
+<B>Up:</B> <A NAME=tex2html193 HREF=subsection3_4_1.html> Application Program Interface </A>
+<B> Previous:</B> <A NAME=tex2html187 HREF=subsubsection3_4_1_1.html> Visual Metaphors.</A>
+<HR> <P>
+<HR>
+
+</BODY>
+<P><ADDRESS>
+<I>ivan@petunia.cwi.nl <BR>
+Tue Jan 25 14:21:49 MET 1994</I>
+</ADDRESS>

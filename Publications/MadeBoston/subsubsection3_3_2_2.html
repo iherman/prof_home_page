@@ -1,0 +1,54 @@
+<HEAD>
+<TITLE> Structuring.</TITLE>
+</HEAD>
+<BODY><P>
+ <HR> <A NAME=tex2html117 HREF=subsubsection3_3_2_3.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/next_motif.gif"></A> <A NAME=tex2html115 HREF=subsection3_3_2.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/up_motif.gif"></A> <A NAME=tex2html109 HREF=subsubsection3_3_2_1.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/previous_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME=tex2html118 HREF=subsubsection3_3_2_3.html> Synchronization.</A>
+<B>Up:</B> <A NAME=tex2html116 HREF=subsection3_3_2.html> Combination Objects</A>
+<B> Previous:</B> <A NAME=tex2html110 HREF=subsubsection3_3_2_1.html> Imaging.</A>
+<HR> <P>
+<H3><A NAME=SECTION0003220000000000000> Structuring.</A></H3>
+<P>
+<A NAME=secstructuring><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/invis_anchor.xbm"></A>
+<P>
+The importance of <em>structuring</em>, ie, of creating aggregates of
+different objects in interactive programs, has long been recognized in
+computer graphics.  All graphics packages provide some form of
+aggregation, like structures in PHIGS<A HREF=bibliography3_8.html#TLJHWTHRJHKMW91>[12]</A>,
+the scene database of IRIS Inventor<A HREF=bibliography3_8.html#PSSRC92>[27]</A>, or the so called
+Go trees in GoPATH<A HREF=bibliography3_8.html#JD91>[7]</A>.  Although the structures used in these
+examples are all relatively simple (directed acyclic graphs or just
+trees), the appearance of hypertext and, lately, of hypermedia systems
+makes it clear that more general aggregation facilities are also
+necessary.
+<P>
+To answer these demands, the MADE toolkit includes a general graph
+management facility in the form of <em>graph objects</em>. These objects
+allow for the specification, management, and the traversal of general
+graphs, with no restrictions imposed on their types. Nodes of these
+graphs may refer to any MADE object. Graph management is achieved via
+special MADE objects; consequently, recursive graphs may also be
+defined via the same mechanism. Individual MADE objects can be
+referred to by several graph nodes (ie, they can be <em>shared</em>).
+<P>
+Graph objects provide a sound basis for the type of structuring required
+by graphics as well as for complex hypermedia navigation systems. They
+are fully integrated into the full MADE structure, which has a number
+of advantages. As an example, graphs provide an automatic defence
+against concurrent access of structures by active objects, they can be
+exported and imported using the very same mechanism as for all other
+MADE objects (ie, complete structures may be stored in databases),
+etc.
+<P>
+<HR> <A NAME=tex2html117 HREF=subsubsection3_3_2_3.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/next_motif.gif"></A> <A NAME=tex2html115 HREF=subsection3_3_2.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/up_motif.gif"></A> <A NAME=tex2html109 HREF=subsubsection3_3_2_1.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/previous_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME=tex2html118 HREF=subsubsection3_3_2_3.html> Synchronization.</A>
+<B>Up:</B> <A NAME=tex2html116 HREF=subsection3_3_2.html> Combination Objects</A>
+<B> Previous:</B> <A NAME=tex2html110 HREF=subsubsection3_3_2_1.html> Imaging.</A>
+<HR> <P>
+<HR>
+
+</BODY>
+<P><ADDRESS>
+<I>ivan@petunia.cwi.nl <BR>
+Tue Jan 25 14:21:49 MET 1994</I>
+</ADDRESS>

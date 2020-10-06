@@ -1,0 +1,144 @@
+<HEAD>
+<TITLE> General Overview</TITLE>
+</HEAD>
+<BODY><P>
+ <A NAME=tex2html54 HREF=section3.1.html><IMG SRC="../../../l2hicons/previous.xbm"></A> <A NAME=tex2html56 HREF=Descrhtml.html><IMG SRC="../../../l2hicons/up.xbm"></A> <A NAME=tex2html52 HREF=section3.3.html><IMG SRC="../../../l2hicons/next.xbm"></A> <A NAME=tex2html50 HREF=section3.1.html><IMG SRC="../../../l2hicons/previous_page.xbm"></A> <A NAME=tex2html58 HREF=section3.3.html><IMG SRC="../../../l2hicons/next_page.xbm"></A> <BR>
+ <b>Previous:</b> <A NAME=tex2html55 HREF=section3.1.html> Introduction</A><BR> <b>Up:</b> <A NAME=tex2html57 HREF=Descrhtml.html>MADE: A Multimedia Application Development Environment</A><BR> <b>Next:</b> <A NAME=tex2html53 HREF=section3.3.html> Toolkit Objects</A><BR> <b>Previous Page:</b> <A NAME=tex2html51 HREF=section3.1.html> Introduction</A><BR> <b>Next Page:</b> <A NAME=tex2html59 HREF=section3.3.html> Toolkit Objects</A><BR> <P>
+<H1><A NAME=SECTION0002000000000000000> General Overview</A></H1>
+<P>
+<A NAME=sectechnoverview><IMG SRC="../../../l2hicons/invis_anchor.xbm"></A>
+<P>
+The full  MADE environment contains a large number of different
+objects and related services. Two important categories of these objects
+have a major role in the development environment; these are: <em>
+toolkits</em> and <em> utilities</em>. (Note that the object--oriented
+nature of  MADE makes it possible for the end--user to add new objects
+to both toolkits and utilities and/or to extend the functional
+capability of existing ones.)
+<P>
+The <em> toolkit</em> level is a collection of objects that are considered
+to be fundamental for multimedia programming. It includes, obviously,
+objects to interface different media. Also, it includes objects which,
+although not directly involved in handling specific media, play a
+fundamental role in constructing more complex multimedia applications.
+Some more details of the toolkit level will be given below
+(see &#167;<A HREF=section3.3.html#sectoolkit>3</A>).
+<P>
+Although it is possible to construct complex applications using the
+ MADE toolkit level only, doing that may be unnecessarily tedious and
+error--prone. Consequently, another layer has been defined on top of the
+ MADE toolkit, called <em> utilities</em>. The idea here is to define
+and implement objects which include complex functionality and which are
+considered to be essential for most multimedia applications.
+Applications programmers may choose to use some of these utility
+objects; however, the toolkit level is never completely obscured, and
+the application layer is free to use toolkit objects directly as well
+(see also Figure <A HREF=section3.2.html#figover>1</A>; some of the terms appearing on the
+Figure will be described in later sections).
+<P>
+<A NAME=53><IMG SRC="../../../l2hicons/invis_anchor.xbm"></A><P><A NAME=figover><IMG SRC="../../../l2hicons/invis_anchor.xbm"></A><IMG ALIGN=BOTTOM ALT="" SRC="_19323_figure51.gif"><P>
+<P>
+In the early stage of the  MADE project a common <em> object model</em>
+was defined and developed, to ensure the smooth cooperation among
+objects within the  MADE library and also to provide a clear approach
+to some of the technical issues raised by multimedia programming in
+general. This object model defines a conceptual layer on the top of the
+implementation language of  MADE (ie, C++), and it describes
+numerous features of objects within  MADE. As far as the application
+programmer is concerned, two characteristics of this model are of a
+great importance: the use of <em> active objects</em> and the presence of
+<em> delegation</em>.
+<P>
+In  MADE, objects may be <em> active</em>, ie, they may have their own
+thread of control (within the shared address space of the same  UNIX,
+ MS--DOS, or Windows--NT process).  This fact is exploited in the
+implementation of the  MADE toolkit library, and is a major tool used
+in defining synchronization of different media
+(see &#167;<A HREF=subsubsection3.3.2.3.html#secsynchronization>3.2.3</A> below). Application programmers may
+have to be aware of this fact if they decide to use the toolkit level
+objects directly.
+<P>
+The concept of <em> delegation</em> of object methods is the other central
+feature of the  MADE object model. Using delegation an object may
+delegate some or all of its behaviour (i.e., the messages it serves) to
+any number of other objects, which will then act on its behalf. The
+notion is not unlike inheritance, but delegation is dynamic, ie, the
+target of delegation may be set and re--set at run--time.  Delegation
+plays a very important role in controlling constraints in  MADE
+(constraint objects are part of the toolkit), and offers advanced means
+to describe temporal behavioural control. A more exact semantics of
+delegation is described in, eg, <A HREF=bibliography3.8.html#HL86>[20]</A>; see also <A HREF=bibliography3.8.html#FAIHGJR93>[1]</A>
+for a more detailed description of the concept within the framework of
+the  MADE object model.
+<P>
+The object model has been realized in the form of an extension of
+C++, called mC++.  The mC++ compiler generates a set of C++
+classes, library and macro calls; this ``intermediate'' level can also
+be accessed by programmers directly, in case they do not intend to use
+yet another programming language (see <A HREF=bibliography3.8.html#MADEAPI>[17]</A>).  Details of the
+object model are, however, hidden to most application programmers and
+are only of real interest for toolkit or utility developers.  The full
+technical description of this object model will be omitted here; the
+interested reader should refer to <A HREF=bibliography3.8.html#FAIHGJR93>[1]</A> for a general
+overview and to <A HREF=bibliography3.8.html#MADETOM>[2]</A> for a complete description of the model
+and of mC++.
+<P>
+The object model is not the only means to achieve smooth cooperation
+among objects.  All  MADE objects also include general features
+that allow them to be used under various circumstances in a unified
+way. Some examples of these features, which are necessary to
+understand what is described in later sections, are given below.
+<P>
+All objects in the  MADE system may be <em> permanent</em>. This means
+that they may ``store'' themselves in a database and can restore their
+content at a later stage of the application's lifetime or even during
+the execution of some other applications.  This feature is present for
+all  MADE objects by default; the only step the application program
+has to do is to invoke certain implicitly defined member functions.
+Furthermore, the  MADE toolkit level includes a special object which
+can interface with various database systems.  Although this interface
+obviously cannot cover all known database systems, it does provide an
+interface to some object--oriented and relational databases.  Here
+again, the general features required by the database access is included
+in all  MADE objects in a database--independent way, and the details
+of the database access is hidden in the general database management
+object of  MADE (see <A HREF=bibliography3.8.html#MADEDBO>[29]</A>); interfacing to a new database
+system means the specification of an appropriate sub--class.
+<P>
+ MADE objects, primarily utility objects, are also prepared for
+distributed access. This not only means that the  MADE library
+includes specific objects for inter--process communication, but also
+that  MADE objects are prepared to ``convert themselves'' into a
+format suitable for communication and, conversely, can ``reconstruct''
+their internal state based on data coming from a communication channel.
+A sophisticated object--oriented communication protocol (called
+ KEDIT<A HREF=bibliography3.8.html#MADEKEDIT>[18]</A>) is currently under development for
+ UNIX platforms, which will allow  MADE applications to offer
+object--based services, and will provide means for the transfer of full
+ MADE objects from one  MADE application to another. The features
+offered by the combination of  MADE objects and  KEDIT are similar
+to the kind of object services defined by the Object Management
+Group<A NAME=tex2html2 HREF=Descrhtml.foot.html#431><IMG SRC="../../../l2hicons/foot.xbm"></A>.  
+On  MS--DOS and Windows--NT platforms the  OLE protocol will be used
+to provide similar facilities; this is already a de--facto standard on
+these environments.
+<P>
+All  MADE objects include a general mechanism known as a ``dynamic
+call interface''. This interface makes it possible to call a member
+function of an object by knowing the object's handle and a <em>
+string</em> describing the full signature of the member function. This
+string can be constructed at run--time, hence the ``dynamic'' nature of
+the call. This feature permits  MADE objects to be accessed easily
+from scripting languages, and provides a simple way of constructing
+interfaces to other programming languages (eg, C or Fortran). It also
+makes the implementation of distribution support (like  KEDIT) fast and
+easy.
+<P>
+<HR>
+<A NAME=tex2html54 HREF=section3.1.html><IMG SRC="../../../l2hicons/previous.xbm"></A> <A NAME=tex2html56 HREF=Descrhtml.html><IMG SRC="../../../l2hicons/up.xbm"></A> <A NAME=tex2html52 HREF=section3.3.html><IMG SRC="../../../l2hicons/next.xbm"></A> <A NAME=tex2html50 HREF=section3.1.html><IMG SRC="../../../l2hicons/previous_page.xbm"></A> <A NAME=tex2html58 HREF=section3.3.html><IMG SRC="../../../l2hicons/next_page.xbm"></A> <BR>
+ <b>Previous:</b> <A NAME=tex2html55 HREF=section3.1.html> Introduction</A><BR> <b>Up:</b> <A NAME=tex2html57 HREF=Descrhtml.html>MADE: A Multimedia Application Development Environment</A><BR> <b>Next:</b> <A NAME=tex2html53 HREF=section3.3.html> Toolkit Objects</A><BR> <b>Previous Page:</b> <A NAME=tex2html51 HREF=section3.1.html> Introduction</A><BR> <b>Next Page:</b> <A NAME=tex2html59 HREF=section3.3.html> Toolkit Objects</A><BR> <P>
+
+</BODY>
+<P><ADDRESS>
+ 
+</ADDRESS>

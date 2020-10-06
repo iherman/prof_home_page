@@ -1,0 +1,57 @@
+<HEAD>
+<TITLE> ``Traditional'' Programming</TITLE>
+</HEAD>
+<BODY><P>
+ <HR> <A NAME=tex2html243 HREF=subsection3_5_2.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/next_motif.gif"></A> <A NAME=tex2html241 HREF=section3_5.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/up_motif.gif"></A> <A NAME=tex2html235 HREF=section3_5.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/previous_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME=tex2html244 HREF=subsection3_5_2.html> Hyperdocument Editing and </A>
+<B>Up:</B> <A NAME=tex2html242 HREF=section3_5.html> Application Architectures</A>
+<B> Previous:</B> <A NAME=tex2html236 HREF=section3_5.html> Application Architectures</A>
+<HR> <P>
+<H2><A NAME=SECTION0005100000000000000> ``Traditional'' Programming</A></H2>
+<P>
+<A NAME=sectraditional><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/invis_anchor.xbm"></A>
+<P>
+The MADE toolkit objects, plus some of the utility objects,
+form a powerful, albeit ``traditional'' programming environment for
+C++ programmers. This means that applications may be developed in
+C++ or C, and then linked to a set of run-time MADE libraries.
+<P>
+Figure <A HREF=subsection3_5_1.html#figtraditional>5</A> (which is identical to
+Figure <A HREF=section3_2.html#figover>1</A>) gives a faithful picture of a traditional program
+using MADE. The application program (which is usually a single
+UNIX, MS-DOS, or Windows-NT task) uses different toolkit objects
+either directly or indirectly, via some utility objects. A more elaborate
+application would also make use of an external database, accessed via
+the MADE database object facilities.
+<P>
+<A NAME=361><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/invis_anchor.xbm"></A><P><A NAME=figtraditional><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/invis_anchor.xbm"></A><IMG ALIGN=BOTTOM ALT="" SRC="_250_figure359.gif"><P>The application program may interchange data with other applications
+via, eg, the MIFF exchange format. Alternatively, the
+application program may offer <em>services</em>, in the form of a
+sophisticated multimedia server, using either the KEDIT protocol or
+OLE.  Other applications may then either directly manipulate
+MADE objects via this protocol or full MADE objects may be
+transferred back and forth, and manipulated upon, by different modules.
+<P>
+Various objects, such as the interaction and animation objects, may use
+scripting languages, which may be revisable by the end-user. In
+fact, the skeleton of the application program may also be written in a
+scripting language instead of C or C++; the script would then manipulate
+MADE objects (written in mC++) via the appropriate
+MADE-script interpreter interface.
+<P>
+Another possibility is to use C++ and, eg, Motif to create the
+user-interface; this is when a graphics user interface application
+builder, like EGERIA, or Visual C++, may play an important role.
+<P>
+<HR> <A NAME=tex2html243 HREF=subsection3_5_2.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/next_motif.gif"></A> <A NAME=tex2html241 HREF=section3_5.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/up_motif.gif"></A> <A NAME=tex2html235 HREF=section3_5.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/previous_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME=tex2html244 HREF=subsection3_5_2.html> Hyperdocument Editing and </A>
+<B>Up:</B> <A NAME=tex2html242 HREF=section3_5.html> Application Architectures</A>
+<B> Previous:</B> <A NAME=tex2html236 HREF=section3_5.html> Application Architectures</A>
+<HR> <P>
+<HR>
+
+</BODY>
+<P><ADDRESS>
+<I>ivan@petunia.cwi.nl <BR>
+Tue Jan 25 14:21:49 MET 1994</I>
+</ADDRESS>

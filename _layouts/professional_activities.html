@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="hyphenate">
+    <div class="title">
+      <h1>Ivan Herman—{{ page.title }}</h1>
+    </div>
+    <div class="main">
+      <main>
+        {{ content }}
+      
+        <ul>
+          {% for act in site.data.social %}
+            <li>
+            {% if act.start != act.end %}
+                <strong>{{ act.start }}-{{ act.end }}:</strong> 
+            {% else %}
+                <strong>{{ act.start }}:</strong>
+            {% endif %}
+            {% if act.href %}
+                <a href="{{ act.href }}">{{ act.label }}</a>, 
+            {% else %}
+                {{ act.label }}, 
+            {% endif%}
+            {{ act.where }},
+            {% if act["act-type"] == "conference programme committee" or act["act-type"] == "conference organization" or act["act-type"] == "advisory board" %}
+                member of the {{ act["act-type"]}}.
+            {% else %}
+                {{ act["act-type"] }}
+            {% endif %}
+            </li>
+          {% endfor %}
+        
+        </ul>
+          
+      </main>
+      {% include aside.html %}
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

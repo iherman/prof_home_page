@@ -1,0 +1,1066 @@
+[
+    {
+        "type": "conferencePC",
+        "label": "The Web Conference 2022",
+        "where": "Lyon, France",
+        "href": "https://www2022.thewebconf.org",
+        "start": "2020",
+        "end": "2022",
+        "status": "present",
+        "related-org": [
+            "IW3C2"
+        ],
+        "act-type": "conference organizing committee",
+        "id": "www2018"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Digital Publishing Summit Europe 2019",
+        "where": "Paris, France",
+        "href": "https://www.edrlab.org/events/dpub-summit-2019/",
+        "start": "2019",
+        "end": "2019",
+        "status": "past",
+        "related-org": [
+            "W3C"
+        ],
+        "act-type": "conference programme committee",
+        "id": "dpub2019"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Digital Publishing Summit Europe 2018",
+        "where": "Berlin, Germany",
+        "href": "https://www.edrlab.org/dpub-summit-2018/",
+        "start": "2018",
+        "end": "2018",
+        "status": "past",
+        "related-org": [
+            "W3C"
+        ],
+        "act-type": "conference programme committee",
+        "id": "dpub2018"
+    },
+    {
+        "type": "conferencePC",
+        "label": "2018 International Workshop on Semantics, Analytics, Visualisation: Enhancing Scholarly Data",
+        "where": "Lyon, France",
+        "href": "https://save-sd.github.io/2018/",
+        "start": "2018",
+        "end": "2018",
+        "status": "past",
+        "related-org": [
+            "IW3C2"
+        ],
+        "act-type": "conference programme committee",
+        "id": "save2018"
+    },
+    {
+        "type": "conferencePC",
+        "label": "The Web Conference 2018",
+        "where": "Lyon, France",
+        "href": "https://www2018.thewebconf.org",
+        "start": "2017",
+        "end": "2018",
+        "status": "past",
+        "related-org": [
+            "IW3C2"
+        ],
+        "act-type": "conference programme committee",
+        "id": "www2018"
+    },
+    {
+        "type": "conferencePC",
+        "label": "2017 International Workshop on Semantics, Analytics, Visualisation: Enhancing Scholarly Data",
+        "where": "Perth, Australia",
+        "href": "http://cs.unibo.it/save-sd/2017/index.html",
+        "start": "2017",
+        "end": "2017",
+        "status": "past",
+        "related-org": [
+            "IW3C2"
+        ],
+        "act-type": "conference programme committee",
+        "id": "save2017"
+    },
+    {
+        "type": "conferencePC",
+        "label": "I Annotate 16",
+        "where": "Berlin, Germany",
+        "href": "http://iannotate.org/2016/",
+        "start": "2016",
+        "end": "2016",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "iannotate16"
+    },
+    {
+        "type": "conferencePC",
+        "label": "2016 International Workshop on Semantics, Analytics, Visualisation: Enhancing Scholarly Data",
+        "where": "Montreal, Canada",
+        "href": "http://cs.unibo.it/save-sd/2016/index.html",
+        "start": "2016",
+        "end": "2016",
+        "status": "past",
+        "related-org": [
+            "IW3C2"
+        ],
+        "act-type": "conference programme committee",
+        "id": "save2016"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Linked Data on the Web Workshop",
+        "where": "Seoul, Korea",
+        "href": "http://events.linkeddata.org/ldow2014",
+        "start": "2014",
+        "end": "2014",
+        "status": "past",
+        "related-org": [
+            "IW3C2"
+        ],
+        "act-type": "conference programme committee",
+        "id": "ldow2014"
+    },
+    {
+        "type": "conferencePC",
+        "label": "International Semantic Web Conference, 2013 (ISWC2013), In-Use track",
+        "where": "Sydney, Australia",
+        "href": "http://iswc2013.semanticweb.org",
+        "start": "2013",
+        "end": "2013",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "W3C",
+        "id": "iswc2013"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Linked Data on the Web Workshop",
+        "where": "Rio de Janeiro, Brasil",
+        "href": "http://events.linkeddata.org/ldow2013",
+        "start": "2013",
+        "end": "2013",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "ldow2013"
+    },
+    {
+        "type": "advisoryBoard",
+        "label": "Semantic Technology Conference 2013",
+        "where": "San Francisco, California, United States of America",
+        "href": "http://www.semantic-conference.com/",
+        "start": "2013",
+        "end": "2013",
+        "status": "past",
+        "act-type": "advisory board",
+        "related-org": "WebMediaBrands",
+        "id": "semtech2013"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Workshop: User Interaction based on Library Linked Data",
+        "where": "Singapore",
+        "href": "https://www.easychair.org/conferences/conference_info.cgi?a=3272154",
+        "start": "2012",
+        "end": "2013",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "uilld2013"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Workshop: What will the Semantic Web Look Like 10 Years From Now? (SW2022)",
+        "where": "Boston, USA",
+        "href": "http://stko.geog.ucsb.edu/sw2022/",
+        "start": "2012",
+        "end": "2012",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "sw2022"
+    },
+    {
+        "type": "conferencePC",
+        "label": "3rd International Workshop on Consuming Linked Data (COLD2012)",
+        "where": "Boston, USA",
+        "href": "http://km.aifb.kit.edu/ws/cold2012/",
+        "start": "2012",
+        "end": "2012",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "cold2012"
+    },
+    {
+        "type": "conferencePC",
+        "label": "International Semantic Web Conference, 2012 (ISWC2012), In-Use track",
+        "where": "Boston, USA",
+        "href": "http://iswc2012.semanticweb.org",
+        "start": "2012",
+        "end": "2012",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "SWSA",
+        "id": "iswc2012UseTrack"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "International Semantic Web Conference, 2012 (ISWC2012), Industry Track",
+        "where": "Boston, USA",
+        "href": "http://iswc2012.semanticweb.org",
+        "start": "2012",
+        "end": "2012",
+        "remark": "track co-chair",
+        "status": "past",
+        "act-type": "co-chair",
+        "related-org": "SWSA",
+        "id": "iswc2012IndustryTrack"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "Declarative 3D for the Web Architecture (Dec3D2012) Workshop",
+        "where": "Lyon, France",
+        "href": "http://events.declarative3d.org/Dec3D2012/",
+        "start": "2012",
+        "end": "2012",
+        "remark": "workshop co-chair",
+        "status": "past",
+        "act-type": "co-chair",
+        "id": "Dec3D2012"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Linked Data on the Web Workshop",
+        "where": "Lyon, France",
+        "href": "http://events.linkeddata.org/ldow2012",
+        "start": "2012",
+        "end": "2012",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "ldow2012"
+    },
+    {
+        "type": "advisoryBoard",
+        "label": "Semantic Technology Conference 2012",
+        "where": "San Francisco, California, United States of America",
+        "href": "http://www.semantic-conference.com/",
+        "start": "2012",
+        "end": "2012",
+        "status": "past",
+        "act-type": "advisory board",
+        "related-org": "WebMediaBrands",
+        "id": "semtech2012"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Extended Semantic Web Conference (ESWC 2012)",
+        "where": "Crete, Greece",
+        "href": "http://2012.eswc-conferences.org/",
+        "start": "2012",
+        "end": "2012",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "eswc2012"
+    },
+    {
+        "type": "conferencePC",
+        "label": "2nd International Workshop on Consuming Linked Data",
+        "where": "Bonn, Germany",
+        "href": "http://km.aifb.kit.edu/ws/cold2011/",
+        "start": "2011",
+        "end": "2011",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "cold2011"
+    },
+    {
+        "type": "conferencePC",
+        "label": "International Semantic Web Conference, 2011 (ISWC2011), In-Use track",
+        "where": "Bonn, Germany",
+        "href": "http://iswc2011.semanticweb.org",
+        "start": "2011",
+        "end": "2011",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "SWSA",
+        "id": "iswc2011UseTrack"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Workshop on  Discovering Meaning On the Go in Large Heterogeneous Data",
+        "where": "Barcelona, Spain",
+        "href": "http://dream.inf.ed.ac.uk/events/lhd-11/",
+        "start": "2011",
+        "end": "2011",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "lhd11"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Ingénierie des Connaissances 2011",
+        "where": "Chambéry, France",
+        "href": "http://events.linkeddata.org/IC2011",
+        "start": "2011",
+        "end": "2011",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "ic2011"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Linked Data on the Web Workshop 2011",
+        "where": "Hyderabad, India",
+        "href": "http://events.linkeddata.org/ldow2010",
+        "start": "2011",
+        "end": "2011",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "ldow2011"
+    },
+    {
+        "type": "advisoryBoard",
+        "label": "Semantic Technology Conference 2011",
+        "where": "San Francisco, California, United States of America",
+        "href": "http://www.semantic-conference.com/",
+        "start": "2011",
+        "end": "2011",
+        "status": "past",
+        "act-type": "advisory board",
+        "related-org": "WebMediaBrands",
+        "id": "semtech2011"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Extended Semantic Web Conference, 2011 (ESWC 2011)",
+        "where": "Heraklion, Greece",
+        "href": "http://www.eswc2011.org/",
+        "start": "2011",
+        "end": "2011",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "eswc2011InUseTrack"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Journées du Web Sémantique",
+        "where": "Paris, France",
+        "href": "http://www.semweb.pro/",
+        "start": "2011",
+        "end": "2011",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "sewebpro10"
+    },
+    {
+        "type": "conferencePC",
+        "label": "The Future of the Web for Collaborative Science (Workshop)",
+        "where": "Raleigh, USA",
+        "href": "http://esw.w3.org/topic/HCLS/WWW2010/Workshop",
+        "start": "2010",
+        "end": "2010",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "fw2010"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "Future of Research Communications Workshop",
+        "href": "https://sites.google.com/site/futureofresearchcommunications/home",
+        "start": "2010",
+        "end": "2011",
+        "status": "past",
+        "act-type": "conference organization",
+        "id": "forc"
+    },
+    {
+        "type": "guest-editor",
+        "label": "Computer & Graphics Journal, Special Section on Semantic 3D Media and Content ",
+        "href": "http://www.sciencedirect.com/science/article/pii/S0097849310001883",
+        "start": "2010",
+        "end": "2011",
+        "status": "past",
+        "act-type": "Guest Editor",
+        "id": "cgspi"
+    },
+    {
+        "type": "conferencePC",
+        "label": "IC 2010 – Ingénierie Connaissances",
+        "href": "http://www.ic2010.mines-ales.fr/",
+        "where": "Nîmes, France",
+        "start": "2010",
+        "end": "2010",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "ic2010"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Linked Data on the Web Workshop",
+        "where": "Raleigh, USA",
+        "href": "http://events.linkeddata.org/ldow2010",
+        "start": "2010",
+        "end": "2010",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "ldow2010"
+    },
+    {
+        "type": "conferencePC",
+        "label": "7th Extended Semantic Web Conference, SW",
+        "where": "Heraklion, Greece",
+        "href": "http://www.eswc2010.org",
+        "start": "2010",
+        "end": "2010",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "eswc2010InUseTrack"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Triplification Challenge 2010",
+        "where": "Graz, Austria",
+        "href": "http://triplify.org/Challenge/2010",
+        "start": "2010",
+        "end": "2010",
+        "status": "past",
+        "act-type": "conference organization",
+        "id": "tc2010"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Triplification Challenge 2011",
+        "where": "Graz, Austria",
+        "href": "http://triplify.org/Challenge/2011",
+        "start": "2010",
+        "end": "2011",
+        "status": "past",
+        "act-type": "conference organization",
+        "id": "tc2011"
+    },
+    {
+        "type": "advisoryBoard",
+        "label": "Semantic Technology Conference 2010",
+        "where": "San Francisco, California, United States of America",
+        "href": "http://www.semantic-conference.com/",
+        "start": "2010",
+        "end": "2010",
+        "status": "past",
+        "act-type": "advisory board",
+        "related-org": "Wilshire Conferences",
+        "id": "semtech2010"
+    },
+    {
+        "type": "conferencePC",
+        "label": "1st International Workshop on Consuming Linked Data",
+        "where": "Shanghai, China",
+        "href": "http://consuminglinkeddata.org/COLD2010",
+        "start": "2010",
+        "end": "2010",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "cold2010"
+    },
+    {
+        "type": "conferencePC",
+        "label": "International Semantic Web Conference, 2010 (ISWC2010), In-Use track",
+        "where": "Shanghai, China",
+        "href": "http://iswc2010.semanticweb.org",
+        "start": "2010",
+        "end": "2010",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "SWSA",
+        "id": "iswc2010UseTrack"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Linked AI: AAAI Spring Symposium 'Linked Data Meets Artificial Intelligence'",
+        "where": "Stanford, USA",
+        "href": "http://www.foaf-project.org/events/linkedai",
+        "start": "2009",
+        "end": "2010",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "linkedai2010"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Triplification Challenge 2009",
+        "href": "http://triplify.org/Challenge/2009",
+        "where": "Graz, Austria",
+        "start": "2009",
+        "end": "2009",
+        "status": "past",
+        "act-type": "conference organization",
+        "id": "tc2009"
+    },
+    {
+        "type": "conferencePC",
+        "label": "ICSD - International Conference und Digital Libraries and the Semantic Web",
+        "where": "Trento, Italy",
+        "href": "http://www.icsd-conference.org/",
+        "start": "2009",
+        "end": "2009",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "icsd2009"
+    },
+    {
+        "type": "conferencePC",
+        "label": "International Semantic Web Conference, 2009 (ISWC2009), In-Use track",
+        "where": "Washington, USA",
+        "href": "http://iswc2009.semanticweb.org",
+        "start": "2009",
+        "end": "2009",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "SWSA",
+        "id": "iswc2009UseTrack"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Linked Data on the Web (LDOW2009)",
+        "where": "Madrid, Spain",
+        "href": "http://events.linkeddata.org/ldow2009/",
+        "start": "2009",
+        "end": "2009",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "ldow2009"
+    },
+    {
+        "type": "conferencePC",
+        "label": "2nd European Semantic Technology Conference",
+        "where": "Heraklion, Greece",
+        "href": "http://www.eswc2009.org/",
+        "start": "2009",
+        "end": "2009",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "id": "estc2009"
+    },
+    {
+        "type": "advisoryBoard",
+        "label": "Semantic Technology Conference 2009",
+        "where": "San José, California, United States of America",
+        "href": "http://www.semantic-conference.com/",
+        "start": "2008",
+        "end": "2009",
+        "status": "past",
+        "act-type": "advisory board",
+        "related-org": "Wilshire Conferences",
+        "id": "semtech2009"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Social Data on the Web Workshop (SDoW2008)",
+        "where": "Karlsruhe, Germany",
+        "href": "http://sdow2008.semanticweb.org/",
+        "start": "2008",
+        "end": "2008",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "SWSA",
+        "id": "sdow2008"
+    },
+    {
+        "type": "conferencePC",
+        "label": "International Semantic Web Conference, 2008 (ISWC2008), In-Use track",
+        "where": "Karlsruhe, Germany",
+        "href": "http://iswc2008.semanticweb.org",
+        "start": "2008",
+        "end": "2008",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "SWSA",
+        "id": "iswc2008UseTrack"
+    },
+    {
+        "type": "conferencePC",
+        "label": "OWL: Experiences and Directions (OWLED) 2008 Workshop",
+        "where": "Karlsruhe, Germany",
+        "href": "http://www.webont.org/owled/2008/",
+        "start": "2008",
+        "end": "2008",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "W3C",
+        "id": "owled2008"
+    },
+    {
+        "type": "conferencePC",
+        "label": "2nd European Semantic Technology Conference",
+        "where": "Wien, Austria",
+        "href": "http://www.estc2008.com/",
+        "start": "2008",
+        "end": "2008",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "W3C",
+        "id": "estc2008"
+    },
+    {
+        "type": "advisoryBoard",
+        "label": "Semantic Technology Conference 2008",
+        "where": "San José, California, United States of America",
+        "href": "http://www.semantic-conference.com/",
+        "start": "2007",
+        "end": "2008",
+        "status": "past",
+        "act-type": "advisory board",
+        "related-org": "Wilshire Conferences",
+        "id": "semtech2008"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Linked Data on the Web Workshop",
+        "where": "Beijing, China",
+        "href": "http://events.linkeddata.org/ldow2008/",
+        "start": "2007",
+        "end": "2008",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "W3C",
+        "id": "lod2008"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Linked Data on the Web Workshop",
+        "where": "Beijing, China",
+        "href": "http://events.linkeddata.org/ldow2008/",
+        "start": "2007",
+        "end": "2008",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "W3C",
+        "id": "lod2008"
+    },
+    {
+        "type": "conferencePC",
+        "label": "NIST-Ontolog-NCOR Ontology Summit 2008",
+        "where": "Gaithersburg, Maryland, United States of America",
+        "href": "http://ontolog.cim3.net/cgi-bin/wiki.pl?OntologySummit2008",
+        "start": "2008",
+        "end": "2008",
+        "status": "past",
+        "act-type": "advisory board",
+        "related-org": "W3C",
+        "id": "ontsummit2008"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Semantic Web for Health Care and Life Sciences Workshop",
+        "where": "Beijing, China",
+        "href": "http://ccnt.zju.edu.cn/hcls2008/index.php?title=Main_Page",
+        "start": "2007",
+        "end": "2008",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "W3C",
+        "id": "hcls2008"
+    },
+    {
+        "type": "conferencePC",
+        "label": "International RuleML Symposium on Rule Interchange and Applications (RuleML-2007)",
+        "where": "Orlando, FL, USA",
+        "href": "http://2007.ruleml.org/",
+        "logoUrl": "http://2007.ruleml.org/index-Dateien/image3221.jpg",
+        "start": "2007",
+        "end": "2007",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "W3C",
+        "id": "ruleml2007"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Uncertainty Reasoning for the Semantic Web, 2007",
+        "where": "Pusan, South Korea",
+        "href": "http://c4i.gmu.edu/ursw2007/",
+        "start": "2007",
+        "end": "2007",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "W3C",
+        "id": "ursw2007"
+    },
+    {
+        "type": "conferencePC",
+        "label": "International Semantic Web Conference, 2007 (ISWC2007), In-Use track",
+        "href": "http://iswc2007.semanticweb.org/",
+        "where": "Pusan, South Korea",
+        "logoUrl": "http://iswc2007.semanticweb.org/img/bg.jpg",
+        "start": "2007",
+        "end": "2007",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "SWSA",
+        "id": "iswc2007"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "WWW2008 Conference",
+        "where": "Beijing, China",
+        "href": "http://www2008.org",
+        "logoUrl": "http://www2008.org/Images/www2008logo.jpg",
+        "start": "2006",
+        "end": "2008",
+        "status": "past",
+        "remark": "liaison with IW2C2",
+        "act-type": "conference organization",
+        "related-org": [
+            "IW3C2",
+            "W3C"
+        ],
+        "id": "www2008"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Workshop on Health Care and Life Sciences Data Integration for the Semantic Web",
+        "where": "Banff, Alberta, Canada",
+        "href": "http://neuroweb.med.yale.edu/hcls/Welcome.htm",
+        "start": "2006",
+        "end": "2007",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": [
+            "IW3C2",
+            "W3C"
+        ],
+        "id": "hclsws07"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Uncertainty Reasoning for the Semantic Web, 2006",
+        "where": "Athens, GA, USA",
+        "href": "http://www.iet.com/iswc/2006/ursw/index.html",
+        "start": "2006",
+        "end": "2006",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "W3C",
+        "id": "ursw2006"
+    },
+    {
+        "type": "conferencePC",
+        "label": "'Semantic Web In Use' track, International Semantic Web Conference, 2006",
+        "where": "Athens, GA, USA",
+        "href": "http://iswc2006.semanticweb.org",
+        "start": "2006",
+        "end": "2006",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "W3C",
+        "id": "iswc2006"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "NIST, Interoperability Week, 2007 Ontology Summit",
+        "href": "http://ontolog.cim3.net/cgi-bin/wiki.pl?OntologySummit2007",
+        "start": "2006",
+        "end": "2007",
+        "status": "past",
+        "act-type": "conference organization",
+        "related-org": [
+            "W3C"
+        ],
+        "id": "os07"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Italian Semantic Web Workshop 2005 (ISWC2005)",
+        "where": "Trento, Italy",
+        "href": "http://www.swap2005.org/",
+        "start": "2005",
+        "end": "2005",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "W3C",
+        "id": "ISWC2005"
+    },
+    {
+        "type": "conferencePC",
+        "label": "International Semantic Web Conference, 2005, In-Use track",
+        "where": "Gallway, Ireland",
+        "href": "http://iswc2005.semanticweb.org",
+        "start": "2005",
+        "end": "2005",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "W3C",
+        "id": "iswc2005"
+    },
+    {
+        "type": "conferencePC",
+        "label": "'Technical Track' SIGGRAPH 2005 Conference",
+        "where": "Los Angeles, CA, USA",
+        "href": "http://www.siggraph.org/s2005/",
+        "start": "2005",
+        "end": "2005",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "misc",
+        "id": "siggraph2005"
+    },
+    {
+        "type": "conferencePC",
+        "label": "SVGOpen 2005 Conference",
+        "where": "Enschede, The Netherlands",
+        "href": "http://www.svgopen.org/2005/",
+        "start": "2005",
+        "end": "2005",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "W3C",
+        "id": "SVGOpen2005"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "Eurographics 2004 Conference",
+        "href": "http://www.eg.org/eg2004/",
+        "where": "Grenoble, France",
+        "start": "2003",
+        "end": "2004",
+        "status": "past",
+        "remark": "topic co-chair on Web-based graphics",
+        "act-type": "conference organization",
+        "related-org": [
+            "Eurographics",
+            "W3C"
+        ],
+        "id": "eg2004"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "Eurographics 2003 Conference",
+        "where": "Granada, Spain",
+        "href": "http://www.eg.org/eg2003/",
+        "start": "2002",
+        "end": "2003",
+        "status": "past",
+        "remark": "topic co-chair on Web-based graphics",
+        "act-type": "conference organization",
+        "related-org": [
+            "Eurographics",
+            "W3C"
+        ],
+        "id": "eg2003"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "WWW 2003 Conference",
+        "where": "Budapest, Hungary",
+        "href": "http://www2003.org/",
+        "start": "2001",
+        "end": "2003",
+        "status": "past",
+        "remark": "developers' day co-chair",
+        "act-type": "conference organization",
+        "related-org": [
+            "IW3C2",
+            "W3C"
+        ],
+        "id": "www2003"
+    },
+    {
+        "type": "conferencePC",
+        "label": "SVGOpen 2002 Conference",
+        "where": "Zurich, Switzerlands",
+        "href": "http://www.svgopen.org/organization_committee.shtml",
+        "start": "2001",
+        "end": "2002",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": "W3C",
+        "id": "SVGOpen2002"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "Joint Eurographics and IEEE TCCG Symposium on Visualization",
+        "where": "Amsterdam, The Netherlands",
+        "href": "http://www.cwi.nl/vissym00",
+        "start": "1999",
+        "end": "2000",
+        "status": "past",
+        "remark": "symposium co-chair",
+        "act-type": "conference organization",
+        "related-org": "Eurographics",
+        "id": "vissym00"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "Eurographics '2000 Conference",
+        "where": "Manchester, UK",
+        "noref": "true",
+        "start": "1998",
+        "end": "2000",
+        "status": "past",
+        "remark": "conference co-chair",
+        "act-type": "conference organization",
+        "related-org": [
+            "Eurographics"
+        ],
+        "id": "eg97"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "9th WWW Conference (WWW9)",
+        "where": "Amsterdam, The Netherlands",
+        "href": "http://www9.org//",
+        "start": "1998",
+        "end": "2000",
+        "status": "past",
+        "remark": "conference co-chair",
+        "act-type": "conference organization",
+        "related-org": [
+            "IW3C2",
+            "CWI",
+            "W3C"
+        ],
+        "id": "www9"
+    },
+    {
+        "type": "conferencePC",
+        "label": "8th WWW Conference (WWW8)",
+        "where": "Toronto, Canada",
+        "href": "http://www8.org/",
+        "start": "1997",
+        "end": "1998",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": [
+            "IW3C2"
+        ],
+        "id": "www8"
+    },
+    {
+        "type": "conferencePC",
+        "label": "International Symposium on Multimedia Systems Application",
+        "noref": "true",
+        "where": "Maui, HW, USA",
+        "start": "1997",
+        "end": "1997",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": [
+            "misc"
+        ],
+        "id": "hwa"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "Combining AI and Graphics for the Interface of the Future",
+        "where": "Brighton, UK",
+        "href": "http://www.cs.columbia.edu/~butz/ecai98/",
+        "start": "1997",
+        "end": "1998",
+        "remark": "workshop co-chair",
+        "status": "past",
+        "act-type": "conference organization",
+        "related-org": "misc",
+        "id": "ecai98"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "Eurographics '97 Conference",
+        "where": "Budapest, Hungary",
+        "noref": "true",
+        "start": "1995",
+        "end": "1997",
+        "status": "past",
+        "remark": "conference co-chair",
+        "act-type": "conference organization",
+        "related-org": [
+            "Eurographics"
+        ],
+        "id": "eg97"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "Eurographics '97 Conference",
+        "where": "Budapest, Hungary",
+        "noref": "true",
+        "start": "1995",
+        "end": "1997",
+        "status": "past",
+        "remark": "conference co-chair",
+        "act-type": "conference organization",
+        "related-org": [
+            "Eurographics"
+        ],
+        "id": "eg97"
+    },
+    {
+        "type": "conferencePC",
+        "label": "IFIP ICCG'93 Conference",
+        "noref": "true",
+        "where": "Bombay, India",
+        "start": "1992",
+        "end": "1993",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": [
+            "misc"
+        ],
+        "id": "ICCG"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "Eurographics '93",
+        "where": "Barcelona, Spain",
+        "noref": "true",
+        "start": "1992",
+        "end": "1993",
+        "status": "past",
+        "remark": "tutorial co-chair",
+        "act-type": "conference organization",
+        "related-org": [
+            "Eurographics"
+        ],
+        "id": "eg93"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "Workshop on 'Computer Graphics and Mathematics'",
+        "where": "Genoa, Italy",
+        "noref": "true",
+        "start": "1990",
+        "end": "1991",
+        "status": "past",
+        "remark": "conference co-chair",
+        "act-type": "conference organization",
+        "related-org": [
+            "Eurographics"
+        ],
+        "id": "cgmath"
+    },
+    {
+        "type": "conferenceOrg",
+        "label": "Eurographics '90",
+        "where": "Montreux, Switzerland",
+        "noref": "true",
+        "start": "1989",
+        "end": "1990",
+        "status": "past",
+        "remark": "tutorial co-chair",
+        "act-type": "tutorial co-chair",
+        "related-org": [
+            "Eurographics"
+        ],
+        "id": "eg90"
+    },
+    {
+        "type": "conferencePC",
+        "label": "Eurographics Conferences",
+        "href": "http://www.eg.org/",
+        "start": "1987",
+        "end": "2000",
+        "remark": "at the EG'87, EG'88, EG'89, EG'90, EG'91, EG'92, EG'95, EG'96, EG'99 and EG'2000 conferences",
+        "status": "past",
+        "act-type": "conference programme committee",
+        "related-org": [
+            "Eurographics"
+        ],
+        "id": "egpcs"
+    }
+]

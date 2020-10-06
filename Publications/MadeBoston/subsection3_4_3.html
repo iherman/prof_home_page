@@ -1,0 +1,125 @@
+<HEAD>
+<TITLE> Composition Utilities</TITLE>
+</HEAD>
+<BODY><P>
+ <HR> <A NAME=tex2html220 HREF=section3_5.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/next_motif.gif"></A> <A NAME=tex2html218 HREF=section3_4.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/up_motif.gif"></A> <A NAME=tex2html214 HREF=subsection3_4_2.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/previous_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME=tex2html221 HREF=section3_5.html> Application Architectures</A>
+<B>Up:</B> <A NAME=tex2html219 HREF=section3_4.html> Utilities</A>
+<B> Previous:</B> <A NAME=tex2html215 HREF=subsection3_4_2.html> Monomedia Editors</A>
+<HR> <P>
+<H2><A NAME=SECTION0004300000000000000> Composition Utilities</A></H2>
+<P>
+<A NAME=seccompositioneditors><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/invis_anchor.xbm"></A>
+<P>
+Composition editing and playback is the mechanism within MADE for
+developing and viewing multimedia/hypermedia documents, both from the
+point of view of an author of such documents and also from the point of
+view of the final user(s) of a MADE application based on the document
+concept.  The composition editing and playback utility is one of the main
+integrating components of the MADE application environment. It is
+through the definition of an abstract document structure that a
+hypermedia document is created and it is the presentation of this
+hyperdocument which the end user may interact with. During both the
+authoring and playback modes of operation the composition utility makes
+direct use of the other MADE utilities for viewing or editing
+particular media objects, for presenting help information, for
+navigating the hyperdocument structure, and perhaps also for monitoring
+the user's actions. The composition utility drives the operation of
+these other utilities based on a composition graph (ie, the internal
+representation of the hyperdocument).
+<P>
+An essential aspect of the composition facilities is the ability
+to define and manipulate an abstract document structure<A NAME=tex2html7 HREF=Descrhtml.foot.html#314><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/foot_motif.gif"></A> The abstract document structure is a
+representation of logical components which describes not only the
+specific types of media involved in the presentation, but also the
+semantic connections between media, the synchronisation constraints
+associated with the presentation of the logical components, geometric
+and other presentation attributes for each component, and specific
+interaction entities to be used in reading the multimedia document.
+<P>
+The authoring and presentation of a hyperdocument is not only determined
+by the media and the composition utilities. There may be a number of
+alternative styles (or metaphors) for presenting a particular
+hyperdocument that are dependent not on the specific document itself but
+on the application domain in which the MADE application exists.
+<P>
+A specific goal of the composition utilities of MADE as a whole is
+to separate the presentation metaphor used for authoring and viewing a
+MADE hyperdocument from the underlying composition graph.  The aim is
+to accommodate different styles of authoring and different forms of
+visually structuring the hypermedia information. Within the MADE
+project, a prototype authoring application will be developed, with a
+specific application area and presentation metaphor. However, this
+application should be considered merely as a test of the MADE
+concepts; it is perfectly possible for another application to choose a
+radically different presentation scheme and implement it on the ``top''
+of the MADE composition utilities.
+<P>
+Another important aspect of the composition editing and playback
+facility is making provision for use of an interchange format that
+represents the abstract document structure in a more persistent form.
+An interchange format enables the reuse of existing compositions, either
+fully or in part, and enables the exchange of documents among MADE 
+applications. This aspect is not straightforward, however, and there are
+a number of decisions to be made on which specific format should be
+adopted. The main contenders at the moment appear to be
+HyTime<A HREF=bibliography3_8.html#HyTime>[13]</A> and MHEG<A HREF=bibliography3_8.html#MHEG>[14]</A>. A third choice would
+be to develop a MADE specific format (temporarily denoted as MIFF), perhaps based partly on either of the above or some other less
+well known format. Other possibilities include the Microsoft's AVI format (<A HREF=bibliography3_8.html#AVI>[21]</A>) and the MOVIE format defines as part
+of Apple's QuickTime environment (<A HREF=bibliography3_8.html#MOVIE>[32]</A>). At the time of writing,
+the choice of the appropriate format is still to be made.
+<P>
+The composition utilities include some sub-modules with well specified
+tasks. These include:
+<P>
+An <em>interaction editor</em>, used to create or modify interaction
+objects (see &#167;<A HREF=subsubsection3_3_2_4.html#secinteraction>3.2.4</A>). This involves defining sensors
+associated with MADE objects (or with their associated visual
+metaphor), specifying the objects the interaction object has to control,
+and editing the corresponding script. The definition and/or the
+modification of sensors may involve, eg, graphics editing, which means
+that the interaction editor may also start up a 2D graphics editor
+internally. In this setting, interaction objects provide a possible
+internal representation for hyperlinks.
+<P>
+The role of the <em>synchronization editor</em> is to interactively
+define the synchronization patterns among several synchronizable MADE
+objects. This may involve the specification of reference points, setting
+references of other object the synchronizable object has to synchronize
+with, defining the details of this synchronization, etc.  Time objects
+are also managed by this editor; the user may indeed prefer to use the
+notions of time, scheduler, and time-constraints for the purpose of
+synchronization, rather than the concept of reference points. (As
+described in &#167;<A HREF=subsubsection3_3_2_3.html#secsynchronization>3.2.3</A>, both mechanisms are available
+within the MADE toolkit.)
+<P>
+The choice of the interchange format will greatly influence whether, in
+the synchronization editor, the emphasis will be placed on reference point
+on time-based synchronization. HyTime, for example, expresses
+all synchronizations using an abstract notion of time; quite naturally,
+if the HyTime format, or a subset of it, is chosen, this will
+determine the final shape of the synchronization editor, too.
+<P>
+The <em>graph</em> or <em>layout editor</em> gives a visual interface for the
+direct manipulation and visualization of the composition graph (ie, the
+hyperdocument structure).
+<P>
+Finally, the <em>composition editor</em> is the most complex composition
+utility, which combines and controls all other composition utilities as
+well as the monomedia editors, and MADE toolkit objects. It is this
+module which lies at the heart of all composition utilities, which
+is responsible for providing all the general functionalities described
+above.
+<P>
+<HR> <A NAME=tex2html220 HREF=section3_5.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/next_motif.gif"></A> <A NAME=tex2html218 HREF=section3_4.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/up_motif.gif"></A> <A NAME=tex2html214 HREF=subsection3_4_2.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/previous_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME=tex2html221 HREF=section3_5.html> Application Architectures</A>
+<B>Up:</B> <A NAME=tex2html219 HREF=section3_4.html> Utilities</A>
+<B> Previous:</B> <A NAME=tex2html215 HREF=subsection3_4_2.html> Monomedia Editors</A>
+<HR> <P>
+<HR>
+
+</BODY>
+<P><ADDRESS>
+<I>ivan@petunia.cwi.nl <BR>
+Tue Jan 25 14:21:49 MET 1994</I>
+</ADDRESS>

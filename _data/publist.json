@@ -1,0 +1,2696 @@
+{
+    "Standardization Documents": [
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                " Timothy W. Cole",
+                " Ivan Herman"
+            ],
+            "url": "https://www.w3.org/TR/2020/NOTE-wpub-ann-20201001/",
+            "abstract": "Selecting part of a resource on the Web is an ubiquitous action. Over the years several selection techniques have been developed, usually in conjunction with the media type of the resource. Often these selections are expressed as fragment identifiers, but that is not always the case.",
+            "uri": "urn:x:ihermanpubls_wpub_ann_note",
+            "label": "Web Annotation Extensions for Web Publications",
+            "key": "wpub-ann",
+            "year": "2020",
+            "keywords": [
+                "Web Publication",
+                "Digital Publishing"
+            ],
+            "type": "Publication",
+            "id": "wpub-ann"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                " Matt Garrish",
+                " Ivan Herman"
+            ],
+            "url": "https://www.w3.org/TR/2019/NOTE-wpub-20190813/",
+            "abstract": "The primary objective of this specification is to define requirements for the production of Web Publications. In doing so, it also defines a framework for creating packaged publication formats, such as EPUB and audiobooks, where a pathway to the Web is highly desirable but not necessarily the primary method of interchange or consumption.",
+            "uri": "urn:x:ihermanpubls_wpub_note",
+            "label": "Web Publications",
+            "key": "wpub",
+            "year": "2019",
+            "keywords": [
+                "Web Publication",
+                "Digital Publishing"
+            ],
+            "type": "Publication",
+            "id": "wpub"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "author": [
+                " Markus Gylling",
+                " Ben De Meester",
+                " Ivan Herman",
+                " Tzviya Siegman",
+                " Dave Cramer",
+                " Leonard Rosenthol"
+            ],
+            "url": "https://www.w3.org/TR/2017/NOTE-pwp-20170502/",
+            "abstract": "We dream of a world where books, and indeed all kinds of publications, are first-class citizens of the web. From novels to textbooks, from journal articles to corporate memos, from newsletters to manga, publications are everywhere. But we face challenges in presenting them on the web with the fidelity and ease of use that they deserve. This document introduces Web Publications, a vision for the future of digital publishing based on a fully native representation of documents within the Open Web Platform. Web publications can be packaged and they can be portable. Web publications work online or offline. Web publications can be accessible, linkable, and annotatable",
+            "uri": "urn:x:ihermanpubls_pwp",
+            "label": "Web Publications for the Open Web Platform: Vision And Technical Challenges",
+            "key": "pwp",
+            "year": "2017",
+            "keywords": [
+                "Web Publication",
+                "Digital Publishing"
+            ],
+            "type": "Publication",
+            "id": "pwp"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                " Heather Flanagan",
+                " Ivan Herman",
+                " Leonard Rosenthol"
+            ],
+            "url": "https://www.w3.org/TR/2017/NOTE-pwp-ucr-20170502/",
+            "abstract": "Publications, from corporate memos to newsletters to electronic books to scholarly journal articles, must be considered first-class content on the Web, equal to the more common forms of Web pages available today. This document describes the various use cases highlighting the problems users and publishers face when these publications are to be used in a digital, Web environment. The requirements that come from those use cases provide the basis for the technical considerations in a companion document, currently entitled “Web Publications” [pwp].",
+            "uri": "urn:x:ihermanpubls_pwp_ucr",
+            "label": "Web Publications Use Cases and Requirements",
+            "key": "pwp_ucr",
+            "year": "2017",
+            "keywords": [
+                "Web Publication",
+                "Digital Publishing"
+            ],
+            "type": "Publication",
+            "id": "pwp_ucr"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                " Ivan Herman",
+                " Robert Sanderson",
+                " Paolo Ciccarese",
+                " Benjamin Young"
+            ],
+            "url": "https://www.w3.org/TR/2017/NOTE-selectors-states-20170223/",
+            "abstract": "Selecting part of a resource on the Web is an ubiquitous action. Over the years several selection techniques have been developed, usually in conjunction with the media type of the resource. Many of these approaches are also expressed in terms of a fragment identifiers, but that is not always the case. This document does not define any new approach to selection. Instead, it relies on existing techniques, providing a common model and syntax to express and possibly combine selections. The formal specification and the semantics originate from a separate Recommendation, namely the Web Annotation Data Model, where it is used to select targets of annotations. The current document only “extracts” Selectors and States from that data model; by doing so, it makes their usage easier for applications developers whose concerns are not related to annotations.",
+            "uri": "urn:x:ihermanpubls_selectors_states",
+            "label": "Selectors and States",
+            "key": "selectors_states",
+            "year": "2017",
+            "keywords": [
+                "Annotation",
+                "Digital Publishing",
+                "RDF"
+            ],
+            "type": "Publication",
+            "id": "selectors_states"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                " Timothy W Cole",
+                " Sarven Capadisli",
+                " Benjamin Young",
+                " Ivan Herman"
+            ],
+            "url": "https://www.w3.org/TR/2017/NOTE-annotation-html-20170223/",
+            "abstract": "The Web Annotation Working Group has published three Recommendations for expressing annotations on the Web: the Web Annotation Data Model; the Web Annotation Vocabulary [annotation-vocab]; and the Web Annotation Protocol. These Recommendations define a serialization of the Model in a new, Web annotation-specific profile of JSON-LD. This Note describes and illustrates potential approaches for including annotations within HTML documents. Examples also are included illustrating the use within an HTML document of annotation Selectors as fragment identifiers. (The Working Group's Selectors and States Reference Note defines the syntax used for Selectors as fragment identifiers.) The approaches described in this document are incomplete and preliminary. They do not exhaust the full range of feasible options. The approaches discussed in this note have emerged from Working Group discussions and should be considered no more than initial starting points for further discussion, experimentation and development.",
+            "uri": "urn:x:ihermanpubls_annohtml",
+            "label": "Embedding Web Annotations in HTML",
+            "key": "annohtml",
+            "year": "2017",
+            "keywords": [
+                "Annotation",
+                "Digital Publishing",
+                "RDF"
+            ],
+            "type": "Publication",
+            "id": "annohtml"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                " Jeremy Tandy",
+                " Ivan Herman"
+            ],
+            "url": "http://www.w3.org/TR/2015/REC-csv2json-20151217/",
+            "abstract": "This document defines the procedures and rules to be applied when converting tabular data into JSON. Tabular data may be complemented with metadata annotations that describe its structure, the meaning of its content and how it may form part of a collection of interrelated tabular data. This document specifies the effect of this metadata on the resulting JSON.",
+            "uri": "urn:x:ihermanpubls_Jeremy2015b",
+            "label": "Generating JSON from Tabular Data on the Web",
+            "key": "Jeremy2015b",
+            "year": "2015",
+            "keywords": [
+                "CSV",
+                "RDF"
+            ],
+            "type": "Publication",
+            "id": "Jeremy2015b"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                " Jeremy Tandy",
+                " Ivan Herman",
+                " Gregg Kellog"
+            ],
+            "url": "http://www.w3.org/TR/2015/REC-csv2rdf-20151217/",
+            "abstract": "This document defines the procedures and rules to be applied when converting tabular data into RDF. Tabular data may be complemented with metadata annotations that describe its structure, the meaning of its content and how it may form part of a collection of interrelated tabular data. This document specifies the effect of this metadata on the resulting RDF.",
+            "uri": "urn:x:ihermanpubls_Jeremy2015a",
+            "label": "Generating RDF from Tabular Data on the Web",
+            "key": "Jeremy2015a",
+            "year": "2015",
+            "keywords": [
+                "CSV",
+                "JSON"
+            ],
+            "type": "Publication",
+            "id": "Jeremy2015a"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                " Rufus Pollock",
+                " Teni Jennison",
+                " Gregg Kellog",
+                " Ivan Herman"
+            ],
+            "url": "http://www.w3.org/TR/2015/REC-tabular-metadata-20151217/",
+            "abstract": "Validation, conversion, display, and search of tabular data on the web requires additional metadata that describes how the data should be interpreted. This document defines a vocabulary for metadata that annotates tabular data. This can be used to provide metadata at various levels, from groups of tables and how they relate to each other down to individual cells within a table. The metadata defined in this specification is used to provide annotations on an annotated table or group of tables, as defined in [tabular-data-model]. Annotated tables form the basis for all further processing, such as validating, converting, or displaying the tables.",
+            "uri": "urn:x:ihermanpubls_Jeni2015b",
+            "label": "Metadata Vocabulary for Tabular Data",
+            "key": "Jeni2015b",
+            "year": "2015",
+            "keywords": [
+                "CSV",
+                "JSON"
+            ],
+            "type": "Publication",
+            "id": "Jeni2015b"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                " Teni Jennison",
+                " Gregg Kellog",
+                " Ivan Herman"
+            ],
+            "url": "http://www.w3.org/TR/2015/REC-tabular-data-model-20151217/",
+            "abstract": "Tabular data is routinely transferred on the web in a variety of formats, including variants on CSV, tab-delimited files, fixed field formats, spreadsheets, HTML tables, and SQL dumps. This document outlines a data model, or infoset, for tabular data and metadata about that tabular data that can be used as a basis for validation, display, or creating other formats. It also contains some non-normative guidance for publishing tabular data as CSV and how that maps into the tabular data model. An annotated model of tabular data can be supplemented by separate metadata about the table. This specification defines how implementations should locate that metadata, given a file containing tabular data. The standard syntax for that metadata is defined in [tabular-metadata]. Note, however, that applications may have other means to create annotated tables, e.g., through some application specific API-s; this model does not depend on the specificities described in [tabular-metadata].",
+            "uri": "urn:x:ihermanpubls_Jeni2015a",
+            "label": "Model for Tabular Data and Metadata on the Web",
+            "key": "Jeni2015a",
+            "year": "2015",
+            "keywords": [
+                "CSV"
+            ],
+            "type": "Publication",
+            "id": "Jeni2015a"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "author": [
+                " Bill Kasdorf",
+                " Madi Solomon",
+                " Ivan Herman"
+            ],
+            "url": "http://www.w3.org/TR/2015/NOTE-dpub-metadata-20150108/",
+            "abstract": "The Metadata Task Force of the DPUB IG found, through extensive interviews with representatives of various sectors and roles within the publishing ecosystem, that there are numerous pain points for publishers with regard to metadata but that these pain points are largely not due to deficiencies in the Open Web Platform. Instead, there is a widespread lack of understanding or implementation of the technologies that the OWP already makes available for addressing most of the issues raised. However, some of the very technologies that are little used or understood in most sectors of publishing are widely used and understood in certain other sectors (e.g., scientific publishing, libraries). Priorities that have emerged are the need for better understanding of the importance of expressing identifiers as URIs; the need for much more widespread use of RDF and its various serializations throughout the publishing ecosystem; and the need to develop a truly interoperable, cross-sector specification for the conveyance of rights metadata (while remaining agnostic as to the sector-specific vocabularies for the expression of rights). This Note documents in detail the issues that were raised; provides examples of available RDF educational resources at various levels, from the very technical to non-technical and introductory; and lists important identifiers used in the publishing ecosystem, documenting which of them are expressed as URIs, and in what sectors and contexts. It recommends that while little new technology is called for, the W3C is in a unique position to bridge today's currently siloed metadata practices to help facilitate truly cross-sector exchange of interoperable metadata. This Note is thus intended to provide background and a context in which concrete work, whether by this Task Force or elsewhere within the W3C, may be undertaken.",
+            "uri": "urn:x:ihermanpubls_Kasdorf2015",
+            "label": "DPUB IG Metadata Task Force Report",
+            "key": "Kasdorf2015",
+            "year": "2015",
+            "keywords": [
+                "metadata",
+                "Digital Publishing",
+                "RDF",
+                "RDFa"
+            ],
+            "type": "Publication",
+            "id": "Kasdorf2015"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                " Manu Sporny",
+                " Shane McCarron",
+                " Ben Adida",
+                " Mark Birbeck",
+                " Gregg Kellog",
+                " Ivan Herman",
+                " Steven Pemberton"
+            ],
+            "url": "http://www.w3.org/TR/2015/REC-html-rdfa-20150317/",
+            "abstract": "This specification defines rules and guidelines for adapting the RDFa Core 1.1 and RDFa Lite 1.1 specifications for use in HTML5 and XHTML5. The rules defined in this specification not only apply to HTML5 documents in non-XML and XML mode, but also to HTML4 and XHTML documents interpreted through the HTML5 parsing rules.",
+            "uri": "urn:x:ihermanpubls_Sporny2013",
+            "label": "HTML+RDFa 1.1 - Second Edition",
+            "key": "Sporny2015",
+            "year": "2015",
+            "keywords": [
+                "HTML",
+                "RDF",
+                "RDFa"
+            ],
+            "type": "Publication",
+            "id": "Sporny2015"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                "Ben Adida",
+                "Mark Birbeck",
+                "Shane McCarron",
+                "Ivan Herman"
+            ],
+            "url": "http://www.w3.org/TR/2015/REC-rdfa-core-20150717/",
+            "abstract": "The current Web is primarily made up of an enormous number of documents that have been created using HTML. These documents contain significant amounts of structured data, which is largely unavailable to tools and applications. When publishers can express this data more completely, and when tools can read it, a new world of user functionality becomes available, letting users transfer structured data between applications and web sites, and allowing browsing applications to improve the user experience: an event on a web page can be directly imported into a user's desktop calendar; a license on a document can be detected so that users can be informed of their rights automatically; a photo's creator, camera setting information, resolution, location and topic can be published as easily as the original photo itself, enabling structured search and sharing. RDFa Core is a specification for attributes to express structured data in any markup language. The embedded data already available in the markup language (e.g., HTML) can often be reused by the RDFa markup, so that publishers don't need to repeat significant data in the document content. The underlying abstract representation is RDF [RDF-PRIMER], which lets publishers build their own vocabulary, extend others, and evolve their vocabulary with maximal interoperability over time. The expressed structure is closely tied to the data, so that rendered data can be copied and pasted along with its relevant structure.",
+            "uri": "urn:x:ihermanpubls_Adida2015",
+            "label": "RDFa 1.1 Core — Third Edition",
+            "key": "Adida2015",
+            "year": "2015",
+            "keywords": [
+                "HTML",
+                "RDF",
+                "RDFa"
+            ],
+            "type": "Publication",
+            "id": "Adida2015"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                "Ben Adida",
+                "Ivan Herman",
+                "Manu Sporny",
+                "Mark Birbeck"
+            ],
+            "url": "http://www.w3.org/TR/2015/rdfa-primer-20150317/",
+            "abstract": "The last couple of years have witnessed a fascinating evolution: while the Web was initially built predominantly for human consumption, web content is increasingly consumed by machines which expect some amount of structured data. Sites have started to identify a page's title, content type, and preview image to provide appropriate information in a user's newsfeed when she clicks the 'Like' button. Search engines have started to provide richer search results by extracting fine-grained structured details from the Web pages they crawl. In turn, web publishers are producing increasing amounts of structured data within their Web content to improve their standing with search engines. A key enabling technology behind these developments is the ability to add structured data to HTML pages directly. RDFa (Resource Description Framework in Attributes) is a technique that allows just that: it provides a set of markup attributes to augment the visual information on the Web with machine-readable hints. In this Primer, we show how to express data using RDFa in HTML, and in particular how to mark up existing human-readable Web page content to express machine-readable data. This document provides only a Primer to RDFa 1.1. The complete specification of RDFa, with further examples, can be found in the RDFa 1.1 Core, RDFa Lite, XHTML+RDFa 1.1, and the HTML5+RDFa 1.1 specifications.",
+            "uri": "urn:x:ihermanpubls_Adida2015a",
+            "label": "RDFa 1.1 Primer — Third Edition",
+            "key": "Adida2015a",
+            "year": "2015",
+            "keywords": [
+                "HTML",
+                "RDF",
+                "RDFa"
+            ],
+            "type": "Publication",
+            "id": "Adida2015a"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                "Ian Hickson",
+                "Gregg Kellogg",
+                "Jeni Tennison",
+                "Ivan Herman"
+            ],
+            "url": "http://www.w3.org/TR/2014/NOTE-microdata-rdf-20141216/",
+            "abstract": "HTML microdata [MICRODATA] is an extension to HTML used to embed machine-readable data into HTML documents. Whereas the microdata specification describes a means of markup, the output format is JSON. This specification describes processing rules that may be used to extract RDF [RDF-CONCEPTS] from an HTML document containing microdata.",
+            "uri": "urn:x:ihermanpubls_Hickson2014",
+            "institution": "World Wide Web Consortium",
+            "key": "Hickson2014",
+            "year": "2014",
+            "keywords": [
+                "HTML",
+                "RDF",
+                "microdata"
+            ],
+            "label": "Microdata to RDF - Second Edition",
+            "type": "Publication",
+            "id": "Hickson2014"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                "Manu Sporny",
+                "Shane McCarron",
+                "Ben Adida",
+                "Mark Birbeck",
+                "Gregg Kellog",
+                "Ivan Herman",
+                "Steven Pemberton"
+            ],
+            "url": "http://www.w3.org/TR/2013/REC-html-rdfa-20130822/",
+            "abstract": "This specification defines rules and guidelines for adapting the RDFa Core 1.1 and RDFa Lite 1.1 specifications for use in HTML5 and XHTML5. The rules defined in this specification not only apply to HTML5 documents in non-XML and XML mode, but also to HTML4 and XHTML documents interpreted through the HTML5 parsing rules.",
+            "uri": "urn:x:ihermanpubls_Sporny2015",
+            "label": "HTML+RDFa 1.1",
+            "key": "Sporny2013",
+            "year": "2013",
+            "keywords": [
+                "HTML",
+                "RDF",
+                "RDFa"
+            ],
+            "type": "Publication",
+            "id": "Sporny2013"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                "Ben Adida",
+                "Mark Birbeck",
+                "Shane McCarron",
+                "Ivan Herman"
+            ],
+            "url": "http://www.w3.org/TR/2013/REC-rdfa-core-20130822/",
+            "abstract": "The current Web is primarily made up of an enormous number of documents that have been created using HTML. These documents contain significant amounts of structured data, which is largely unavailable to tools and applications. When publishers can express this data more completely, and when tools can read it, a new world of user functionality becomes available, letting users transfer structured data between applications and web sites, and allowing browsing applications to improve the user experience: an event on a web page can be directly imported into a user's desktop calendar; a license on a document can be detected so that users can be informed of their rights automatically; a photo's creator, camera setting information, resolution, location and topic can be published as easily as the original photo itself, enabling structured search and sharing. RDFa Core is a specification for attributes to express structured data in any markup language. The embedded data already available in the markup language (e.g., HTML) can often be reused by the RDFa markup, so that publishers don't need to repeat significant data in the document content. The underlying abstract representation is RDF [RDF-PRIMER], which lets publishers build their own vocabulary, extend others, and evolve their vocabulary with maximal interoperability over time. The expressed structure is closely tied to the data, so that rendered data can be copied and pasted along with its relevant structure.",
+            "uri": "urn:x:ihermanpubls_Adida2013",
+            "label": "RDFa 1.1 Core — Second Edition",
+            "key": "Adida2013",
+            "year": "2013",
+            "keywords": [
+                "HTML",
+                "RDF",
+                "RDFa"
+            ],
+            "type": "Publication",
+            "id": "Adida2013"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "author": [
+                "Ben Adida",
+                "Ivan Herman",
+                "Manu Sporny",
+                "Mark Birbeck"
+            ],
+            "url": "http://www.w3.org/TR/2013/rdfa-primer-20130822/",
+            "abstract": "The last couple of years have witnessed a fascinating evolution: while the Web was initially built predominantly for human consumption, web content is increasingly consumed by machines which expect some amount of structured data. Sites have started to identify a page's title, content type, and preview image to provide appropriate information in a user's newsfeed when she clicks the 'Like' button. Search engines have started to provide richer search results by extracting fine-grained structured details from the Web pages they crawl. In turn, web publishers are producing increasing amounts of structured data within their Web content to improve their standing with search engines. A key enabling technology behind these developments is the ability to add structured data to HTML pages directly. RDFa (Resource Description Framework in Attributes) is a technique that allows just that: it provides a set of markup attributes to augment the visual information on the Web with machine-readable hints. In this Primer, we show how to express data using RDFa in HTML, and in particular how to mark up existing human-readable Web page content to express machine-readable data. This document provides only a Primer to RDFa 1.1. The complete specification of RDFa, with further examples, can be found in the RDFa 1.1 Core, RDFa Lite, XHTML+RDFa 1.1, and the HTML5+RDFa 1.1 specifications.",
+            "uri": "urn:x:ihermanpubls_Adida2013a",
+            "label": "RDFa 1.1 Primer — Second Edition",
+            "key": "Adida2013a",
+            "year": "2013",
+            "keywords": [
+                "HTML",
+                "RDF",
+                "RDFa"
+            ],
+            "type": "Publication",
+            "id": "Adida2013a"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                "Nathan Rixham",
+                "Manu Sporny",
+                "Mark Birbeck",
+                "Ivan Herman",
+                "Benjamin Adrian"
+            ],
+            "url": "http://www.w3.org/TR/2012/NOTE-rdf-api-20120705/",
+            "abstract": "RDF enables providers to publish various types of data on the Web in a unified format. This data intends to be machine-interpretable so that web developers can access it by programming languages in order to create applications for i.e., crawling, aggregating, summarizing, or highlighting contained information. While publishing RDF data on the web is vital to the growth of the Semantic Web, using the information to improve the collective utility of the Web is the true goal of the Semantic Web. To accomplish this goal, the RDF Application Programming Interface (RDF API) defines a set of standardized interfaces for working with RDF data in a web-based programming environment.",
+            "uri": "urn:x:ihermanpubls_rdf_api",
+            "label": "RDF API—A high-level API for working with RDF data",
+            "key": "rdf-api",
+            "year": "2012",
+            "keywords": [
+                "Semantic Web"
+            ],
+            "type": "Publication",
+            "id": "rdf-api"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                "Nathan Rixham",
+                "Mark Birbeck",
+                "Ivan Herman"
+            ],
+            "url": "http://www.w3.org/TR/2012/NOTE-rdfa-api-20120705/",
+            "abstract": "RDFa  enables authors to publish structured information that is both human- and machine-readable. Concepts that have traditionally been difficult for machines to detect, like people, places, events, music, movies, and recipes, are now easily marked up in Web documents. While publishing this data is vital to the growth of Linked Data, using the information to improve the collective utility of the Web for humankind is the true goal. To accomplish this goal, it must be simple for Web developers to extract and utilize structured information from a Web document. This document details such a mechanism; an RDFa Application Programming Interface that allows simple extraction and usage of structured information from a Web document.",
+            "uri": "urn:x:ihermanpubls_rdfa_api",
+            "label": "RDFa API—An API for extracting structured data from Web documents",
+            "key": "rdfa-api",
+            "year": "2012",
+            "keywords": [
+                "Semantic Web"
+            ],
+            "type": "Publication",
+            "id": "rdfa-api"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                "Ben Adida",
+                "Mark Birbeck",
+                "Shane McCarron",
+                "Ivan Herman"
+            ],
+            "url": "http://www.w3.org/TR/2012/REC-rdfa-core-20120607/",
+            "abstract": "The current Web is primarily made up of an enormous number of documents that have been created using HTML. These documents contain significant amounts of structured data, which is largely unavailable to tools and applications. When publishers can express this data more completely, and when tools can read it, a new world of user functionality becomes available, letting users transfer structured data between applications and web sites, and allowing browsing applications to improve the user experience: an event on a web page can be directly imported into a user's desktop calendar; a license on a document can be detected so that users can be informed of their rights automatically; a photo's creator, camera setting information, resolution, location and topic can be published as easily as the original photo itself, enabling structured search and sharing. RDFa Core is a specification for attributes to express structured data in any markup language. The embedded data already available in the markup language (e.g., HTML) can often be reused by the RDFa markup, so that publishers don't need to repeat significant data in the document content. The underlying abstract representation is RDF [RDF-PRIMER], which lets publishers build their own vocabulary, extend others, and evolve their vocabulary with maximal interoperability over time. The expressed structure is closely tied to the data, so that rendered data can be copied and pasted along with its relevant structure.",
+            "uri": "urn:x:ihermanpubls_Adida2012",
+            "label": "RDFa 1.1 Core",
+            "key": "Adida2012",
+            "year": "2012",
+            "keywords": [
+                "HTML",
+                "RDF",
+                "RDFa"
+            ],
+            "type": "Publication",
+            "id": "Adida2012"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "author": [
+                "Nathan Rixham",
+                "Manu Sporny",
+                "Mark Birbeck",
+                "Ivan Herman",
+                "Benjamin Adrian"
+            ],
+            "url": "http://www.w3.org/TR/2012/NOTE-rdfa-primer-20120607/",
+            "abstract": "The RDF Interfaces Specification defines a set of standardized interfaces for working with RDF data in a programming environment. This specification outlines three distinct sets of interfaces: RDF Concept Interfaces, which represent the various RDF Concepts; RDF Environment Interfaces, which provide the basic methods required to work with RDF data.; RDF Data Interfaces, which are a set of modular interfaces covering common areas of functionality.",
+            "uri": "urn:x:ihermanpubls_Rixham2012",
+            "label": "RDF Interfaces",
+            "key": "Rixham2012",
+            "year": "2012",
+            "keywords": [
+                "HTML",
+                "RDF"
+            ],
+            "type": "Publication",
+            "id": "Rixham2012"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "author": [
+                "Ben Adida",
+                "Ivan Herman",
+                "Manu Sporny",
+                "Mark Birbeck"
+            ],
+            "url": "http://www.w3.org/TR/2012/NOTE-rdfa-primer-20120607/",
+            "abstract": "The last couple of years have witnessed a fascinating evolution: while the Web was initially built predominantly for human consumption, web content is increasingly consumed by machines which expect some amount of structured data. Sites have started to identify a page's title, content type, and preview image to provide appropriate information in a user's newsfeed when she clicks the 'Like' button. Search engines have started to provide richer search results by extracting fine-grained structured details from the Web pages they crawl. In turn, web publishers are producing increasing amounts of structured data within their Web content to improve their standing with search engines. A key enabling technology behind these developments is the ability to add structured data to HTML pages directly. RDFa (Resource Description Framework in Attributes) is a technique that allows just that: it provides a set of markup attributes to augment the visual information on the Web with machine-readable hints. In this Primer, we show how to express data using RDFa in HTML, and in particular how to mark up existing human-readable Web page content to express machine-readable data. This document provides only a Primer to RDFa 1.1. The complete specification of RDFa, with further examples, can be found in the RDFa 1.1 Core, RDFa Lite, XHTML+RDFa 1.1, and the HTML5+RDFa 1.1 specifications.",
+            "uri": "urn:x:ihermanpubls_Adida2012a",
+            "label": "RDFa 1.1 Primer",
+            "key": "Adida2012a",
+            "year": "2012",
+            "keywords": [
+                "HTML",
+                "RDF",
+                "RDFa"
+            ],
+            "type": "Publication",
+            "id": "Adida2012a"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                "Ian Hickson",
+                "Gregg Kellogg",
+                "Jeni Tennison",
+                "Ivan Herman"
+            ],
+            "url": "http://www.w3.org/TR/2012/NOTE-microdata-rdf-20121009/",
+            "abstract": "HTML microdata [MICRODATA] is an extension to HTML used to embed machine-readable data into HTML documents. Whereas the microdata specification describes a means of markup, the output format is JSON. This specification describes processing rules that may be used to extract RDF [RDF-CONCEPTS] from an HTML document containing microdata.",
+            "uri": "urn:x:ihermanpubls_Hickson2012",
+            "institution": "World Wide Web Consortium",
+            "key": "Hickson2012",
+            "year": "2012",
+            "keywords": [
+                "HTML",
+                "RDF",
+                "microdata"
+            ],
+            "label": "Microdata to RDF",
+            "type": "Publication",
+            "id": "Hickson2012"
+        },
+        {
+            "pub-type": "standard",
+            "editor": [
+                " Jie Bao",
+                " Diego Calvanese",
+                " Bernardo Cuenca Grau",
+                " Martin Dzbor",
+                " Achille Fokoue",
+                " Christine Golbreich",
+                " Sandro Hawke",
+                " Ivan Herman",
+                " Rinke Hoekstra",
+                " Ian Horrocks",
+                " Elisa Kendall",
+                " Markus Krötzsch",
+                " Carsten Lutz",
+                " Deborah L McGuinness",
+                " Boris Motik",
+                " Jeff Pan",
+                " Bijan Parsia",
+                " Peter F. Patel-Schneider",
+                " Alan Ruttenberg",
+                " Ulrike Sattler",
+                " Michael Schneider",
+                " Mike Smith",
+                " Evan Wallace",
+                " Zhe Wu",
+                " Antoine Zimmermann"
+            ],
+            "url": "http://www.w3.org/TR/owl2-overview/",
+            "abstract": "The OWL 2 Web Ontology Language, informally OWL 2, is an ontology language for the Semantic Web with formally defined meaning. OWL 2 ontologies provide classes, properties, individuals, and data values and are stored as Semantic Web documents. OWL 2 ontologies can be used along with information written in RDF, and OWL 2 ontologies themselves are primarily exchanged as RDF documents. This document serves as an introduction to OWL 2 and the various other OWL 2 documents. It describes the syntaxes for OWL 2, the different kinds of semantics, the available profiles (sub-languages), and the relationship between OWL 1 and OWL 2.",
+            "uri": "urn:x:ihermanpubls_Bao2009",
+            "institution": "World Wide Web Consortium",
+            "key": "Bao2009",
+            "year": "2009",
+            "keywords": [
+                "OWL2",
+                "standards"
+            ],
+            "label": "OWL 2 Web Ontology Language: Document Overview",
+            "type": "Publication",
+            "id": "Bao2009"
+        },
+        {
+            "pub-type": "standard",
+            "editor": [
+                " Michael Schneider",
+                " Jeremy Carroll",
+                " Ivan Herman",
+                " Peter F. Patel-Schneider"
+            ],
+            "url": "http://www.w3.org/TR/owl2-rdf-based-semantics/",
+            "abstract": "The OWL 2 Web Ontology Language, informally OWL 2, is an ontology language for the Semantic Web with formally defined meaning. OWL 2 ontologies provide classes, properties, individuals, and data values and are stored as Semantic Web documents. OWL 2 ontologies can be used along with information written in RDF, and OWL 2 ontologies themselves are primarily exchanged as RDF documents. The OWL 2 Document Overview describes the overall state of OWL 2, and should be read before other OWL 2 documents. This document defines the RDF-compatible model-theoretic semantics of OWL 2.",
+            "uri": "urn:x:ihermanpubls_Schne2009",
+            "institution": "World Wide Web Consortium",
+            "key": "Schne2009",
+            "year": "2009",
+            "keywords": [
+                "OWL2",
+                "standards"
+            ],
+            "label": "OWL 2 Web Ontology Language: RDF-Based Semantics",
+            "type": "Publication",
+            "id": "Schne2009"
+        },
+        {
+            "pub-type": "standard",
+            "url": "http://www.ivan-herman.net/professional/Publications/PREMODocument/Part1.pdf",
+            "uri": "urn:x:ihermanpubls_Duke1998f",
+            "id": "Duke1998f",
+            "editor": [
+                " David J. Duke",
+                " Ivan Herman"
+            ],
+            "key": "Duke1998f",
+            "year": "1998",
+            "keywords": [
+                "PREMO",
+                "multimedia"
+            ],
+            "label": "Information Technology — Computer Graphics and Image Processing — Presentation Environments for Multimedia Objects (PREMO), Part 1: Fundamentals of PREMO, ISO/IEC 14478–1:1998",
+            "type": "Publication",
+            "institution": "International Standardization Organization (ISO)"
+        },
+        {
+            "pub-type": "standard",
+            "url": "http://www.ivan-herman.net/professional/Publications/PREMODocument/Part2.pdf",
+            "uri": "urn:x:ihermanpubls_Duke1998e",
+            "id": "Duke1998e",
+            "editor": [
+                " David J. Duke",
+                " Ivan Herman"
+            ],
+            "key": "Duke1998e",
+            "year": "1998",
+            "keywords": [
+                "PREMO",
+                "multimedia"
+            ],
+            "label": "Information Technology — Computer Graphics and Image Processing — Presentation Environments for Multimedia Objects (PREMO), Part 2: Foundation Component, ISO/IEC 14478–2:1998",
+            "type": "Publication",
+            "institution": "International Standardization Organization (ISO)"
+        },
+        {
+            "pub-type": "standard",
+            "url": "http://www.ivan-herman.net/professional/Publications/PREMODocument/Part4.pdf",
+            "uri": "urn:x:ihermanpubls_Duke1998c",
+            "id": "Duke1998c",
+            "editor": [
+                " David J. Duke",
+                " Terrence W. Hewitt",
+                " Ivan Herman"
+            ],
+            "year": "1998",
+            "key": "Duke1998c",
+            "keywords": [
+                "PREMO",
+                "multimedia"
+            ],
+            "label": "Information Technology — Computer Graphics and Image Processing — Presentation Environments for Multimedia Objects (PREMO), Part 4: Modelling, Rendering, and Interaction Component, ISO/IEC 14478–4:1998",
+            "type": "Publication",
+            "institution": "International Standardization Organization (ISO)"
+        },
+        {
+            "pub-type": "standard",
+            "url": "http://www.ivan-herman.net/professional/Publications/PREMODocument/Part3.pdf",
+            "uri": "urn:x:ihermanpubls_Duke1998d",
+            "id": "Duke1998d",
+            "editor": [
+                " David J. Duke",
+                " Jim Van Loo",
+                " Ivan Herman"
+            ],
+            "year": "1998",
+            "key": "Duke1998d",
+            "keywords": [
+                "PREMO",
+                "multimedia"
+            ],
+            "label": "Information Technology — Computer Graphics and Image Processing — Presentation Environments for Multimedia Objects (PREMO), Part 3: Multimedia Systems Services, ISO/IEC 14478–3:1998",
+            "type": "Publication",
+            "institution": "International Standardization Organization (ISO)"
+        }
+    ],
+    "Conference Papers": [
+        {
+            "publisher": "The Journal of Electronic Publishing",
+            "pub-type": "inproceedings",
+            "author": [
+                " Ivan Herman",
+                " Markus Gylling"
+            ],
+            "url": "https://quod.lib.umich.edu/j/jep/3336451.0018.106/--bridging-the-web-and-digital-publishing?rgn=main;view=fulltext",
+            "year": "2015",
+            "abstract": "Although using advanced Web technologies at their core, e-books represent a parallel universe to everyday Web documents. Their production workflows, user interfaces, their security, access, or privacy models, etc, are all distinct. There is a lack of a vision on how to unify Digital Publishing and the Web. Conceptually, what is important is the *content* for Web documents that should be unique. Whether that content is portable (offline) or online should merely be a particular *state* at a point it time and it should be easy for the user to provide a portable state of the same document, synchronize it with the online version when possible, etc. To achieve this vision the community has to define a general, portable Web document format based on current Web technologies. {EPUB}3 has already made a huge step in this direction. But technical challenges remain. This includes the usage of a general packaging format both to Web browsers and ebooks; unification of security, privacy, and access control models; general and portable annotation systems; defining general linking and anchoring structures. This presentation will outline the vision and address some of the relevant technical issues: the goal is to set a direction for a work that the overall Web and publishing community has to solve jointly.",
+            "uri": "urn:x:ihermanpubls_Gylling2015",
+            "label": "Bridging the Web and Digital Publishing",
+            "editor": [
+                " Peter Bantley"
+            ],
+            "key": "Gylling2015",
+            "address": "San Francisco, CA",
+            "keywords": [
+                "publishing",
+                "lDigital Publishing"
+            ],
+            "booktitle": "Books in Browsers V Proceedings",
+            "type": "Publication",
+            "id": "Gylling2015"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "inproceedings",
+            "author": [
+                " Benjamin Adrian",
+                " Jörn Hees",
+                " Ivan Herman",
+                " Michael Sintek",
+                " Andreas Dengel"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/Epiphany.pdf",
+            "year": "2010",
+            "abstract": "The appearance of Linked Open Data (LOD) was an impor- tant milestone for reaching a Web of Data. More and more RDF data sets get published to be consumed and integrated into a variety of appli- cations. Pointing out one application, Linked Data can be used to enrich web pages with semantic annotations. This gives readers the chance to recall Semantic Web’s knowledge about text passages. RDFa provides a well-defined base, as it extends HTML tags in web pages to a form that contains RDF data. Nevertheless, asking web authors to manually an- notate their web pages with semantic annotations is illusive. We present Epiphany, a service that annotates Linked Data to web pages automat- ically by creating RDFa enhanced versions of the input HTML pages. In Epiphany, Linked Data can be any RDF dataset or mashup (e.g., DBpedia, BBC programs, etc.). Based on ontology-based information extraction and the dataset, Epiphany generates an RDF graph about a web page’s content. Based on this RDF graph, RDFa annotations are generated and integrated in an RDFa enhanced version of the web page. Authors can use Epiphany to get RDFa enhanced versions of their articles that link to Linked Data models. Readers may use Epiphany to receive RDFa enhanced versions of web pages while surfing. We prove the qual- ity of Epiphany in an evaluation based on Linked Data from BBC about music biographies and compare results of Epiphany and Open Calais.",
+            "uri": "urn:x:ihermanpubls_Adrian2010",
+            "label": "Epiphany : Adaptable RDFa Generation Linking the Web of Documents to the Web of Data",
+            "editor": [
+                " Sofia Pinto",
+                " Philipp Cimiano"
+            ],
+            "key": "Adrian2010",
+            "address": "Lisbon",
+            "keywords": [
+                "RDFa",
+                "linked open data"
+            ],
+            "booktitle": "Knowledge Engineering and Knowledge Management by the Masses (EKAW 2010)",
+            "type": "Publication",
+            "id": "Adrian2010"
+        },
+        {
+            "pub-type": "inproceedings",
+            "author": [
+                " Diego Berrueta",
+                " José E. Labra",
+                " Ivan Herman"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/XSLTSPARQL.pdf",
+            "abstract": "Scripting the SemanticWeb requires to access and transform RDF data. We present XSLT+SPARQL, a set of extension functions for XSLT which allow stylesheets to directly access RDF data, independently of any serialization syntax, by means of SPARQL queries. Using these functions, XSLT stylesheets can retrieve, query, merge and transform data from the semantic web. We illustrate the functionality of our proposal with an example script which creates XHTML pages from the contents of DBpedia.",
+            "year": "2008",
+            "uri": "urn:x:ihermanpubls_Berrueta2008",
+            "label": "XSLT+SPARQL : Scripting the Semantic Web with SPARQL embedded into XSLT stylesheets",
+            "editor": [
+                " Tom Heath",
+                " Sören Auer",
+                " Gunnar Aastrand Grimmes",
+                " Chris Bizer"
+            ],
+            "key": "Berrueta2008",
+            "address": "Tenerife",
+            "keywords": [
+                "SPARQL",
+                "XSLT",
+                "semantic web"
+            ],
+            "booktitle": "4th Workshop on Scripting for the Semantic Web",
+            "type": "Publication",
+            "id": "Berrueta2008"
+        },
+        {
+            "pub-type": "inproceedings",
+            "author": [
+                " Ivan Herman"
+            ],
+            "url": "http://www.w3.org/2006/Talks/0318-Budapest-IH/cikk.pdf",
+            "booktitle": "Magyarországi Web Konferencia",
+            "uri": "urn:x:ihermanpubls_Herman2006",
+            "label": "Szemantikus Web: egy rövid bevezetés",
+            "editor": [
+                " Gábor Hojtsy"
+            ],
+            "key": "Herman2006",
+            "year": "2006",
+            "keywords": [
+                "messaging",
+                "semantic web"
+            ],
+            "type": "Publication",
+            "id": "Herman2006"
+        },
+        {
+            "publisher": "IEEE CS Press",
+            "pub-type": "inproceedings",
+            "author": [
+                " Ivan Herman",
+                " M. Scott Marshall",
+                " Guy Melançon"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/Density.pdf",
+            "booktitle": "IEEE Information Visualization Symposium",
+            "uri": "urn:x:ihermanpubls_Herman2000",
+            "pages": "49-56",
+            "editor": [
+                " S. F. Roth",
+                " D. A. Keim"
+            ],
+            "key": "Herman2000",
+            "year": "2000",
+            "keywords": [
+                "graphs",
+                "visualization"
+            ],
+            "label": "Density Functions for Visual Attributes and Effective Partitioning in Graph Visualization",
+            "type": "Publication",
+            "id": "Herman2000"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "inproceedings",
+            "author": [
+                " M. Scott Marshall",
+                " Ivan Herman"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/INS-R0009.pdf",
+            "booktitle": "Graph Drawing - 8th International Symposium, GD 2000, Colonial Williamsburg, VA, USA",
+            "year": "2000",
+            "uri": "urn:x:ihermanpubls_Marshall2000",
+            "label": "GraphXML - a graph description language",
+            "editor": [
+                " J. Marks"
+            ],
+            "key": "Marshall2000",
+            "address": "Heidelberg",
+            "keywords": [
+                "graphs",
+                "visualization"
+            ],
+            "type": "Publication",
+            "id": "Marshall2000"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "inproceedings",
+            "author": [
+                " Guy Melançon",
+                " Ivan Herman"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/INS-R9915.pdf",
+            "booktitle": "Proceedings of the Joint Eurographics IEEE TCVG Symposium on Visualization",
+            "year": "2000",
+            "uri": "urn:x:ihermanpubls_Melancon2000",
+            "label": "DAG drawing from an information visualization perspective",
+            "editor": [
+                " Robert van Liere",
+                " Wim De Leeuw"
+            ],
+            "key": "Melancon2000",
+            "address": "Heidelberg",
+            "keywords": [
+                "graphs",
+                "visualization"
+            ],
+            "type": "Publication",
+            "id": "Melancon2000"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "inproceedings",
+            "author": [
+                " Ivan Herman",
+                " M. Scott Marshall",
+                " Guy Melançon",
+                " David J. Duke",
+                " Maylis Delest",
+                " Jean-Philippe Domenger"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/INS-R9813.pdf",
+            "booktitle": "Proceedings of the Joint Eurographics IEEE TCVG Symposium on Visualization",
+            "year": "1999",
+            "uri": "urn:x:ihermanpubls_Herman1999",
+            "pages": "13-22",
+            "editor": [
+                " W. Ribarsky",
+                " H. Löffelmann",
+                " E. Gröller"
+            ],
+            "key": "Herman1999",
+            "address": "Heidelberg",
+            "keywords": [
+                "graphs",
+                "visualization"
+            ],
+            "label": "Skeletal Images as Visual Cues in Graph Visualization",
+            "type": "Publication",
+            "id": "Herman1999"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "inproceedings",
+            "author": [
+                " Ivan Herman",
+                " Guy Melançon",
+                " Maurice M. de Ruiter",
+                " Maylis Delest"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/LatourGD99.pdf",
+            "booktitle": "Graph Drawing - 7th International Symposium, GD 1999, Stirin Castle, Czech Republic",
+            "year": "1999",
+            "uri": "urn:x:ihermanpubls_Herman1999a",
+            "pages": "392-399",
+            "editor": [
+                " J. Kratochvil"
+            ],
+            "key": "Herman1999a",
+            "address": "Heidelberg",
+            "keywords": [
+                "graphs",
+                "visualization"
+            ],
+            "label": "Latour – a tree visualisation system",
+            "type": "Publication",
+            "id": "Herman1999a"
+        },
+        {
+            "publisher": "Cépadues-Editions",
+            "pub-type": "inproceedings",
+            "author": [
+                " Guy Melançon",
+                " Ivan Herman",
+                " Maylis Delest"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/IHM.pdf",
+            "booktitle": "Onzièmes journées sur l'ingénierie de l'Interaction Homme-Machine",
+            "year": "1999",
+            "uri": "urn:x:ihermanpubls_Melancon1999",
+            "pages": "166-173",
+            "editor": [
+                " J. Nanard",
+                " P. Girard"
+            ],
+            "key": "Melancon1999",
+            "address": "Toulouse",
+            "keywords": [
+                "graphs",
+                "visualization"
+            ],
+            "label": "Indices visuels et métriques combinatoires pour la visualisation de données hiérarchiques",
+            "type": "Publication",
+            "id": "Melancon1999"
+        },
+        {
+            "publisher": "ACM Press",
+            "pub-type": "inproceedings",
+            "author": [
+                " David J. Duke",
+                " Ivan Herman"
+            ],
+            "url": "http://dl.acm.org/citation.cfm?id=290806",
+            "booktitle": "Proceedings of the 6th ACM International Conference on Multimedia (MM'98)",
+            "uri": "urn:x:ihermanpubls_Duke1998a",
+            "label": "A Standard for Multimedia Middleware",
+            "year": "1998",
+            "editor": [
+                " W. Effelsberg",
+                " B. C. Smith"
+            ],
+            "key": "Duke1998a",
+            "address": "New York",
+            "keywords": [
+                "multimedia",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Duke1998a"
+        },
+        {
+            "pub-type": "inproceedings",
+            "author": [
+                " David J. Duke",
+                " Ivan Herman"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/EGUK98.pdf",
+            "booktitle": "Eurographics UK'98 Proceedings",
+            "uri": "urn:x:ihermanpubls_Duke1998",
+            "label": "Plugging graphics into distributed multimedia",
+            "editor": [
+                " Ken W. Brodlie"
+            ],
+            "key": "Duke1998",
+            "year": "1998",
+            "keywords": [
+                "PREMO",
+                "graphics",
+                "multimedia",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Duke1998"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "inproceedings",
+            "author": [
+                " David J. Duke",
+                " David A. Duce",
+                " Ivan Herman",
+                " Giorgio Faconti"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/Specifying_Premo_Sync_Objects.pdf",
+            "booktitle": "Proceedings of the 4th Eurographics Workshop on Design, Specification, and Verification of Interactive Systems",
+            "year": "1997",
+            "uri": "urn:x:ihermanpubls_Duke1997a",
+            "label": "Specifying the PREMO Synchronization Objects",
+            "key": "Duke1997a",
+            "address": "Heidelberg",
+            "keywords": [
+                "PREMO",
+                "multimedia",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Duke1997a"
+        },
+        {
+            "pub-type": "inproceedings",
+            "author": [
+                " Jacques Davy",
+                " Ivan Herman",
+                " Graham J. Reynolds"
+            ],
+            "booktitle": "Proc. of Multimédia et Normalisation de la Télématique à la Télévision Numérique",
+            "year": "1994",
+            "uri": "urn:x:ihermanpubls_Davy1994",
+            "label": "MADE: an Environment for Object-oriented Multimedia Support",
+            "key": "Davy1994",
+            "address": "Paris",
+            "keywords": [
+                "multimedia"
+            ],
+            "type": "Publication",
+            "id": "Davy1994"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "inproceedings",
+            "author": [
+                " Frans C. Heeman",
+                " Ivan Herman",
+                " Graham J. Reynolds"
+            ],
+            "url": "http://link.springer.com/chapter/10.1007/978-3-7091-9361-7_18",
+            "booktitle": "Proceedings of the 1st Eurographics Symposium on Multimedia",
+            "year": "1994",
+            "uri": "urn:x:ihermanpubls_Heeman1994",
+            "label": "Interaction Objects in the MADE Multimedia Environment",
+            "editor": [
+                " F. Kappe",
+                " W. Herzner"
+            ],
+            "key": "Heeman1994",
+            "address": "Heidelberg",
+            "keywords": [
+                "multimedia"
+            ],
+            "type": "Publication",
+            "id": "Heeman1994"
+        },
+        {
+            "publisher": "ACM Press",
+            "pub-type": "inproceedings",
+            "author": [
+                " Ivan Herman",
+                " George S. Carson",
+                " Jacques Davy",
+                " Paul J.W. ten Hagen",
+                " David A. Duce",
+                " Terrence W. Hewitt",
+                " Klaus Kansy",
+                " Barbara J. Lurvey",
+                " Richard Puk",
+                " Graham J. Reynolds",
+                " Horst Stenzel"
+            ],
+            "booktitle": "Proceedings of the Second ACM International Conference on Multimedia (MM'94)",
+            "year": "1994",
+            "uri": "urn:x:ihermanpubls_Herman1994",
+            "label": "Premo: An ISO Standard for a Presentation Environment for Multimedia Objects",
+            "editor": [
+                " D. Ferrari"
+            ],
+            "key": "Herman1994",
+            "address": "New York",
+            "keywords": [
+                "PREMO",
+                "multimedia",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1994"
+        },
+        {
+            "publisher": "IEEE CS Press",
+            "pub-type": "inproceedings",
+            "author": [
+                " Ivan Herman",
+                " Graham J. Reynolds",
+                " Jacques Davy"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/MadeBoston/Descrhtml.html",
+            "booktitle": "Proceedings of the IEEE International Conference on Multimedia Computing and Systems",
+            "year": "1994",
+            "uri": "urn:x:ihermanpubls_Herman1994b",
+            "label": "MADE: A Multimedia Application development environment",
+            "editor": [
+                " L. A. Belady",
+                " S. M. Stevens",
+                " R. Steinmetz"
+            ],
+            "key": "Herman1994b",
+            "address": "Los Alamitos",
+            "keywords": [
+                "multimedia"
+            ],
+            "type": "Publication",
+            "id": "Herman1994b"
+        },
+        {
+            "publisher": "IEEE CS Press",
+            "pub-type": "inproceedings",
+            "author": [
+                " Farhad Arbab",
+                " Ivan Herman",
+                " Per Spilling"
+            ],
+            "booktitle": "Proceedings of the 26th Hawaii International Conference on Systems Sciences (HICSS—26), Volume II",
+            "year": "1993",
+            "uri": "urn:x:ihermanpubls_Arbab1993b",
+            "label": "The Skeleton of a Computing Farm in Manifold",
+            "editor": [
+                " H. El-Rewini",
+                " B. D. Schriver",
+                " T. Lewis"
+            ],
+            "key": "Arbab1993b",
+            "address": "Los Alamitos",
+            "keywords": [
+                "parallelism"
+            ],
+            "type": "Publication",
+            "id": "Arbab1993b"
+        },
+        {
+            "publisher": "IEEE CS Press",
+            "pub-type": "inproceedings",
+            "author": [
+                " Farhad Arbab",
+                " Ivan Herman",
+                " Per Spilling"
+            ],
+            "booktitle": "Proceedings of the 4th International Conference Computing and Interaction (ICCI'92)",
+            "year": "1992",
+            "uri": "urn:x:ihermanpubls_Arbab1992",
+            "label": "Interaction Management of a Window Manager in Manifold",
+            "editor": [
+                " A. A. Toptsis",
+                " W. W. Koczkodaj",
+                " P. E. Lauer"
+            ],
+            "key": "Arbab1992",
+            "address": "Los Alamitos",
+            "keywords": [
+                "parallelism"
+            ],
+            "type": "Publication",
+            "id": "Arbab1992"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "inproceedings",
+            "author": [
+                " Farhad Arbab",
+                " Ivan Herman",
+                " Per Spilling"
+            ],
+            "booktitle": "CONPAR 92 & VAPP V: Second Joint International Conference on Vector and Parallel Processing Lyon, France",
+            "year": "1992",
+            "uri": "urn:x:ihermanpubls_Arbab1992a",
+            "label": "Manifold: Concepts and Implementation",
+            "editor": [
+                " M. Cosnard",
+                " D. Trystram",
+                "undefined Bougé"
+            ],
+            "key": "Arbab1992a",
+            "address": "Heidelberg",
+            "keywords": [
+                "parallelism"
+            ],
+            "type": "Publication",
+            "id": "Arbab1992a"
+        },
+        {
+            "pub-type": "inproceedings",
+            "author": [
+                " Farhad Arbab",
+                " Ivan Herman"
+            ],
+            "booktitle": "Proceedings of the EurOpen Autumn Conference, Budapest, Hungary",
+            "uri": "urn:x:ihermanpubls_Arbab1991",
+            "label": "Manifold: A Language for Specification of Inter-Process Communication",
+            "editor": [
+                " A. Findlay"
+            ],
+            "key": "Arbab1991",
+            "year": "1991",
+            "keywords": [
+                "parallelism"
+            ],
+            "type": "Publication",
+            "id": "Arbab1991"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "inproceedings",
+            "author": [
+                " Ulrik Brandes",
+                " Markus Eiglsperger",
+                " Ivan Herman",
+                " Michael Himsolt",
+                " M. Scott Marshall"
+            ],
+            "year": "1991",
+            "booktitle": "Graph Drawing - 8th International Symposium, GD 2000, Colonial Williamsburg, VA, USA",
+            "uri": "urn:x:ihermanpubls_Brandes2001",
+            "pages": "501-512",
+            "editor": [
+                " S. Leipert",
+                " P. Mutzel",
+                " M. Junger"
+            ],
+            "key": "Brandes2001",
+            "address": "Heidelberg",
+            "keywords": [
+                "graphics",
+                "graphs",
+                "visualization"
+            ],
+            "label": "GraphML Progress Report, Structural Layer Proposal",
+            "url": "http://www.ivan-herman.net/professional/Publications/GraphML_Progress_Report.pdf",
+            "type": "Publication",
+            "id": "Brandes2001"
+        },
+        {
+            "publisher": "North-Holland",
+            "pub-type": "inproceedings",
+            "author": [
+                " Ivan Herman"
+            ],
+            "booktitle": "Eurographics'89 Conference Proceedings, Hamburg",
+            "year": "1989",
+            "uri": "urn:x:ihermanpubls_Herman1989a",
+            "label": "2.5D Graphics Systems",
+            "editor": [
+                " F. R. A. Hopgood",
+                " W. Hansmann",
+                " W. Straßer"
+            ],
+            "key": "Herman1989a",
+            "address": "Amsterdam",
+            "keywords": [
+                "graphics"
+            ],
+            "type": "Publication",
+            "id": "Herman1989a"
+        },
+        {
+            "publisher": "North-Holland",
+            "pub-type": "inproceedings",
+            "author": [
+                " Ivan Herman",
+                " János Reviczky"
+            ],
+            "booktitle": "Eurographics'87 Conference Proceedings, Amsterdam",
+            "year": "1988",
+            "uri": "urn:x:ihermanpubls_Herman1988b",
+            "label": "A Means to Improve the GKS-3D/PHIGS Output Pipeline Implementation",
+            "editor": [
+                " G. Maréchal"
+            ],
+            "key": "Herman1988b",
+            "address": "Amsterdam",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1988b"
+        },
+        {
+            "publisher": "Eurographics Association",
+            "pub-type": "inproceedings",
+            "author": [
+                " Ivan Herman",
+                " János Reviczky"
+            ],
+            "booktitle": "Proceedings of the GKS Review Workshop",
+            "year": "1987",
+            "uri": "urn:x:ihermanpubls_Herman1987a",
+            "label": "GKS — A Useless Standard?",
+            "editor": [
+                " W. T. Hewitt"
+            ],
+            "key": "Herman1987a",
+            "address": "Geneva",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1987a"
+        },
+        {
+            "publisher": "North-Holland",
+            "pub-type": "inproceedings",
+            "author": [
+                " Ivan Herman",
+                " János Reviczky",
+                " Tibor Tolnay-Knefély"
+            ],
+            "booktitle": "Eurographics'85 Conference Proceedings, Nice",
+            "year": "1985",
+            "uri": "urn:x:ihermanpubls_Herman1985a",
+            "label": "A Concept for a GKS Machine",
+            "editor": [
+                " C. E. Vandoni"
+            ],
+            "key": "Herman1985a",
+            "address": "Amsterdam",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1985a"
+        },
+        {
+            "publisher": "North-Holland",
+            "pub-type": "inproceedings",
+            "author": [
+                " Ivan Herman",
+                " Tibor Tolnay-Knefély",
+                " Árpád Vincze"
+            ],
+            "booktitle": "Eurographics'83 Conference Proceedings, Zagreb",
+            "year": "1983",
+            "uri": "urn:x:ihermanpubls_Herman1983",
+            "label": "XGKS - A Multitask Implementation of GKS",
+            "editor": [
+                " Paul J.W. ten Hagen"
+            ],
+            "key": "Herman1983",
+            "address": "Amsterdam",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1983"
+        }
+    ],
+    "Book Chapters": [
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "incollection",
+            "isbn": "978-3-540-92912-3",
+            "author": [
+                " Ben Adida",
+                " Mark Birbeck",
+                " Ivan Herman"
+            ],
+            "url": "http://www.ivan-herman.net/Misc/2011/RDFa_book_chapter.pdf",
+            "abstract": "For the Semantic Web to succeed in a major, public setting, it needs to leverage the existing Web. Two major technologies have emerged over the last few years to bridge the vast, existing ‘‘clickable’’ Web and the new Semantic Web: Microformats and RDFa. Both allow authors to embed extra information within (X)HTML to mark up the structure, not just the visual presentation, of the information they publish. In this chapter, both approaches are explained, exploring their strengths and weaknesses, providing example applications, and touching on future considerations.",
+            "year": "2011",
+            "uri": "urn:x:ihermanpubls_Adida2011",
+            "label": "Semantic Annotation and Retrieval: Web of Hypertext – RDFa and Microformats",
+            "editor": [
+                " John Domingue",
+                " Dieter Fensel",
+                " James A. Hendler"
+            ],
+            "key": "Adida2011",
+            "address": "Heidelberg",
+            "keywords": [
+                "RDFa",
+                "semantic web"
+            ],
+            "booktitle": "Handbook of Semantic Web Technologies",
+            "type": "Publication",
+            "id": "Adida2011"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "incollection",
+            "isbn": "0387485309",
+            "author": [
+                " Vipul Kashyap",
+                " Kei-Hoi Cheung",
+                " Matthias Samwald",
+                " Donald Doherty",
+                " M. Scott Marshall",
+                " Joanne Luciano",
+                " Susie Stephens",
+                " Ivan Herman",
+                " Raymond Hookway"
+            ],
+            "series": "Semantic Web and Beyond",
+            "booktitle": "Real-world Applications of Semantic Web Technology and Ontologies",
+            "year": "2008",
+            "uri": "urn:x:ihermanpubls_Kashyap2008",
+            "label": "An Ontology-based Approach for Data Integration - An Application in Biomedical Research",
+            "editor": [
+                " Miltiadis D. Lytras",
+                " Martin Hepp",
+                " Jorge Cardoso"
+            ],
+            "key": "Kashyap2008",
+            "address": "Heidelberg",
+            "keywords": [
+                "HCLS",
+                "SW application",
+                "bioinformatics",
+                "semantic web"
+            ],
+            "type": "Publication",
+            "id": "Kashyap2008"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "incollection",
+            "author": [
+                " Ivan Herman"
+            ],
+            "series": "EurographicSeminar Series",
+            "booktitle": "Advances in Computer Graphics IV",
+            "uri": "urn:x:ihermanpubls_Herman1991",
+            "label": "Projective Geometry and Computer Graphics",
+            "editor": [
+                " M. Roch",
+                " W. T. Hewitt",
+                " M. Grave"
+            ],
+            "key": "Herman1991",
+            "address": "Heidelberg",
+            "keywords": [
+                "graphics",
+                "mathematics"
+            ],
+            "type": "Publication",
+            "id": "Herman1991",
+            "year": "1992"
+        }
+    ],
+    "Journal Articles": [
+        {
+            "publisher": "PeerJ Computer Science",
+            "pub-type": "article",
+            "author": [
+                " Joan Starr",
+                " Eleni Castro",
+                " Mercè Crosas",
+                " Michel Dumontier",
+                " Robert R. Downs",
+                " Ruth Duerr",
+                " Haak Laurel",
+                " Melissa Haendel",
+                " Ivan Herman",
+                " Simon Hodson",
+                " Joe Hourclé",
+                " John Ernest Kratz",
+                " Jennifer Lin",
+                " Lars Holm Nielsen",
+                " Amy Nurnberger",
+                " Stefan Pröll",
+                " Andreas Rauber",
+                " Simone Sacchi",
+                " Arthur P. Smith",
+                " Michael Taylor",
+                " Tim Clark"
+            ],
+            "url": "https://dx.doi.org/10.7717/peerj-cs.1",
+            "abstract": "Reproducibility and reusability of research results is an important concern in scientific communication and science policy. A foundational element of reproducibility and reusability is the open and persistently available presentation of research data. However, many common approaches for primary data publication in use today do not achieve sufficient long-term robustness, openness, accessibility or uniformity. Nor do they permit comprehensive exploitation by modern Web technologies. This has led to several authoritative studies recommending uniform direct citation of data archived in persistent repositories. Data are to be considered as first-class scholarly objects, and treated similarly in many ways to cited and archived scientific and scholarly literature. Here we briefly review the most current and widely agreed set of principle-based recommendations for scholarly data citation, the Joint Declaration of Data Citation Principles (JDDCP). We then present a framework for operationalizing the JDDCP; and a set of initial recommendations on identifier schemes, identifier resolution behavior, required metadata elements, and best practices for realizing programmatic machine actionability of cited data. The main target audience for the common implementation guidelines in this article consists of publishers, scholarly organizations, and persistent data repositories, including technical staff members in these organizations. But ordinary researchers can also benefit from these recommendations. The guidance provided here is intended to help achieve widespread, uniform human and machine accessibility of deposited data, in support of significantly improved verification, validation, reproducibility and re-use of scholarly/scientific data.",
+            "uri": "urn:x:ihermanpubls_Clark2015",
+            "label": "Achieving human and machine accessibility of cited data in scholarly publications",
+            "key": "Clark2015",
+            "year": "2015",
+            "keywords": [
+                "metadata",
+                "publishing",
+                "linked data",
+                "linked open data",
+                "scientific publication"
+            ],
+            "type": "Publication",
+            "id": "Clark2015"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Phil Bourne",
+                " Tim Clark",
+                " Robert Dale",
+                " Anita de Waard",
+                " Ivan Herman",
+                " Eduard Hovy",
+                " David Shotton"
+            ],
+            "journal": "Dagstuhl Manifestos",
+            "abstract": "The dissemination of knowledge derived from research and scholarship has a fundamental impact on the ways in which society develops and progresses, and at the same time it feeds back to improve subsequent research and scholarship. Here, as in so many other areas of human activity, the internet is changing the way things work; two decades of emergent and increasingly pervasive information technology have demonstrated the potential for far more effective scholarly communication. But the use of this technology remains limited. Force11 is a community of scholars, librarians, archivists, publishers and research funders that has arisen organically to help facilitate the change toward improved knowledge creation and sharing. This document highlights the findings of the Force11 workshop on the Future of Research Communication held at Schloss Dagstuhl, Germany, in August 2011: it summarizes a number of key problems facing scholarly publishing today, and presents a vision that addresses these problems, proposing concrete steps that key stakeholders can take to improve the state of scholarly publishing.",
+            "uri": "urn:x:ihermanpubls_Bourne2012a",
+            "pages": "41-60",
+            "volume": "1",
+            "url": "http://dx.doi.org/10.4230/DagMan.1.1.41",
+            "key": "Bourne2012a",
+            "year": "2012",
+            "keywords": [
+                "publishing"
+            ],
+            "label": "Improving The Future of Research Communications and e-Scholarship (Dagstuhl Perspectives Workshop 11331)",
+            "type": "Publication",
+            "id": "Bourne2012a"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Phil Bourne",
+                " Tim Clark",
+                " Robert Dale",
+                " Anita de Waard",
+                " Ivan Herman",
+                " Eduard Hovy",
+                " David Shotton"
+            ],
+            "journal": "Informatik Spektrum",
+            "abstract": "Despite the pervasive technical rev- olution of the Web, scholars and researchers continue to communicate their thoughts and research results primarily via electronic facsimiles of an ink-on-paper system established in the 17th century. This brief report summarizes ex- tensive discussion and results from a Perspectives Workshop held at Schloss Dagstuhl in August 2011, on urgently necessary developments in the form, content, enabling tech- nologies, assessment and economics of digital scholarly communication, with an emphasis on informatics http://www.dagstuhl.de/11331.",
+            "uri": "urn:x:ihermanpubls_Bourne2012",
+            "pages": "56-58",
+            "volume": "35",
+            "key": "Bourne2012",
+            "year": "2012",
+            "keywords": [
+                "publishing"
+            ],
+            "label": "Improving Future Research Communication and e-Scholarship: A Summary of Findings",
+            "type": "Publication",
+            "id": "Bourne2012"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Tim Clark",
+                " Anita de Waard",
+                " Ivan Herman",
+                " Eduard Hovy"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/Future_of_research_comm.pdf",
+            "journal": "Daghstuhl Reports",
+            "uri": "urn:x:ihermanpubls_Clark2011",
+            "pages": "29-52",
+            "volume": "1",
+            "key": "Clark2011",
+            "year": "2011",
+            "keywords": [
+                "publishing"
+            ],
+            "label": "The Future of Research Communications",
+            "type": "Publication",
+            "id": "Clark2011"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Alexandre Bertails",
+                " Ivan Herman",
+                " Sandro Hawke"
+            ],
+            "journal": "Réalités Industrielles",
+            "abstract": "Construit sur la base de technologies existantes (protocole HTTP (HyperText Transfert Protocol), identifiant URI (Uniform Resource Identifier, qui désigne de manière unique un document sur le Web), le Web sémantique, par une participation toujours plus active de la communauté des internautes, constitue une nouvelle étape dans la logique de partage qui caractérise le Web actuel.",
+            "uri": "urn:x:ihermanpubls_Bertails2010",
+            "pages": "84-89",
+            "url": "http://www.ivan-herman.net/professional/Publications/Le_Web_semantique.pdf",
+            "year": "2010",
+            "key": "Bertails2010",
+            "keywords": [
+                "semantic web"
+            ],
+            "label": "Le Web sémantique",
+            "type": "Publication",
+            "id": "Bertails2010"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Lee Feigenbaum",
+                " Ivan Herman",
+                " Tonya Hongsermeier",
+                " Eric Neumann",
+                " Susie Stephens"
+            ],
+            "url": "http://thefigtrees.net/lee/sw/sciam/semantic-web-in-action",
+            "journal": "Scientific American",
+            "uri": "urn:x:ihermanpubls_Feigenbaum2007",
+            "pages": "90-97",
+            "volume": "297",
+            "key": "Feigenbaum2007",
+            "year": "2007",
+            "keywords": [
+                "messaging",
+                "semantic web",
+                "standards"
+            ],
+            "label": "The Semantic Web in Action",
+            "type": "Publication",
+            "id": "Feigenbaum2007"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Alan Ruttenberg",
+                " Tim Clark",
+                " William Bug",
+                " Matthias Samwald",
+                " Olivier Bodenreider",
+                " Helen Chen",
+                " Donald Doherty",
+                " Kerstin Forsberg",
+                " Yong Gao",
+                " Vipul Kashyap",
+                " June Kinoshita",
+                " Joanne Luciano",
+                " M. Scott Marshall",
+                " Chimezie Ogbuji",
+                " Jonathan Rees",
+                " Susie Stephens",
+                " Gwendolyn T. Wong",
+                " Elisabeth Wu",
+                " Davide Zaccagnini",
+                " Tonya Hongsermeier",
+                " Eric Neumann",
+                " Ivan Herman",
+                " Kei-Hoi Cheung"
+            ],
+            "journal": "BMC Bioinformatics",
+            "abstract": "A fundamental goal of the U.S. National Institute of Health (NIH) Roadmap is to strengthen Translational Research, defined as the movement of discoveries in basic research to application at the clinical level. A significant barrier to translational research is the lack of uniformly structured data across related biomedical domains. The Semantic Web is an extension of the current Web that enables navigation and meaningful use of digital resources by automatic processes. It is based on common formats that support aggregation and integration of data drawn from diverse sources. A variety of technologies have been built on this foundation that, together, support identifying, representing, and reasoning across a wide range of biomedical data. The Semantic Web Health Care and Life Sciences Interest Group (HCLSIG), set up within the framework of the World Wide Web Consortium, was launched to explore the application of these technologies in a variety of areas. Subgroups focus on making biomedical data available in RDF, working with biomedical ontologies, prototyping clinical decision support systems, working on drug safety and efficacy communication, and supporting disease researchers navigating and annotating the large amount of potentially relevant literature.",
+            "uri": "urn:x:ihermanpubls_Ruttenberg2007",
+            "label": "Advancing translational research with the Semantic Web",
+            "volume": "8",
+            "url": "http://www.biomedcentral.com/1471-2105/8/S3/S2",
+            "key": "Ruttenberg2007",
+            "year": "2007",
+            "keywords": [
+                "HCLS",
+                "SW application",
+                "bioinformatics",
+                "semantic web"
+            ],
+            "type": "Publication",
+            "id": "Ruttenberg2007"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ken W. Brodlie",
+                " David J. Duke",
+                " David A. Duce",
+                " Ivan Herman"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/IEEEOntology.pdf",
+            "journal": "IEEE Computer Graphics & Application",
+            "uri": "urn:x:ihermanpubls_Brodlie2005",
+            "pages": "6-9",
+            "volume": "25",
+            "key": "Brodlie2005",
+            "year": "2005",
+            "keywords": [
+                "visualization"
+            ],
+            "label": "Do you see what I Mean?",
+            "type": "Publication",
+            "id": "Brodlie2005"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " David A. Duce",
+                " Frank R.A. Hopgood",
+                " Ivan Herman"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/SVGOverview.pdf",
+            "journal": "Computer Graphics Forum",
+            "uri": "urn:x:ihermanpubls_Duce2002",
+            "pages": "43-65",
+            "volume": "21",
+            "key": "Duce2002",
+            "year": "2002",
+            "keywords": [
+                "SVG",
+                "graphics",
+                "standards",
+                "visualization"
+            ],
+            "label": "Web 2D Graphics: State-of-the-Art",
+            "type": "Publication",
+            "id": "Duce2002"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " Daniel Dardailler"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/Linearization.pdf",
+            "journal": "Computer Graphics Forum",
+            "uri": "urn:x:ihermanpubls_Herman2002",
+            "pages": "777-786",
+            "volume": "21",
+            "key": "Herman2002",
+            "year": "2002",
+            "keywords": [
+                "SVG",
+                "accessibility",
+                "graphics"
+            ],
+            "label": "SVG Linearization",
+            "type": "Publication",
+            "id": "Herman2002"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " David J. Duke",
+                " Ivan Herman"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/IEEE.pdf",
+            "journal": "IEEE Computer Graphics & Application",
+            "uri": "urn:x:ihermanpubls_Duke2001",
+            "label": "Minimal Graphics",
+            "volume": "21",
+            "key": "Duke2001",
+            "year": "2001",
+            "keywords": [
+                "graphics",
+                "visualization"
+            ],
+            "type": "Publication",
+            "id": "Duke2001"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " M. Scott Marshall",
+                " Ivan Herman"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/An_object_oriented_design.pdf",
+            "journal": "Software — Practice & Experience",
+            "uri": "urn:x:ihermanpubls_Marshall2001",
+            "pages": "739-756",
+            "volume": "31",
+            "key": "Marshall2001",
+            "year": "2001",
+            "keywords": [
+                "graphs",
+                "visualization"
+            ],
+            "label": "An object-oriented design for graph visualization",
+            "type": "Publication",
+            "id": "Marshall2001"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " Guy Melançon",
+                " M. Scott Marshall"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/StarGraphVisuInInfoVis.pdf",
+            "journal": "IEEE Transactions on Visualization and Computer Graphics",
+            "uri": "urn:x:ihermanpubls_Herman2000b",
+            "pages": "24-44",
+            "volume": "6",
+            "key": "Herman2000b",
+            "year": "2000",
+            "keywords": [
+                "graphs",
+                "visualization"
+            ],
+            "label": "Graph visualization in information visualization: a survey",
+            "type": "Publication",
+            "id": "Herman2000b"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " David J. Duke",
+                " David A. Duce",
+                " Giorgio Faconti",
+                " Ivan Herman"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/Changing_face_of_standardization.pdf",
+            "journal": "Formal Aspects of Computing",
+            "uri": "urn:x:ihermanpubls_Duke1999a",
+            "pages": "1-20",
+            "volume": "11",
+            "key": "Duke1999a",
+            "year": "1999",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "label": "The changing face of standardization: a place for formal methods?",
+            "type": "Publication",
+            "id": "Duke1999a"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " Nuno Correia",
+                " David A. Duce",
+                " David J. Duke",
+                " Graham J. Reynolds",
+                " Jim Van Loo"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/SyncObjects.pdf",
+            "journal": "Multimedia Systems",
+            "uri": "urn:x:ihermanpubls_Herman1998",
+            "pages": "88-101",
+            "volume": "6",
+            "key": "Herman1998",
+            "year": "1998",
+            "keywords": [
+                "multimedia",
+                "standards"
+            ],
+            "label": "A Standard Model for Multimedia Synchronization: PREMO Synchronization Objects",
+            "type": "Publication",
+            "id": "Herman1998"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " Maylis Delest",
+                " Guy Melançon"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/INS-R9806.pdf",
+            "journal": "Computer Graphics Forum",
+            "uri": "urn:x:ihermanpubls_Herman1998a",
+            "pages": "153-165",
+            "volume": "17",
+            "key": "Herman1998a",
+            "year": "1998",
+            "keywords": [
+                "graphs",
+                "visualization"
+            ],
+            "label": "Tree Visualisation and Navigation Clues for Information Visualisation",
+            "type": "Publication",
+            "id": "Herman1998a"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " David J. Duke",
+                " Ivan Herman",
+                " Thomas Rist",
+                " Michael Wilson"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/INS-R9704.pdf",
+            "journal": "Computer Standards & Interfaces",
+            "uri": "urn:x:ihermanpubls_Duke1997b",
+            "pages": "525-535",
+            "volume": "18",
+            "key": "Duke1997b",
+            "year": "1997",
+            "keywords": [
+                "PREMO",
+                "graphics",
+                "multimedia",
+                "standards"
+            ],
+            "label": "Relating the primitive hierarchy of the PREMO standard to the Standard Reference Model for Intelligent Multimedia Presentation Systems",
+            "type": "Publication",
+            "id": "Duke1997b"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Dejuan Wang",
+                " Ivan Herman",
+                " Graham J. Reynolds"
+            ],
+            "journal": "Computer Graphics Forum",
+            "uri": "urn:x:ihermanpubls_Wang1997",
+            "pages": "159-176",
+            "volume": "16",
+            "key": "Wang1997",
+            "year": "1997",
+            "keywords": [
+                "PREMO",
+                "graphics",
+                "standards"
+            ],
+            "label": "The Open Inventor Toolkit and the PREMO Standard",
+            "type": "Publication",
+            "id": "Wang1997"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " Graham J. Reynolds",
+                " Jim Van Loo"
+            ],
+            "journal": "IEEE MultiMedia",
+            "uri": "urn:x:ihermanpubls_Herman1996",
+            "pages": "83-89",
+            "volume": "3",
+            "key": "Herman1996",
+            "year": "1996",
+            "keywords": [
+                "PREMO",
+                "multimedia",
+                "standards"
+            ],
+            "label": "PREMO: An emerging standard for multimedia. Part I: Overview and Framework",
+            "type": "Publication",
+            "id": "Herman1996"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " Graham J. Reynolds",
+                " Jim Van Loo"
+            ],
+            "journal": "IEEE MultiMedia",
+            "uri": "urn:x:ihermanpubls_Herman1996a",
+            "pages": "72-75",
+            "volume": "3",
+            "key": "Herman1996a",
+            "year": "1996",
+            "keywords": [
+                "PREMO",
+                "multimedia",
+                "standards"
+            ],
+            "label": "PREMO: An emerging standard for multimedia. Part II: Specification and Applications",
+            "type": "Publication",
+            "id": "Herman1996a"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " David J. Duke",
+                " David A. Duce",
+                " Ivan Herman",
+                " Paul J.W. ten Hagen",
+                " Graham J. Reynolds"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/Formal_methods_Premo.pdf",
+            "journal": "Computer Standards & Interfaces",
+            "uri": "urn:x:ihermanpubls_Duke1995",
+            "pages": "491-509",
+            "volume": "16",
+            "key": "Duke1995",
+            "year": "1995",
+            "keywords": [
+                "multimedia",
+                "standards"
+            ],
+            "label": "Formal Methods in the Development of PREMO",
+            "type": "Publication",
+            "id": "Duke1995"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Farhad Arbab",
+                " Ivan Herman"
+            ],
+            "journal": "Future Generation Computer Systems",
+            "uri": "urn:x:ihermanpubls_Arbab1994",
+            "label": "Manifold",
+            "volume": "10",
+            "key": "Arbab1994",
+            "year": "1994",
+            "keywords": [
+                "parallelism"
+            ],
+            "type": "Publication",
+            "id": "Arbab1994"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " Graham J. Reynolds",
+                " Jacques Davy"
+            ],
+            "journal": "CWI Quarterly",
+            "uri": "urn:x:ihermanpubls_Herman1994a",
+            "label": "MADE: A Multimedia application development environment",
+            "volume": "7",
+            "key": "Herman1994a",
+            "year": "1994",
+            "keywords": [
+                "multimedia"
+            ],
+            "type": "Publication",
+            "id": "Herman1994a"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Farhad Arbab",
+                " Ivan Herman",
+                " Graham J. Reynolds"
+            ],
+            "journal": "Computer Graphics Forum",
+            "uri": "urn:x:ihermanpubls_Arbab1993",
+            "label": "An Object Model for Multimedia Programming",
+            "volume": "12",
+            "key": "Arbab1993",
+            "year": "1993",
+            "keywords": [
+                "graphics",
+                "multimedia"
+            ],
+            "type": "Publication",
+            "id": "Arbab1993"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Farhad Arbab",
+                " Ivan Herman",
+                " Per Spilling"
+            ],
+            "journal": "Concurrency: Practice and Experience",
+            "uri": "urn:x:ihermanpubls_Arbab1993a",
+            "label": "An Overview of Manifold and its Implementation",
+            "volume": "5",
+            "key": "Arbab1993a",
+            "year": "1993",
+            "keywords": [
+                "parallelism"
+            ],
+            "type": "Publication",
+            "id": "Arbab1993a"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " Farhad Arbab"
+            ],
+            "journal": "CWI Quarterly",
+            "uri": "urn:x:ihermanpubls_Herman1992a",
+            "label": "A Processor Farm Example in Manifold",
+            "volume": "5",
+            "key": "Herman1992a",
+            "year": "1992",
+            "keywords": [
+                "parallelism"
+            ],
+            "type": "Publication",
+            "id": "Herman1992a"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Dirk Soede",
+                " Farhad Arbab",
+                " Ivan Herman",
+                " Paul J.W. ten Hagen"
+            ],
+            "journal": "Computer Graphics Forum",
+            "uri": "urn:x:ihermanpubls_Soede1991",
+            "label": "The GKS Input Model in Manifold",
+            "volume": "10",
+            "key": "Soede1991",
+            "year": "1991",
+            "keywords": [
+                "graphics",
+                "parallelism",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Soede1991"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Joseph Hübl",
+                " Ivan Herman"
+            ],
+            "journal": "Computer Graphics Forum",
+            "uri": "urn:x:ihermanpubls_Hubl1990",
+            "label": "Modelling Clip: Some More Results",
+            "volume": "9",
+            "key": "Hubl1990",
+            "year": "1990",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Hubl1990"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Paul J.W. ten Hagen",
+                " Ivan Herman",
+                " Jan R.G. de Vries"
+            ],
+            "journal": "Computers & Graphics",
+            "uri": "urn:x:ihermanpubls_TenHagen1990",
+            "label": "A Dataflow Graphics Workstation",
+            "volume": "14",
+            "key": "TenHagen1990",
+            "year": "1990",
+            "keywords": [
+                "graphics",
+                "parallelism"
+            ],
+            "type": "Publication",
+            "id": "TenHagen1990"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman"
+            ],
+            "journal": "Computer Graphics Forum",
+            "uri": "urn:x:ihermanpubls_Herman1989b",
+            "label": "On the Projective Representation of Conics in Computer Graphics",
+            "volume": "8",
+            "key": "Herman1989b",
+            "year": "1989",
+            "keywords": [
+                "graphics"
+            ],
+            "type": "Publication",
+            "id": "Herman1989b"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " János Reviczky"
+            ],
+            "journal": "Computers & Graphics",
+            "uri": "urn:x:ihermanpubls_Herman1988",
+            "label": "A Means to Improve the GKS-3D/PHIGS Output Pipeline Implementation",
+            "volume": "12",
+            "key": "Herman1988",
+            "year": "1988",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1988"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " János Reviczky"
+            ],
+            "journal": "Computer Graphics Forum",
+            "uri": "urn:x:ihermanpubls_Herman1988a",
+            "label": "Some Remarks on the Modelling Clip Problem",
+            "volume": "7",
+            "key": "Herman1988a",
+            "year": "1988",
+            "keywords": [
+                "graphics",
+                "mathematics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1988a"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " János Reviczky",
+                " Tibor Tolnay-Knefély",
+                " Franz L. Westhoff"
+            ],
+            "journal": "Computers & Graphics",
+            "uri": "urn:x:ihermanpubls_Herman1988c",
+            "label": "Three Dimensional Graphics Standards and CGI",
+            "volume": "12",
+            "key": "Herman1988c",
+            "year": "1988",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1988c"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " János Reviczky"
+            ],
+            "journal": "Computer Graphics Forum",
+            "uri": "urn:x:ihermanpubls_Herman1987",
+            "label": "New Methods for Improving the GKS Fill Area Output Primitive",
+            "volume": "6",
+            "key": "Herman1987",
+            "year": "1987",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1987"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " János Reviczky",
+                " Tibor Tolnay-Knefély"
+            ],
+            "journal": "Computers & Graphics",
+            "uri": "urn:x:ihermanpubls_Herman1986",
+            "label": "A Concept for a GKS Machine",
+            "volume": "10",
+            "key": "Herman1986",
+            "year": "1986",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1986"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " János Reviczky"
+            ],
+            "journal": "Computer Graphics Forum",
+            "uri": "urn:x:ihermanpubls_Herman1985",
+            "label": "A General Device Driver for GKS",
+            "volume": "4",
+            "key": "Herman1985",
+            "year": "1985",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1985"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " János Szél"
+            ],
+            "journal": "Információ és Elektronika",
+            "uri": "urn:x:ihermanpubls_Herman1985b",
+            "label": "A Számítógépes Grafika Első Nemzetközi Szabványa: a GKS",
+            "volume": "20",
+            "key": "Herman1985b",
+            "year": "1985",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1985b"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman"
+            ],
+            "journal": "Computer Graphics Forum",
+            "uri": "urn:x:ihermanpubls_Herman1984",
+            "label": "Managing Context-frames through GKS",
+            "volume": "3",
+            "key": "Herman1984",
+            "year": "1984",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1984"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman",
+                " Tibor Tolnay-Knefély",
+                " Árpád Vincze"
+            ],
+            "journal": "Computers & Graphics",
+            "uri": "urn:x:ihermanpubls_Herman1984a",
+            "label": "XGKS - A Multitask Implementation of GKS",
+            "volume": "8",
+            "key": "Herman1984a",
+            "year": "1984",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1984a"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman"
+            ],
+            "journal": "Computer Graphics Forum",
+            "uri": "urn:x:ihermanpubls_Herman1982",
+            "label": "A Parser Generator for Interactive Command Languages",
+            "volume": "1",
+            "key": "Herman1982",
+            "year": "1982",
+            "keywords": [
+                "graphics"
+            ],
+            "type": "Publication",
+            "id": "Herman1982"
+        },
+        {
+            "pub-type": "article",
+            "author": [
+                " Ivan Herman"
+            ],
+            "journal": "Acta Mathematica Academiæ Scientarioum Hungarica",
+            "uri": "urn:x:ihermanpubls_Herman1981",
+            "label": "A Hamiltonian Defined on L2(SO(3),λ)",
+            "volume": "31",
+            "key": "Herman1981",
+            "year": "1981",
+            "keywords": [
+                "mathematical physics"
+            ],
+            "type": "Publication",
+            "id": "Herman1981"
+        }
+    ],
+    "Technical Reports": [
+        {
+            "pub-type": "techreport",
+            "author": [
+                " Phil Bourne",
+                " Tim Clark",
+                " Robert Dale",
+                " Anita de Waard",
+                " Ivan Herman",
+                " Eduard Hovy",
+                " David Shotton"
+            ],
+            "url": "http://force11.org/white_paper",
+            "abstract": "Research and scholarship lead to the generation of new knowledge. The dissemination of this knowledge has a fundamental impact on the ways in which society develops and progresses, and at the same time it feeds back to improve subsequent research and scholarship. Here, as in so many other areas of human activity, the internet is changing the way things work: it opens up opportunities for new processes that can accelerate the growth of knowledge, including the creation of new means of communicating that knowledge among researchers and within the wider community. Two decades of emergent and increasingly pervasive information technology have demonstrated the potential for far more effective scholarly communication. However, the use of this technology remains limited; research processes and the dissemination of research results have yet to fully assimilate the capabilities of the web and other digital media. Producers and consumers remain wedded to formats developed in the era of print publication, and the reward systems for researchers remain tied to those delivery mechanisms. Force11 (the Future of Research Communication and e-Scholarship) is a community of scholars, librarians, archivists, publishers and research funders that has arisen organically to help facilitate the change toward improved knowledge creation and sharing. Individually and collectively, we aim to bring about a change in scholarly communication through the effective use of information technology. Force11 has grown from a small group of like-minded individuals into an open movement with clearly identified stakeholders associated with emerging technologies, policies, funding mechanisms and business models. While not disputing the expressive power of the written word to communicate complex ideas, our foundational assumption is that scholarly communication by means of semantically-enhanced media-rich digital publishing is likely to have a greater impact than communication in traditional print media or electronic facsimiles of printed works. However, to date, online versions of ‘scholarly outputs’ have tended to replicate print forms, rather than exploit the additional functionalities afforded by the digital terrain. We believe that digital publishing of enhanced papers will enable more effective scholarly communication, which will also broaden to include, for example, better links to data, the publication of software tools, mathematical models, protocols and workflows, and research communication by means of social media channels. This document highlights the findings of the Force11 workshop on the Future of Research Communication and e-Scholarship held at Schloss Dagstuhl, Germany, in August 2011: it summarizes a number of key problems facing scholarly publishing today, and presents a vision that addresses these problems, proposing concrete steps that key stakeholders can take to improve the state of scholarly publishing. More about Force11 can be found at http://www.force11.org. This White Paper is a collaborative effort that reflects the input of all Force11 attendees at the Dagstuhl Workshop1, and is very much a living document. We see it as a starting point that will grow and be updated and augmented by individual and collective efforts by the participants and others. We invite you to join and contribute to this enterprise.",
+            "uri": "urn:x:ihermanpubls_Bourne2011",
+            "institution": "Force11",
+            "key": "Bourne2011",
+            "year": "2011",
+            "keywords": [
+                "publishing",
+                "scientific publication"
+            ],
+            "label": "Improving Future Research Communication and e-Scholarship—A White Paper",
+            "type": "Publication",
+            "id": "Bourne2011"
+        },
+        {
+            "pub-type": "techreport",
+            "author": [
+                " Ivan Herman",
+                " M. Scott Marshall",
+                " Guy Melançon"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/Automatic_Generation.pdf",
+            "year": "2000",
+            "uri": "urn:x:ihermanpubls_Herman2000a",
+            "institution": "Center for Mathematics and Computer Sciences (CWI)",
+            "key": "Herman2000a",
+            "address": "Amsterdam",
+            "keywords": [
+                "graphs",
+                "visualization"
+            ],
+            "label": "Automatic generation of interactive overview diagrams for the navigation of large graphs",
+            "type": "Publication",
+            "id": "Herman2000a"
+        },
+        {
+            "pub-type": "techreport",
+            "author": [
+                " David J. Duke",
+                " Ivan Herman"
+            ],
+            "year": "1998",
+            "uri": "urn:x:ihermanpubls_Duke1998b",
+            "institution": "Eurographics Association",
+            "key": "Duke1998b",
+            "address": "Geneva",
+            "keywords": [
+                "PREMO",
+                "multimedia",
+                "standards"
+            ],
+            "label": "PREMO: A Standard for Multimedia Middleware",
+            "type": "Publication",
+            "id": "Duke1998b"
+        },
+        {
+            "pub-type": "techreport",
+            "author": [
+                " Guy Melançon",
+                " Ivan Herman"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/INS-R9817.pdf",
+            "year": "1998",
+            "uri": "urn:x:ihermanpubls_Melancon1998",
+            "institution": "Centre for Mathematics and Computer Sciences (CWI)",
+            "key": "Melancon1998",
+            "address": "Amsterdam",
+            "keywords": [
+                "graphs",
+                "visualization"
+            ],
+            "label": "Circular Drawings of Rooted Trees",
+            "type": "Publication",
+            "id": "Melancon1998"
+        },
+        {
+            "pub-type": "techreport",
+            "author": [
+                " David J. Duke",
+                " David A. Duce",
+                " Giorgio Faconti",
+                " Ivan Herman",
+                " Mike Massink"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/INS-R9708.ps.Z",
+            "year": "1997",
+            "uri": "urn:x:ihermanpubls_Duke1997",
+            "institution": "Centre for Mathematics and Computer Sciences (CWI)",
+            "key": "Duke1997",
+            "address": "Amsterdam",
+            "keywords": [
+                "PREMO",
+                "multimedia",
+                "standards"
+            ],
+            "label": "PREMO: a Case Study in Formal Methods and Multimedia System Specification",
+            "type": "Publication",
+            "id": "Duke1997"
+        },
+        {
+            "pub-type": "techreport",
+            "author": [
+                " Eric P.B.M. Rutten",
+                " Farhad Arbab",
+                " Ivan Herman"
+            ],
+            "year": "1992",
+            "uri": "urn:x:ihermanpubls_Rutten1992",
+            "institution": "Center for Mathematics and Computer Sciences (CWI)",
+            "key": "Rutten1992",
+            "address": "Amsterdam",
+            "keywords": [
+                "parallelism"
+            ],
+            "label": "Formal Specification of Manifold: a Preliminary Study",
+            "type": "Publication",
+            "id": "Rutten1992"
+        }
+    ],
+    "Books": [
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "book",
+            "author": [
+                " David J. Duke",
+                " Ivan Herman",
+                " M. Scott Marshall"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/Premo.pdf",
+            "series": "Lecture Notes in Computer Sciences",
+            "year": "1999",
+            "uri": "urn:x:ihermanpubls_Duke1999",
+            "label": "PREMO: a framework for multimedia middleware : specification, rationale, and Java binding",
+            "key": "Duke1999",
+            "address": "Heidelberg",
+            "keywords": [
+                "PREMO",
+                "multimedia",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Duke1999"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "book",
+            "series": "Focus on Computer Graphics",
+            "year": "1992",
+            "uri": "urn:x:ihermanpubls_Falcidieno1992",
+            "label": "Computer Graphics and Mathematics",
+            "editor": [
+                " Bianca Falcidieno",
+                " Ivan Herman",
+                " Caterina Pienovi"
+            ],
+            "key": "Falcidieno1992",
+            "address": "Heidelberg",
+            "keywords": [
+                "graphics"
+            ],
+            "type": "Publication",
+            "id": "Falcidieno1992"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "book",
+            "author": [
+                " Ivan Herman"
+            ],
+            "url": "http://www.ivan-herman.net/professional/Publications/PhD.pdf",
+            "series": "Lecture Notes in Computer Sciences",
+            "uri": "urn:x:ihermanpubls_Herman1992",
+            "year": "1992",
+            "label": "The Use of Projective Geometry in Computer Graphics",
+            "key": "Herman1992",
+            "address": "Heidelberg",
+            "keywords": [
+                "graphics",
+                "mathematics"
+            ],
+            "type": "Publication",
+            "id": "Herman1992"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "book",
+            "series": "EurographicSeminar Series",
+            "year": "1991",
+            "uri": "urn:x:ihermanpubls_Garcia1991",
+            "label": "Advances in Computer Graphics VI",
+            "editor": [
+                " Gerard Garcia",
+                " Ivan Herman"
+            ],
+            "key": "Garcia1991",
+            "address": "Heidelberg",
+            "keywords": [
+                "graphics"
+            ],
+            "type": "Publication",
+            "id": "Garcia1991"
+        },
+        {
+            "publisher": "Springer-Verlag",
+            "pub-type": "book",
+            "series": "EurographicSeminar Series",
+            "year": "1988",
+            "uri": "urn:x:ihermanpubls_Herman1988d",
+            "label": "GKS — Theory and Practice",
+            "editor": [
+                " Ivan Herman",
+                " Peter Bono"
+            ],
+            "key": "Herman1988d",
+            "address": "Heidelberg",
+            "keywords": [
+                "graphics",
+                "standards"
+            ],
+            "type": "Publication",
+            "id": "Herman1988d"
+        }
+    ],
+    "PhD Thesis": [
+        {
+            "school": "University of Leiden",
+            "author": [
+                " Ivan Herman"
+            ],
+            "pub-type": "phdthesis",
+            "uri": "urn:x:ihermanpubls_Herman1989",
+            "key": "Herman1989",
+            "year": "1989",
+            "keywords": [
+                "graphics",
+                "mathematics"
+            ],
+            "label": "The use of projective geometry in computer graphics",
+            "type": "Publication",
+            "id": "Herman1989"
+        }
+    ],
+    "Software": [
+        {
+            "pub-type": "software",
+            "author": [
+                " Ivan Herman"
+            ],
+            "institution": "W3C",
+            "uri": "urn:x:ihermanpubls_canonical_rdf2019",
+            "key": "10.5281/zenodo.3154322",
+            "year": "2019",
+            "keywords": [
+                "standards"
+            ],
+            "url": "https://zenodo.org/record/3154682",
+            "label": "Proof-of-concept implementation of Aidan Hogan's RDF canonicalization algorithm in node.js",
+            "software": "yes",
+            "type": "Publication",
+            "id": "canonical_rdf2019"
+        },
+        {
+            "pub-type": "software",
+            "author": [
+                " Ivan Herman"
+            ],
+            "institution": "W3C",
+            "uri": "urn:x:ihermanpubls_pymdata2015",
+            "key": "pymdata2015",
+            "year": "2014",
+            "keywords": [
+                "standards"
+            ],
+            "url": "http://dx.doi.org/10.5281/zenodo.14541",
+            "label": "pymicrodata: Extracting RDF from HTML+microdata",
+            "software": "yes",
+            "type": "Publication",
+            "id": "pymdata2015"
+        },
+        {
+            "pub-type": "software",
+            "author": [
+                " Ivan Herman"
+            ],
+            "institution": "W3C",
+            "uri": "urn:x:ihermanpubls_pyrdfa2014",
+            "key": "pyrdfa2014",
+            "year": "2014",
+            "keywords": [
+                "standards"
+            ],
+            "url": "http://dx.doi.org/10.5281/zenodo.14547",
+            "label": "pyrdfa3: RDFa 1.1 extractor software for HTML5 and XML",
+            "software": "yes",
+            "type": "Publication",
+            "id": "pyrdfa2014"
+        },
+        {
+            "pub-type": "software",
+            "author": [
+                " Ivan Herman"
+            ],
+            "institution": "W3C",
+            "uri": "urn:x:ihermanpubls_owlrl2014",
+            "key": "owlrl2014",
+            "year": "2014",
+            "keywords": [
+                "standards"
+            ],
+            "url": "http://dx.doi.org/10.5281/zenodo.14543",
+            "label": "OWL-RL: A simple OWL2 RL reasoner on top of RDFLib",
+            "software": "yes",
+            "type": "Publication",
+            "id": "owlrl2014"
+        }
+    ]
+}

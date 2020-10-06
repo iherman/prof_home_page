@@ -1,0 +1,55 @@
+<HEAD>
+<TITLE> Hyperdocument Editing and Playback</TITLE>
+</HEAD>
+<BODY><P>
+ <HR> <A NAME=tex2html253 HREF=subsection3_5_3.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/next_motif.gif"></A> <A NAME=tex2html251 HREF=section3_5.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/up_motif.gif"></A> <A NAME=tex2html245 HREF=subsection3_5_1.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/previous_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME=tex2html254 HREF=subsection3_5_3.html> Other Application Schemes</A>
+<B>Up:</B> <A NAME=tex2html252 HREF=section3_5.html> Application Architectures</A>
+<B> Previous:</B> <A NAME=tex2html246 HREF=subsection3_5_1.html> ``Traditional'' Programming</A>
+<HR> <P>
+<H2><A NAME=SECTION0005200000000000000> Hyperdocument Editing and Playback</A></H2>
+<P>
+<A NAME=seccompo><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/invis_anchor.xbm"></A>
+<P>
+Figure <A HREF=subsection3_5_2.html#figcompo>6</A> illustrates a possibility for hypermedia document
+manipulation using the full-blown composition utilities described
+in &#167;<A HREF=subsection3_4_3.html#seccompositioneditors>4.3</A>. The programming environment offered
+by MADE in this setting is hypermedia document authoring; quite
+naturally, the user community for such an environment differs radically
+from the community of ``traditional'' programmers. (Very often, to make
+the distinction, members of this community are referred to as
+``authors'', as opposed to ``users''.)
+<P>
+<A NAME=380><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/invis_anchor.xbm"></A><P><A NAME=figcompo><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/invis_anchor.xbm"></A><IMG ALIGN=BOTTOM ALT="" SRC="_250_figure378.gif"><P>In this authoring environment, the composition utilities are
+conceptually separate from the media editors. The composition utilities
+act as the coordinating components of the complete architecture.
+Effectively, there is an inter-editor message facility that is used to
+both control the operation of the media editors and to provide
+information to the composition utilities representing actions performed
+by the user through dialogues with the media editors.  In this setting
+the media editors may be considered as separate applications or, in
+other terms, as separate service providers. These applications
+may be realized following the scheme described in the previous section.
+<P>
+This organisation implies that media objects or references to objects
+are passed between the composition utility and the media editors in
+order to ``render'' them.  Similarly, edited media objects may need to
+be passed back to the composition editor and placed into the multimedia
+database.
+<P>
+Note that a simpler version of the architecture, including a simpler
+version for each of the media editors, may be defined to be used for
+``playback'' only.
+<P>
+<HR> <A NAME=tex2html253 HREF=subsection3_5_3.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/next_motif.gif"></A> <A NAME=tex2html251 HREF=section3_5.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/up_motif.gif"></A> <A NAME=tex2html245 HREF=subsection3_5_1.html><IMG ALIGN=MIDDLE SRC="http://www.cwi.nl/latex2html-icons/previous_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME=tex2html254 HREF=subsection3_5_3.html> Other Application Schemes</A>
+<B>Up:</B> <A NAME=tex2html252 HREF=section3_5.html> Application Architectures</A>
+<B> Previous:</B> <A NAME=tex2html246 HREF=subsection3_5_1.html> ``Traditional'' Programming</A>
+<HR> <P>
+<HR>
+
+</BODY>
+<P><ADDRESS>
+<I>ivan@petunia.cwi.nl <BR>
+Tue Jan 25 14:21:49 MET 1994</I>
+</ADDRESS>
