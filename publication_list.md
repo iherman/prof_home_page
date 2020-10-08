@@ -1,7 +1,7 @@
 ---
 title: "Publications"
 layout: publ
-fname: software
+fname: publication_list
 ---
 
 * TOC

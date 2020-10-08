@@ -1,7 +1,7 @@
 ---
 title: "Languages Spoken"
 layout: default
-fname: langs
+fname: languages
 ---
 
 

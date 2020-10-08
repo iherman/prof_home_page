@@ -15,7 +15,7 @@ fname: index
 * ![ORCID Logo](assets/images/orcid_logo.png) ORCID ID: [0000-0003-0782-2704](https://orcid.org/0000-0003-0782-2704)
 * I have accounts on [LinkedIn](https://www.linkedin.com/in/iherman)[^2] and [Facebook](https://www.facebook.com/ivan.herman).
 
-A [more detailed CV](cv) is also available on this site. Private data are available on my [private home page](http://www.ivan-herman.net).
+A [more detailed CV](curriculum_vitae.html) is also available on this site. Private data are available on my [private home page](http://www.ivan-herman.net).
 
 
 [^1]: Note, however, that I spend a lot of time outside my office, so it is probably safer to contact me by email or use my mobile phone.
