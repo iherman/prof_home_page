@@ -198,8 +198,8 @@ aside > nav {
   flex: 1; }
 
 /* Footnotes */
-div[role = doc-endnotes] p {
-  line-height: 20%;
+div[role = doc-endnotes]  {
+  font-size: 70%;
 }
 
 /****************************************************************

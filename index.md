@@ -9,7 +9,6 @@ fname: index
 ### Contact information:
 
 * Office address: CWI, Science Park 123, P.O. Box 94079, 1090GB Amsterdam, The Netherlands[^1]
-* ![telephone logo](assets/images/tel.gif) mobile: +33 6 52 46 00 43
 * Email: [Ivan.Herman@cwi.nl](mailto:Ivan.Herman@cwi.nl) or [ivan@w3.org](mailto:ivan@w3.org)
 * GnuPG: [public key](https://www.ivan-herman.net/pgpkey.txt)
 * ![ORCID Logo](assets/images/orcid_logo.png) ORCID ID: [0000-0003-0782-2704](https://orcid.org/0000-0003-0782-2704)

@@ -42,8 +42,6 @@ fname: r_and_d
 
 (I am not affiliated to any university, nor do I have a university title. Participating in PhD work is therefore not part of my usual job…)
 
-**References:**
-
 [^1]: W3C: [World Wide Web Consortium](https://www.w3.org/)
 [^2]: Force11: [Future of Research Communications and e-Scholarship](https://www.force11.org)
 [^3]: TACIT: [Theory and Application of Continuous Interaction Techniques](http://kazan.cnuce.cnr.it/TACIT/TACIThome.html)
