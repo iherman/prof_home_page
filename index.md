@@ -4,7 +4,7 @@ layout: default
 fname: index
 ---
 
- I hold a tenure research position at Centrum Wiskunde & Informatica ([CWI](http://www.cwi.nl)) in Amsterdam, the Netherlands. As a W3C Fellow for CWI, I am also member of the permanent staff of the [World Wide Web Consortium (W3C)](http://www.w3.org) which is my full time work at the moment. At the W3C I am the [Technical Lead for Publishing@W3C](http://www.w3.org/publishing/), as well as the W3C staff representative for the work on [EPUB 3](https://www.w3.org//publishing/groups/epub-wg/)and [Decentralized Identities](https://www.w3.org/2019/did-wg/). Finally, I am also member of the W3C internal groups on Strategy as well as on Technology & Architecture.
+ I hold a tenure research position at Centrum Wiskunde & Informatica ([CWI](http://www.cwi.nl)) in Amsterdam, the Netherlands. As a W3C Fellow for CWI, I am also member of the permanent staff of the [World Wide Web Consortium (W3C)](http://www.w3.org) which is my full time work at the moment. At the W3C I am the [Technical Lead for Publishing@W3C](http://www.w3.org/publishing/), as well as the W3C staff representative for the work on [EPUB 3](https://www.w3.org/publishing/groups/epub-wg/) and [Decentralized Identities](https://www.w3.org/2019/did-wg/). Finally, I am also member of the W3C internal groups on Strategy as well as on Technology & Architecture.
 
 ### Contact information:
 
@@ -17,5 +17,5 @@ fname: index
 A [more detailed CV](curriculum_vitae.html) is also available on this site. Private data are available on my [private home page](http://www.ivan-herman.net).
 
 
-[^1]: Note, however, that I spend a lot of time outside my office, so it is probably safer to contact me by email or use my mobile phone.
-[^2]: As a principle, I accept connections on LinkedIn only with people I really know. Please, do not bother me if this is not the case…
+[^1]: Note, however, that I spend a lot of time outside my office, so it is probably safer to contact me by email.
+[^2]: As a principle, I do not accept connection requests on LinkedIn from people I do not really know. Please, do not bother me if this is  the case…
