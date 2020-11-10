@@ -22,6 +22,7 @@ The complete list of the {{ number }} entries, with more details, is also availa
 
     <ol>
     {% for pub in site.data.publist[category] %}
+
         <li>
             <em>“{{ pub.label }}”;</em> 
             {% if pub.author %} {{ pub.author | array_to_sentence_string }}. {% endif %}
