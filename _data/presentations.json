@@ -1,5 +1,17 @@
 [
     {
+        "city": "Nanjing",
+        "title": "Decentralized Identifiers (DIDs)",
+        "country": "China (by video)",
+        "id": "X_2020-12-21",
+        "slides": "https://www.w3.org/2020/Talks/FinTech-Nanjing-IH/",
+        "talkType": "presentation",
+        "year": 2020,
+        "date": "2020-12-21",
+        "type": "presentation",
+        "event": "Fin-Tech Ecosystem Event and Inauguration Ceremony of W3C's Nanjing Chapter"
+    },
+    {
         "city": "San Francisco",
         "title": "Graph Data: RDF, Property Graphs (Results of a Workshop…)",
         "country": "USA",
