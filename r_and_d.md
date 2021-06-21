@@ -8,9 +8,9 @@ fname: r_and_d
 ## Major research and development projects
 
 * **2001-present**: Member of the W3C[^1] team:
-    * **2017-present**: member of the W3C Strategy team for publishing on the Web, and member of the W3C Technology and Architecture team as a specialist of publishing and data on the Web;
-    * **2019-present**: staff representative for the work on [Decentralized Identities](https://www.w3.org/2019/did-wg/); 
+    * **2019-present**: staff representative for the work on [Decentralized Identities](https://www.w3.org/2019/did-wg/) and [Verifiable Credentials](https://www.w3.org/2017/vc/WG/); 
     * **2017-present**: [Publishing@W3C](http://www.w3.org/publishing/) Technical Lead, staff representative for the work on [EPUB 3](https://www.w3.org//publishing/groups/epub-wg/);
+    * **2017-2021**: member of the W3C Strategy team for publishing on the Web, and member of the W3C Technology and Architecture team as a specialist of publishing and data on the Web;
     * **2012-2016**: leader of the [Digital Publishing Activity](http://www.w3.org/dpub/);
     * **2006-2014**: leader of the [Semantic Web Activity](http://www.w3.org/2001/sw/);
     * **2001-2006**: head of [offices](http://www.w3.org/Consortium/Offices/) and member of the W3C Semantic Web Coordination Group.
@@ -40,7 +40,7 @@ fname: r_and_d
 * Scott Marshall, *Methods and Tools for the Visualization and Navigation of Graphs* (*Méthodes et outils pour la visualisation et la navigation de données relationnelles*), University of Bordeaux, France, 2001. (Co-promotor)
 * J.E.A. van Hintum, *Quality Constraints & Constrained Quality*, University of Eindhoven, the Netherlands, 1997. (Co-promotor)
 
-(I am not affiliated to any university, nor do I have a university title. Participating in PhD work is therefore not part of my usual job…)
+(I am not affiliated to any university, nor do I have a university title. Participating in PhD work was therefore not part of my usual job…)
 
 [^1]: W3C: [World Wide Web Consortium](https://www.w3.org/)
 [^2]: Force11: [Future of Research Communications and e-Scholarship](https://www.force11.org)

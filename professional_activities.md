@@ -7,7 +7,7 @@ fname: professional_activities
 Committee, Board, etc. Memberships
 ----------------------------------
 
--	**1997-current**: [IW3C2](http://www.iw3c2.org/) (International World Wide Web Conference Committee)
+-	**1997-2021**: [IW3C2](http://www.iw3c2.org/) (International World Wide Web Conference Committee)
 -	**2016-2018**: Steering Committee of the [“Annotating All Knowledge”](https://hypothes.is/annotating-all-knowledge/) coalition
 -	**2016-2018**: Advisory Board of [Force11](http://www.force11.org) (Future of Research Communications and e-Scholarship)
 -	**2015**: [ORCID](http://www.orcid.org/) Technical Steering Board
