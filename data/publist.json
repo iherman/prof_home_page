@@ -2518,6 +2518,41 @@
     ],
     "Books": [
         {
+            "publisher": "Association for Computing Machinery",
+            "pub-type": "book",
+            "editor" : [
+                "Frédérique Laforest",
+                "Raphaël Troncy",
+                "Deepak Agarwal",
+                "Aristides Gionis",
+                "Elena Simperl",
+                "Ivan Herman",
+                "Lionel Médini"
+            ],
+            "url": "https://dl.acm.org/doi/proceedings/10.1145/3485447",
+            "year": "2022",
+            "uri": "twc2022",
+            "address" : "New York, NY, USA",
+            "type" : "Publication",
+            "id": "twc2022",
+            "label": "WWW '22: Proceedings of the ACM Web Conference 2022"
+        },
+        {
+            "publisher": "Elsevier Science",
+            "pub-type": "book",
+            "editor" : [
+                "Dick Bulterman",
+                "Ivan Herman",
+                "Albert Vezza"
+            ],
+            "year": "2000",
+            "uri": "twc2000",
+            "address" : "Amsterdam, The Netherlands",
+            "type" : "Publication",
+            "id": "twc2000",
+            "label": "Conference Proceedings, 9th International World Wide Web Conference"
+        },
+        {
             "publisher": "Springer-Verlag",
             "pub-type": "book",
             "author": [
