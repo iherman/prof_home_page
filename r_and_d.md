@@ -8,8 +8,9 @@ fname: r_and_d
 ## Major research and development projects
 
 * **2001-present**: Member of the W3C[^1] team:
-    * **2019-present**: staff representative for the work on [Decentralized Identities](https://www.w3.org/2019/did-wg/) and [Verifiable Credentials](https://www.w3.org/2017/vc/WG/); 
-    * **2017-present**: [Publishing@W3C](http://www.w3.org/publishing/) Technical Lead, staff representative for the work on [EPUB 3](https://www.w3.org//publishing/groups/epub-wg/);
+    * **2019-present**: staff representative for the work on [Verifiable Credentials](https://www.w3.org/2017/vc/WG/); 
+    * **2017-present**: [Publishing@W3C](http://www.w3.org/publishing/) Technical Lead, staff representative for the work on [EPUB 3](https://www.w3.org/publishing/groups/epub-wg/);
+    * **2019-2022**: staff representative for the work on [Decentralized Identities](https://www.w3.org/2019/did-wg/); 
     * **2017-2021**: member of the W3C Strategy team for publishing on the Web, and member of the W3C Technology and Architecture team as a specialist of publishing and data on the Web;
     * **2012-2016**: leader of the [Digital Publishing Activity](http://www.w3.org/dpub/);
     * **2006-2014**: leader of the [Semantic Web Activity](http://www.w3.org/2001/sw/);
