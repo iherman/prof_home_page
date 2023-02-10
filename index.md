@@ -4,7 +4,7 @@ layout: default
 fname: index
 ---
 
-I am a retired researcher from the Centrum Wiskunde & Informatica ([CWI](http://www.cwi.nl)) in Amsterdam, the Netherlands. I was also a W3C Fellow for CWI until my retirement in 2021 and, as such, I was also member of the permanent staff of the [World Wide Web Consortium (W3C)](http://www.w3.org). At present, I continue to be on the W3C staff for 50% of my time. At the W3C I am the [Technical Lead for Publishing@W3C](http://www.w3.org/publishing/), as well as the W3C staff representative for the work on [EPUB 3](https://www.w3.org/publishing/groups/epub-wg/) and [Decentralized Identities](https://www.w3.org/2019/did-wg/).
+I am a retired researcher from the Centrum Wiskunde & Informatica ([CWI](http://www.cwi.nl)) in Amsterdam, the Netherlands. I was also a W3C Fellow for CWI until my retirement in 2021 and, as such, I was also member of the permanent staff of the [World Wide Web Consortium (W3C)](http://www.w3.org). At present, I continue to be on the W3C staff as an "emeritus" for 50% of my time. At the W3C I am the [Technical Lead for Publishing@W3C](http://www.w3.org/publishing/), as well as the W3C staff representative for the work on [EPUB 3](https://www.w3.org/publishing/groups/epub-wg/) and [Verifiable Credentials](https://www.w3.org/2017/vc/WG/).
 
 ### Contact information:
 
