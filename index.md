@@ -11,9 +11,5 @@ I am a retired researcher from the Centrum Wiskunde & Informatica ([CWI](http://
 * Professional Email: [ivan@w3.org](mailto:ivan@w3.org)
 * GnuPG: [public key](https://www.ivan-herman.net/pgpkey.txt)
 * ![ORCID Logo](assets/images/orcid_logo.png) ORCID ID: [0000-0003-0782-2704](https://orcid.org/0000-0003-0782-2704)
-* I have accounts on [LinkedIn](https://www.linkedin.com/in/iherman)[^1].
 
 A [more detailed CV](curriculum_vitae.html) is also available on this site. Private data are available on my [private home page](http://www.ivan-herman.net).
-
-
-[^1]: As a principle, I do not accept connection requests on LinkedIn from people I do not really know. Please, do not bother me if this is  the case…
