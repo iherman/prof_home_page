@@ -7,6 +7,66 @@
                 "Matt Garrish",
                 "Ivan Herman"
             ],
+            "url": "https://www.w3.org/TR/2023/NOTE-epub-overview-33-20230519/",
+            "abstract": "EPUB® 3 defines a distribution and interchange format for digital publications and documents. The EPUB format provides a means of representing, packaging, and encoding structured and semantically enhanced web content — including HTML, CSS, SVG and other resources — for distribution in a single-file container. This overview provides a general starting point for anyone curious to understand the features available in EPUB 3 publications. It is not intended as a technical introduction to the format or to building reading systems.",
+            "uri": "urn:x:ihermanpubls_epub_overview_33/",
+            "label": "EPUB 3 Overview",
+            "key": "epub-overview-33",
+            "year": "2023",
+            "keywords": [
+                "Web Publication",
+                "Digital Publishing"
+            ],
+            "type": "Publication",
+            "id": "epub-overview-33"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                "Matt Garrish",
+                "Ivan Herman"
+            ],
+            "url": "https://www.w3.org/TR/2023/REC-epub-rs-33-20230525/",
+            "abstract": "EPUB® 3 defines a distribution and interchange format for digital publications and documents. The EPUB format provides a means of representing, packaging, and encoding structured and semantically enhanced web content — including HTML, CSS, SVG and other resources — for distribution in a single-file container. This specification defines the conformance requirements for EPUB 3 reading systems — the user agents that render EPUB publications.",
+            "uri": "urn:x:ihermanpubls_epub_rs_33",
+            "label": "EPUB Reading Systems 3.3",
+            "key": "epub-rs-33",
+            "year": "2023",
+            "keywords": [
+                "Web Publication",
+                "Digital Publishing"
+            ],
+            "type": "Publication",
+            "id": "epub-rs-33"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                "Matt Garrish",
+                "Ivan Herman"
+            ],
+            "url": "https://www.w3.org/TR/2023/REC-epub-33-20230525/",
+            "abstract": "EPUB® 3 defines a distribution and interchange format for digital publications and documents. The EPUB format provides a means of representing, packaging, and encoding structured and semantically enhanced web content — including HTML, CSS, SVG, and other resources — for distribution in a single-file container. This specification defines the authoring requirements for EPUB publications and represents the third major revision of the standard.",
+            "uri": "urn:x:ihermanpubls_epub_33",
+            "label": "EPUB 3.3",
+            "key": "epub-33",
+            "year": "2023",
+            "keywords": [
+                "Web Publication",
+                "Digital Publishing"
+            ],
+            "type": "Publication",
+            "id": "epub-33"
+        },
+        {
+            "publisher": "World Wide Web Consortium",
+            "pub-type": "standard",
+            "editor": [
+                "Matt Garrish",
+                "Ivan Herman"
+            ],
             "url": "https://www.w3.org/TR/2020/REC-pub-manifest-20201110/",
             "abstract": "This specification defines a general manifest format for expressing information about a digital publication. It uses schema.org metadata augmented to include various structural properties about publications, serialized in json-ld11, to enable interoperability between publishing formats while accommodating variances in the information that needs to be expressed.",
             "uri": "urn:x:ihermanpubls_pub_manifest",
