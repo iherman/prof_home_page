@@ -2738,7 +2738,25 @@
         {
             "pub-type": "software",
             "author": [
-                " Ivan Herman"
+                "Ivan Herman"
+            ],
+            "institution": "W3C",
+            "uri": "urn:x:ihermanpubls_rdfc-1.0",
+            "key": "10.5281/zenodo.10775229",
+            "year": "2024",
+            "keywords": [
+                "standards"
+            ],
+            "url": "https://zenodo.org/records/10775230",
+            "label": "RDF Dataset Canonicalization (RDFC 1.0) Implementation in Typescript",
+            "software": "yes",
+            "type": "Publication",
+            "id": "rdfc-1.0"
+        },
+        {
+            "pub-type": "software",
+            "author": [
+                "Ivan Herman"
             ],
             "institution": "W3C",
             "uri": "urn:x:ihermanpubls_canonical_rdf2019",
